@@ -1,0 +1,53 @@
+CMO REVIEW — Fractional Data & Analytics Leader for Mid-Market Companies
+
+ONE-PARAGRAPH MARKET READ
+This can absolutely be sold, positioned, and distributed — the "fractional executive" wrapper is a proven motion (fractional CFOs, CMOs, CTOs are a mature, recognizable category to mid-market owners), and the pain ("which customers actually make us money?") is genuine, expensive, and recurring. The trouble is not whether it sells; it's that the thing being sold is undifferentiated at the category level. "Outsourced head of data" is a label dozens of boutique analytics consultancies, fractional-data shops, and modern-data-stack agencies already wear, and the only durable moat is the founders' personal relationships and judgment — which does not compound into a brand and caps the business at the number of executive relationships two people can personally hold. It's a real, sellable, sticky services business with a soft ceiling, not a category-defining wedge.
+
+POSITIONING DRAFT
+"Your outsourced head of data — for the $30M distributor who's drowning in reports and still can't get a straight answer about which customers make money. We wire your existing systems into one set of numbers everyone trusts, and we sit in your monthly review telling you what they mean and what to do — for a fraction of a $250K hire." A clean, customer-legible sentence. The weakness: strip "data" and swap in "finance," "ops," or "RevOps" and the identical sentence already exists. Sharp at the sentence level but not ownable at the category level — it describes a delivery model (fractional + retained), not a differentiated product.
+
+THE WEDGE
+The first 100 customers are warm-intro, relationship-led, and the founders' network is the channel. (1) Referral partnerships with fractional CFOs and accounting firms serving the same $10M–$150M buyer who hit the "I can't trust these numbers" wall but don't want to own data engineering — a fractional-CFO firm like Preferred CFO, CFO Hub, or a regional Acuity/Pilot-style shop is a natural referrer; a referral fee of 10% of first-year retainer (~$6K–$14K) is cheap and aligned. (2) Vistage / EO / YPO CEO peer groups — a Vistage membership runs ~$15K–$18K/year; the founders join or take a speaker slot (often free) to reach 12–16 owner-operators in one room — the highest-conviction channel because the buyer IS the room. (3) Targeted outbound to two-three sectors the founders know cold — but note: the founder profile says their depth is healthcare/benefits/insurance, NOT distribution/manufacturing/logistics, so the "sectors the founders know" claim is thinner than the one-pager implies. The wedge is real and low-cost but a relationship wedge, not a scalable engine — it gets you to maybe 15–30 clients, not 1,000.
+
+COMPETITIVE PICTURE
+- Modern-data-stack / analytics agencies — 4 Mile Analytics, Brooklyn Data Co. (now Aimpoint), Mammoth Growth, and a long tail of dbt/Fivetran/Looker boutiques. Best at the build; typically projects not retained leadership — the gap this aims at, but they are moving toward retainers too.
+- Fractional-CFO firms (Preferred CFO, CFO Hub, Paro, Pilot's CFO services) — best at owning "the numbers" for mid-market, already trusted in the CEO's office, increasingly bolting on FP&A/BI. Simultaneously the best referral partners AND the most dangerous competitor, because the CFO already owns the financial-truth relationship and can extend into operational analytics.
+- Fractional CTO/data collectives — Toptal, Go Fractional, Continuum, Bolster — best at matching a senior fractional data leader on demand; they commoditize the exact "fractional head of data" role at marketplace scale.
+- Outsourced FP&A / RevOps shops and offshore analyst staffing — best at cheap capacity.
+- "Do nothing" and the part-time internal analyst — the real default.
+Where is the air? Genuinely thin but present: the combination of (a) ongoing retained leadership, (b) a living reporting foundation they maintain, and (c) operational (not just financial) truth for unglamorous sectors is a slightly underserved seam — most modern-data agencies chase VC-backed tech; most fractional CFOs stop at financial reporting. But this seam is a 12-month head start, not a moat. Any fractional collective or fractional-CFO firm can announce a "fractional head of data" line next quarter.
+
+SCORES (1–10)
+1. Positioning clarity: 7 — "Outsourced head of data, without the $250K hire" is a sharp, customer-legible sentence anchored to a named price-of-the-alternative ($250K VP of Data), pivoting cleanly off three real alternatives.
+2. Real differentiation: 4 — The difference is delivery model (retained vs project) plus founder judgment, both copyable inside 90 days; no structural or proprietary differentiation, and fractional-CFO firms can extend into this seam directly.
+3. Wedge to first 1,000 customers: 5 — The relationship/referral wedge (Vistage rooms ~$15K-$18K/member, fractional-CFO referral ~10% of retainer) is real and cheap for the first 15–30 clients, but no identified path scales to 1,000 without becoming a different, agency-shaped company.
+4. GTM motion fit: 8 — Relationship-led, referral-and-network sales is exactly Mike's stated strength ("charisma, partnerships, channel sales") and a short-cycle, high-authority CEO/CFO/COO buyer matches the founder-profile green flag of "buyer has budget and decision authority."
+5. Distribution channel realism: 7 — Multiple concrete working channels (Vistage/EO/YPO, accountant and fractional-CFO referral, sector outbound), each affordable and founder-fit; capped because none is a scalable inbound engine and all lean on personal relationships.
+6. CAC realism: 7 — Referral/peer-group CAC plausibly low (a 10%-of-first-year referral fee ≈ $6K–$14K against $60K–$144K ACV is excellent LTV/CAC) [ASSUMED 20–35% close on warm intros; verify on first 20], but founder-time is the hidden cost and it doesn't scale past their calendars.
+7. Brand / story compounding: 4 — Every sale is a fresh relationship fight; the story ("we own your numbers") doesn't accumulate brand equity that lowers the next customer's CAC, and there's no content/data flywheel proposed.
+8. Competitive air: 5 — The mid-market unglamorous-sector seam is real but crowded-adjacent: fractional-CFO firms (Preferred CFO, CFO Hub) and fractional collectives (Go Fractional, Continuum, Toptal) sit one product-announcement away from occupying it.
+9. Defensibility: 4 — The only moats are switching cost (dashboards embedded in the monthly review — genuinely sticky once installed) and personal trust; both are account-level, not company-level, so a competitor just has to win each account fresh.
+10. Customer truth: 6 — Pain described vividly and credibly and the buyer correctly identified, but the founders' authentic domain depth is healthcare/benefits/insurance, not the distribution/manufacturing/logistics sectors named as targets — a guessing gap. [Verify with 10 discovery calls into distribution/manufacturing CEOs before committing the sector pitch.]
+
+AVERAGE SCORE: 5.7 / 10
+
+TOP 3 MARKET STRENGTHS
+- A proven, recognizable delivery wrapper (fractional executive) attached to a real, recurring, seven-figure-decision pain — the buyer already understands and budgets for "fractional [X]."
+- Founder-GTM fit is excellent: relationship- and partner-led selling to a high-authority CEO/CFO/COO buyer is exactly Mike's wheelhouse and matches the green flag of "budget + decision authority + short cycle."
+- High switching cost and natural expansion once embedded: when dashboards drive the monthly business review, the retainer renews indefinitely and expands — sticky, high-margin recurring revenue.
+
+TOP 3 MARKET RISKS
+- Weak differentiation and no compounding brand: the offering is a delivery model, not an ownable category, and fractional-CFO firms can extend into it directly.
+- Hard human ceiling on scale: two senior advisors can hold a limited number of executive relationships; contract analysts extend capacity per account but the trusted-advisor seat doesn't delegate.
+- Sector-knowledge mismatch: the founders' real depth is healthcare/benefits/insurance, but the targeted sectors are distribution/manufacturing/logistics/construction, where they'd be selling credibility they don't yet have.
+
+BIGGEST SINGLE RISK
+The single most likely thing to cap this business is that the value lives in two people's heads and relationships, so the brand never compounds and the model never escapes its labor ceiling. The positioning is clean and the pain real, but nothing in the concept turns the first 20 happy clients into cheaper, easier acquisition of the next 200 — there's no proprietary data asset, no productized IP, no content flywheel, no network effect. Every new client is a fresh trust-sale into a new executive suite, and the highest-value seat (the trusted "owner of the numbers" in the monthly review) is precisely the one that cannot be handed to a junior or offshore analyst. The binding constraint on revenue is the founders' personal calendars and credibility, and a two-person team carrying $5K–$12K/month retainers tops out around 15–25 concurrent clients before the senior advisory quality (the entire differentiator) degrades. A wonderful lifestyle business, but it grows linearly with founder time and competes on relationships that any fractional-CFO firm or fractional-talent marketplace can contest account by account — there is no marketing moat being built, only a book of business.
+
+QUESTIONS THE FOUNDERS MUST ANSWER BEFORE I'M COMFORTABLE
+- What is the productized, non-personal asset that makes client #50 cheaper to acquire than client #5 — a benchmarking dataset across your portfolio, sector dashboard templates, a published point of view that pulls inbound? If the answer is "our reputation," the brand does not compound and the model is calendar-capped.
+- Why you, in distribution/manufacturing/logistics specifically? Your authentic depth is healthcare/benefits/insurance — will you re-target the concept at sectors you actually know, or show 10 discovery calls proving you can earn credibility fast in the named sectors?
+- How do you defend the account when the client's fractional CFO (often the referrer) extends into "the numbers" and BI themselves — what keeps the data-leadership seat distinct from the finance-leadership seat in the CEO's mind?
+- What is the real close rate and sales-cycle length from warm intro to signed retainer, and how many concurrent clients can ONE founder personally carry before quality degrades? (These two numbers set the entire revenue ceiling.)
+
+RECOMMENDATION: REFINE
