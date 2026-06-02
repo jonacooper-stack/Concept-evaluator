@@ -15,10 +15,25 @@
 | 5 | InsuranceCarrierAuditOps (WC premium audit) | 2 | 7.5 | 6.7 | 5.9 | 5.6 | 7.3 | **6.60** | 4 (Legal licensing) | 69 | FAIL |
 | 6 | ApprovedVendorEngine (contractor vendor-compliance) | 2 | 7.3 | 6.8 | 6.5 | 6.6 | 6.0 | **6.64** | 3 (CTO 3rd-party dep) | 66.5 | FAIL |
 | 7 | RebateCaptureOps (utility/IRA rebate capture) | 2 | 6.8 | 7.2 | 5.9 | 6.4 | 5.3 | **6.32** | 3 (CTO maintenance) | 66 | FAIL |
+| 8 | SuretyComplianceOps (bonding-readiness) | 2 | 7.1 | 7.0 | 6.3 | 6.9 | 7.0 | **6.86** | 4 (COO hiring/Legal liab) | 69 | FAIL |
 
-## Concepts deep-dived: 7 / 12 bound
-## Generation rounds completed: 1 / 3 bound
+## Concepts deep-dived: 8 / 12 bound
+## Generation rounds completed: 2 / 3 bound
 ## Clears so far: 0 / 2 needed
+
+---
+## ROUND 2 WRAP — 4 concepts deep-dived, 0 clears (means 6.32–6.92)
+Round 2 seeded toward structural moats + clean liability + take-rate. It scored LOWER than Round 1, revealing a deeper structural truth:
+- **The revenue-upside hook re-imports liability every time.** Take-rate / "maximize" framing on a regulated outcome re-creates exactly the liability wall it was meant to escape: C5 insurance-consultant licensing, C7 False Claims Act (federal rebate $), C8 surety-fraud (§1001/FCA). The contingency fee that makes the sale easy is the fraud-motive that sinks Legal.
+- **The "operational system-of-record" moat needs either a portal-dependency (C6: ISN/Avetta rented ground, CTO 3) or a scarce-expert bottleneck (C8: ex-underwriter, COO hiring 4) or a maintenance treadmill (C7: rules-DB, CTO 3).** A bootstrapped service can't get a structural moat without importing one of these.
+- **"Found money"/revenue-recovery is weaker must-have than a forced obligation** (C5 latent demand, C7 found-money churn).
+
+## CROSS-ROUND STRUCTURAL FINDING (8 concepts, 0 clears, means 6.32–7.56)
+The bar (mean >8.0 AND every sub-score >=7 AND obj >=80) requires ZERO weak dimensions across 50 sub-scores. Every concept in this founder-thesis space (bootstrapped, marketing-led, productized B2B service for SMBs around a forced/recurring buy) has carried >=1 structurally weak dimension:
+- **Defensibility/Differentiation ~5-6**: a bootstrapped service is inherently copyable; a real moat needs a network effect (→ two-sidedness → dependency/chicken-egg) or proprietary data (→ maintenance treadmill).
+- **Liability ~4-6**: any forced-buy in a regulated/financial/government domain carries attestation/fraud/licensing exposure; clean-liability operational services drift toward vitamin or hit competent incumbents.
+- **A delivery bottleneck** (scarce expert, portal dependency, or content treadmill) whenever a structural moat is attempted.
+This is looking like an HONEST zero-clear outcome — the thesis space tops out ~7.5 on rigorous, red-teamed scoring. Round 3 will test the last untested corner before the bound.
 
 ---
 ## ROUND 1 WRAP — 4 concepts deep-dived, 0 clears (means 7.04–7.56)
