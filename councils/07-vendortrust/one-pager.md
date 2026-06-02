@@ -1,0 +1,24 @@
+# Managed Supplier-Compliance Document & Attestation Service for SMB Suppliers to Large Buyers
+
+## Customer
+Small and mid-size businesses ($1M–$50M revenue) that supply products or services to large buyers with formal vendor-compliance programs — big-box and grocery retailers, distributors, manufacturers, hospitality and healthcare systems, and large primes. Typical suppliers: food/CPG brands, importers, packaging and component manufacturers, and service vendors selling into one or several large buyers.
+
+## The problem (forced, recurring, budgeted)
+To stay an approved vendor, a supplier must continuously maintain and re-submit a stack of compliance items each buyer mandates: certificates of insurance (COIs) at required coverage levels naming the buyer as additional insured, W-9s, supplier code-of-conduct and anti-corruption/forced-labor (UFLPA) attestations, quality/food-safety certifications (e.g., GFSI/SQF/BRC for food), product-testing and certification documents, data-security questionnaires, diversity certifications, and periodic supplier self-assessment questionnaires on each buyer's vendor portal or a third-party network. These expire and must be renewed on rolling cycles; the buyer's compliance team chases the supplier, and if a document lapses or a questionnaire isn't completed, the supplier can be placed on hold, have POs blocked, payments withheld, or be deactivated as a vendor — directly cutting off revenue. The burden multiplies for suppliers selling into multiple large buyers, each with its own portal, document set, and deadlines. It is forced (required to keep selling), recurring (documents expire), and already budgeted as a cost of keeping the account.
+
+## Product
+A productized managed service that runs an SMB supplier's entire buyer-compliance lifecycle:
+- A software workspace that inventories every buyer relationship and the documents/attestations/questionnaires each requires, with status and expiration dates.
+- A managed renewal/submission process: the service collects updated COIs from the supplier's insurance broker, completes and submits the buyer's questionnaires and attestations, uploads documents to each buyer's vendor portal, tracks deadlines, and responds to the buyer's compliance chasers.
+- Coordination with the supplier's insurance broker for COI renewals at the required limits and endorsements.
+- A dashboard and audit-ready record of compliance status across all buyers.
+AI/software handles the high-volume tracking, document generation, questionnaire pre-fill, and deadline management; a specialist handles exceptions and buyer-portal idiosyncrasies. Delivery is fully remote. The required expertise — the common buyer-compliance frameworks and portals — is administrative and bridgeable, not a credential.
+
+## Revenue model
+Per-supplier monthly subscription (tiered by number of buyer relationships and document complexity), plus onboarding and per-questionnaire/per-submission fees. Proposed pricing (the plan, to validate): roughly $200–$1,000 per supplier per month recurring depending on how many large buyers they serve and document volume; setup $1K–$5K. Retention is high because losing approved-vendor status cuts off revenue.
+
+## Positioning / competition
+Today suppliers handle this with an office manager, a sales-ops person, or the owner reacting to buyer compliance emails, plus their insurance broker for COIs; many scramble when a buyer threatens a hold. On the BUYER side there are funded supplier-management / third-party-risk platforms (the buyer's own vendor portal, or networks such as supplier-information-management/TPRM systems) sold to and serving the BUYER — automating the buyer's chasing, not helping the supplier respond. The closest supplier-paid analogs are contractor-prequalification networks (e.g., Avetta, ISN) where contractors pay to maintain safety/insurance compliance their hiring clients require — but those concentrate in industrial/contractor safety, not the retail/CPG/food/general-supplier tier. COI-tracking tools (TrustLayer, myCOI, Jones) are buyer-side or GC-side. There is no productized, done-for-you service serving the small/mid SUPPLIER side across all of its large buyers' requirements. The intended wedge is a sharply positioned, productized recurring supplier-compliance managed service for that under-served tier, with content marketing and a founder-led close, against DIY-and-react and a broker who only handles the COI.
+
+## Why now
+Large buyers have professionalized and tightened vendor-compliance and third-party-risk programs — ESG, forced-labor (UFLPA), data-security, food-safety, and insurance requirements are all expanding — pushing more documentation and attestation demands down onto suppliers; more of it runs through portals with hard deadlines and automated holds; and SMB suppliers lack the staff to keep up across multiple buyers.
