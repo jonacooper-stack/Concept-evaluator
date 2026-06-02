@@ -25,6 +25,10 @@ small defense subcontractors** — is the bar. Its anatomy:
   advisors + the founders' compliance-operator / regulated-sales background). The
   moat forces demand and keeps lazy competitors out — a feature, not a bug.
 - **Capital-light, remote-first, NOT field ops.**
+- **Light integration + sleepy NON-tech incumbents.** Favor concepts that don't
+  depend deeply on one platform's API/terms, and whose incumbents are sleepy
+  consultants / generalist MSPs / old-line vendors — NOT a horizontal platform or
+  funded SaaS that could reach down into the niche.
 
 Three more on-thesis directions (illustrative — generate well beyond these):
 1. Managed compliance for a DIFFERENT forced regime (a new privacy law, a niche
@@ -49,6 +53,11 @@ Three more on-thesis directions (illustrative — generate well beyond these):
   productization or recurring software leverage.
 - Markets owned or aggressively contested by **high-performing, well-funded,
   strong-tech incumbents** where you'd have to outspend or out-engineer.
+- **Encroachable niches:** a managed wrapper around a problem a funded horizontal
+  platform already owns and could absorb within ~2 quarters (e.g., sitting directly
+  under a Vanta/Drata/Clio/AgentSync-type player).
+- **Heavy-integration / platform-dependent** plays whose viability hinges on one
+  vendor's API or terms.
 
 ## Output
 Your prompt says how many to generate (e.g., 100). Reject your own weak/off-thesis
