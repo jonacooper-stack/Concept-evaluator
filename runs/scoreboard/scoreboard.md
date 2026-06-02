@@ -18,10 +18,15 @@
 | 8 | SuretyComplianceOps (bonding-readiness) | 2 | 7.1 | 7.0 | 6.3 | 6.9 | 7.0 | **6.86** | 4 (COO hiring/Legal liab) | 69 | FAIL |
 | 9 | DataProofEU (GDPR deal-enablement) | 3 | 7.7 | 7.0 | 7.0 | 5.3 | 7.5 | **6.90** | 3 (Legal Art.27 liability) | 70 | FAIL |
 | 10 | SupplyAttest (aerospace AS9100 supplier-qual) | 3 | 7.4 | 6.5 | 6.6 | 5.3 | 6.9 | **6.54** | 3 (Legal ITAR burden) | 68 | FAIL |
+| 11 | FoundationFile (foundation grant-compliance net) | 3 | 7.1 | 6.7 | 7.4 | 7.5 | 7.5 | **7.24** | 5 (CMO defensibility) | 73 | NEAR-MISS (strongest) |
+| 12 | TrialKeeper (clinical-site qualification net) | 3 | 7.6 | 5.7 | 7.3 | 7.3 | 7.3 | **7.04** | 4 (CMO defensibility) | 63.5 | FAIL |
 
-## Concepts deep-dived: 10 / 12 bound
-## Generation rounds completed: 3 / 3 bound (round 3 deep-dives in progress)
+## Concepts deep-dived: 12 / 12 bound — BOUND REACHED
+## Generation rounds completed: 3 / 3 bound — BOUND REACHED
 ## Clears so far: 0 / 2 needed
+
+# === END STATE B: BOUND REACHED (12 concepts AND 3 generation rounds), 0 clears ===
+See FINAL-REPORT.md for the full cross-round analysis, 3 strongest near-misses, and cheapest experiments.
 
 ---
 ## ROUND 2 WRAP — 4 concepts deep-dived, 0 clears (means 6.32–6.92)
