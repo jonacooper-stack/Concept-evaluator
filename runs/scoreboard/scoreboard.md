@@ -14,8 +14,9 @@
 | 4 | DOTDrug Consortium Ops (49 CFR Part 40) | 1 | 7.4 | 6.7 | 7.1 | 6.5 | 7.5 | **7.04** | 4 (Legal burden/privacy) | 71 | FAIL |
 | 5 | InsuranceCarrierAuditOps (WC premium audit) | 2 | 7.5 | 6.7 | 5.9 | 5.6 | 7.3 | **6.60** | 4 (Legal licensing) | 69 | FAIL |
 | 6 | ApprovedVendorEngine (contractor vendor-compliance) | 2 | 7.3 | 6.8 | 6.5 | 6.6 | 6.0 | **6.64** | 3 (CTO 3rd-party dep) | 66.5 | FAIL |
+| 7 | RebateCaptureOps (utility/IRA rebate capture) | 2 | 6.8 | 7.2 | 5.9 | 6.4 | 5.3 | **6.32** | 3 (CTO maintenance) | 66 | FAIL |
 
-## Concepts deep-dived: 6 / 12 bound
+## Concepts deep-dived: 7 / 12 bound
 ## Generation rounds completed: 1 / 3 bound
 ## Clears so far: 0 / 2 needed
 
