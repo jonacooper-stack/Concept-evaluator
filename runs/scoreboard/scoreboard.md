@@ -16,9 +16,11 @@
 | 6 | ApprovedVendorEngine (contractor vendor-compliance) | 2 | 7.3 | 6.8 | 6.5 | 6.6 | 6.0 | **6.64** | 3 (CTO 3rd-party dep) | 66.5 | FAIL |
 | 7 | RebateCaptureOps (utility/IRA rebate capture) | 2 | 6.8 | 7.2 | 5.9 | 6.4 | 5.3 | **6.32** | 3 (CTO maintenance) | 66 | FAIL |
 | 8 | SuretyComplianceOps (bonding-readiness) | 2 | 7.1 | 7.0 | 6.3 | 6.9 | 7.0 | **6.86** | 4 (COO hiring/Legal liab) | 69 | FAIL |
+| 9 | DataProofEU (GDPR deal-enablement) | 3 | 7.7 | 7.0 | 7.0 | 5.3 | 7.5 | **6.90** | 3 (Legal Art.27 liability) | 70 | FAIL |
+| 10 | SupplyAttest (aerospace AS9100 supplier-qual) | 3 | 7.4 | 6.5 | 6.6 | 5.3 | 6.9 | **6.54** | 3 (Legal ITAR burden) | 68 | FAIL |
 
-## Concepts deep-dived: 8 / 12 bound
-## Generation rounds completed: 2 / 3 bound
+## Concepts deep-dived: 10 / 12 bound
+## Generation rounds completed: 3 / 3 bound (round 3 deep-dives in progress)
 ## Clears so far: 0 / 2 needed
 
 ---
