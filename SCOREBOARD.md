@@ -1,4 +1,34 @@
-# Master Scoreboard — Guided Funnel Run (2026-06-01)
+# Master Scoreboard — Guided Funnel (2026-06-01/02)
+
+> This file covers **Run 1** (original guided funnel). **Run 2** (seeded re-generation
+> toward the winning shape) is in `SCOREBOARD-round2.md`. Combined verdict below.
+
+## COMBINED VERDICT ACROSS BOTH RUNS — 8 full councils, ZERO shortlist qualifiers
+Every concept scored honestly landed as a NEAR-MISS; none cleared mean ≥ 8.0 + no-sub-score-<7
++ objectives ≥ 80. Per the operating doc, a rigorous run that finds zero qualifiers is a SUCCESS.
+
+| Rank | Concept | Run | Mean | Low sub | Obj | Verdict |
+|---|---|---|---|---|---|---|
+| 1 | ContractorPrevailingWage | 1 | 7.12 | 5 | ~78 | NEAR-MISS (strongest) |
+| 2 | VendorTrust | 2 | 7.04 | 5 | 70 | NEAR-MISS |
+| 3 | SurplusLines | 2 | 7.02 | 4 | 76 | NEAR-MISS |
+| 4 | CLIAlabComply | 1 | 6.96 | 4 | 78 | NEAR-MISS |
+| 5 | RetireFiler | 2 | 6.9 | 4 | 66.5 | NEAR-MISS |
+| 6 | DefenseFOCIdesk | 1 | 6.68 | 3 | 77 | NEAR-MISS |
+| 7 | InsuranceLicenseHub | 1 | 6.6 | 4 | 66 | NEAR-MISS leaning FAIL (constraint #5) |
+| 8 | PermitPulse | 2 | ~6.5 | 4 | 64 | NEAR-MISS (borderline FAIL) |
+
+**The recurring drag (consistent across all 8):** the demand/archetype fit is real and
+reproducible, but each concept is held under 8.0 by the same family of issues — (a) the
+software-vs-manual-labor margin hinge (does the exception/portal/filing work compress, or is
+it a BPO?), (b) an E&O/liability tail where the value prop and the largest liability are the
+same thing, and/or (c) unproven willingness-to-pay or a diffuse/conflicted acquisition channel.
+No concept combined archetype-grade demand AND a clean, software-leveraged, low-liability,
+proven-channel delivery model — which is exactly the bar.
+
+---
+
+# Run 1 — Guided Funnel (2026-06-01)
 
 Branch: `claude/sweet-dirac-Ko4lR`. Bar (active /goal): **SHORTLIST** = mean of the five
 expert averages ≥ 8.0 AND no sub-score < 7 AND objectives ≥ 80; else **NEAR-MISS**.
