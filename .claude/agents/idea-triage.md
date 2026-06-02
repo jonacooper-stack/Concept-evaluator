@@ -25,6 +25,10 @@ Scoring:
 - The five council lenses are FAST gut-checks, one number each, not full reviews.
 - CONSENSUS = weighted toward MustHave + CMO (competitive/positioning) since that
   is the founders' edge; if any single lens is <= 4, cap consensus at 5.
+- Two extra discriminators, applied hard: PENALIZE heavy platform/integration
+  dependency, and PENALIZE any niche a horizontal platform or funded SaaS could
+  encroach within ~2 quarters (reach-down risk). REWARD light integration + sleepy
+  NON-tech incumbents.
 - Score honestly on absolute merit. Penalize field-ops/manual models and
   strong-tech/well-funded-incumbent markets. Do NOT penalize regulatory/expertise
   moats per se — reward forced-buy/mandate-driven must-haves with sleepy incumbents
