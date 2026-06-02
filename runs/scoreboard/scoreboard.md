@@ -11,10 +11,27 @@
 | 1 | SecureControls Defense Tier-2 (NIST 800-171/SPRS) | 1 | 7.7 | 7.6 | 7.5 | 7.3 | 7.7 | **7.56** | 5 (Legal priv/liab) | 79.5 | FAIL / near-miss |
 | 2 | ClearWater Water Ops (EPA LCRI) | 1 | 7.6 | 6.5 | 7.4 | 7.4 | 8.1 | **7.40** | 4 (CFO path-to-income) | 69 | FAIL |
 | 3 | CosmeticMoCRA Ops (FDA MoCRA) | 1 | 7.5 | 7.0 | 7.2 | 7.5 | 7.8 | **7.40** | 6 (many) | 73.5 | NEAR-MISS |
+| 4 | DOTDrug Consortium Ops (49 CFR Part 40) | 1 | 7.4 | 6.7 | 7.1 | 6.5 | 7.5 | **7.04** | 4 (Legal burden/privacy) | 71 | FAIL |
 
-## Concepts deep-dived: 3 / 12 bound
-## Generation rounds completed: 1 (in progress) / 3 bound
+## Concepts deep-dived: 4 / 12 bound
+## Generation rounds completed: 1 / 3 bound
 ## Clears so far: 0 / 2 needed
+
+---
+## ROUND 1 WRAP — 4 concepts deep-dived, 0 clears (means 7.04–7.56)
+The bar (mean >8.0 AND every sub-score >=7 AND obj >=80) is demanding; honest scores cluster ~7.4. Consistent ceilings across ALL four managed-compliance-service concepts:
+1. **Differentiation/Defensibility 5–6** — productized managed service is copyable; in 3 of 4, a competent/funded incumbent already existed (Vanta/Drata-adjacent, 120Water, Registrar Corp, Foley/J.J. Keller). The "sleepy incumbent" premise keeps getting violated on close inspection.
+2. **Liability 5–6 (worse, 4, when custodying sensitive regulated data)** — advising on/executing a government-facing attestation or holding CUI/medical/test-result data creates an E&O + breach tail.
+3. **Recurrence/margin/ARPU dips to 6** — front-loaded onboarding, free self-serviceable filings, or commodity ARPU floors.
+4. **Income-ladder strain** when ACV is low or buyer is slow/public.
+
+### ROUND 2 SEED DIRECTIVE (away from the above)
+Keep forced-buy + sleepy-incumbent spine, but ADD:
+- **A real structural moat beyond "managed service":** proprietary/accumulating dataset that improves the product, genuine two-sided network, or becoming the OPERATIONAL system-of-record the customer runs daily ops on (high switching cost), NOT just a compliance binder.
+- **Clean liability:** deliverable is operational/productivity, or liability cleanly rests on customer/third-party; AVOID custodying drug-test/PHI/CUI/cardholder data and AVOID signing/advising on government attestations.
+- **No competent incumbent:** triage must actively name-check and REJECT any niche where a funded vertical player (Foley/120Water/Registrar/AgentSync/Vanta-type) already runs the productized model. Brand-new mandates with NO entrenched player score best on competition — but pair with a non-free, genuinely hard recurring workload.
+- **Higher ACV ($12K+), private single-decision-maker buyer, fast close, intrinsic high-frequency recurrence.**
+- Consider NON-compliance forced-buys: contractually/insurer/lender-mandated recurring services where the value is operational uptime/revenue-protection, not paperwork.
 
 ## Round 1 failure-mode notes (seed for Round 2 generation)
 - **Liability tail kills it**: FCA / attestation-spillover exposure where the firm advises on a government representation drives Legal privacy+liability to 5s. AVOID concepts where the provider is a witness/contribution target in the customer's regulatory enforcement, or where the provider custodies highly sensitive regulated data (CUI/PHI/cardholder) that makes it an extinction-grade breach target. Favor concepts where the provider handles low-sensitivity business data and the liability cleanly rests on the customer.
