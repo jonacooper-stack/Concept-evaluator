@@ -12,8 +12,9 @@
 | 2 | ClearWater Water Ops (EPA LCRI) | 1 | 7.6 | 6.5 | 7.4 | 7.4 | 8.1 | **7.40** | 4 (CFO path-to-income) | 69 | FAIL |
 | 3 | CosmeticMoCRA Ops (FDA MoCRA) | 1 | 7.5 | 7.0 | 7.2 | 7.5 | 7.8 | **7.40** | 6 (many) | 73.5 | NEAR-MISS |
 | 4 | DOTDrug Consortium Ops (49 CFR Part 40) | 1 | 7.4 | 6.7 | 7.1 | 6.5 | 7.5 | **7.04** | 4 (Legal burden/privacy) | 71 | FAIL |
+| 5 | InsuranceCarrierAuditOps (WC premium audit) | 2 | 7.5 | 6.7 | 5.9 | 5.6 | 7.3 | **6.60** | 4 (Legal licensing) | 69 | FAIL |
 
-## Concepts deep-dived: 4 / 12 bound
+## Concepts deep-dived: 5 / 12 bound
 ## Generation rounds completed: 1 / 3 bound
 ## Clears so far: 0 / 2 needed
 
