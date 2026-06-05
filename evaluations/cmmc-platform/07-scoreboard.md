@@ -9,28 +9,34 @@ A concept clears only if ALL three hold:
 2. **No** single expert sub-score **< 7**
 3. Objectives weighted total **>= 80**
 
-## Council results (pre-red-team, as returned)
+## Council results — pre- and post-red-team
 
-| Expert | Average | Lowest sub-score | Recommendation |
-|---|---|---|---|
-| CFO   | 8.0 | 6 (financial-risk concentration) | GO |
-| CMO   | 6.6 | 5 (competitive air; defensibility) | REFINE |
-| COO   | 7.5 | 5 (quality control on AI output) | GO |
-| Legal | 7.0 | 5 (data-privacy; liability) | GO (conditional) |
-| CTO   | 6.7 | 5 (technical-assumption; infosec) | GO (conditional) |
-| **MEAN of the five averages** | **7.16** | **5 (floor)** | — |
+| Expert | Avg (returned) | Avg (post-red-team) | Lowest sub-score | Recommendation |
+|---|---|---|---|---|
+| CFO   | 8.0 | 7.6 | 6 (financial-risk concentration) | GO |
+| CMO   | 6.6 | 6.6 | 5 (competitive air; defensibility) | REFINE |
+| COO   | 7.5 | 7.2 | 5 (quality control on AI output) | GO |
+| Legal | 7.0 | 6.8 | 5 (data-privacy; liability) | GO (conditional) |
+| CTO   | 6.7 | 6.7 | 5 (technical-assumption; infosec) | GO (conditional) |
+| **MEAN of the five averages** | **7.16** | **6.98** | **5 (floor)** | — |
 
-Objectives weighted total (doc-01): **71 / 100**
+Objectives weighted total (doc-01): orchestrator **71 / 100**; PM independent re-read **68 / 100**.
 
-## Verdict vs. the bar
-- Mean 7.16 **< 8.0** → fail clause 1
-- Lowest sub-score 5 **< 7** (five experts each have a 5) → fail clause 2
-- Objectives 71 **< 80** → fail clause 3
+Red-team cuts (all downward): COO logistics 10→8; CFO cash-flow-self-funding 9→8;
+Legal regulatory-trajectory 8→7. Survived on evidence: CFO working-capital 9, CFO
+startup-capital 9, Legal licensing 9, Legal employment 9.
 
-**RESULT: DOES NOT CLEAR THE BAR.** Honest verdict: a structurally attractive,
-genuine must-have business held under the bar by a contested/partly-funded
-competitive field, a thin day-one moat, and unproven retention. Not a kill —
-a strong base for a structural pivot. (Final verdict after PM red-team in 08.)
+## Verdict vs. the bar (post-red-team)
+- Mean 6.98 **< 8.0** → fail clause 1 (by a full point)
+- Lowest sub-score 5 **< 7** (five sub-scores at 5) → fail clause 2
+- Objectives 68–71 **< 80** → fail clause 3
+
+**RESULT: DOES NOT CLEAR THE BAR. Verdict: NEAR-MISS → REFINE.** A structurally
+attractive, genuine must-have business held under the bar by a contested/partly-funded
+competitive field, a thin day-one moat, an unaddressed trust/channel reality, and
+unproven retention. Not a kill — a strong base for a structural pivot. The red-team
+moved every adjusted score DOWN, not up. Full synthesis + documented red-team in
+08-synthesis-redteam.md.
 
 ## Where it is strong (consensus)
 - Market pull / must-have: elite. Regulation-forced, deadline-driven, budgeted,
