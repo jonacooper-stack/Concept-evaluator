@@ -1,0 +1,16 @@
+# Business Concept One-Pager
+
+## Customer
+Independent insurance agencies, brokerages, and managing general agents (MGAs) — typically small to mid-size firms with 3 to 100 producers — that distribute insurance on behalf of multiple carriers. The buyer is the agency principal, the agency's operations/compliance manager, or the MGA's chief compliance officer.
+
+## The problem
+An agency's entire revenue depends on its "appointments" — the contracts that authorize it to sell and service a given carrier's policies and to collect commissions on the resulting book of business. To grant and keep an appointment, carriers increasingly require the agency to maintain and periodically attest to a set of conditions: current errors-and-omissions (E&O) coverage, valid producer licenses for every producer in every state they write in, data-security/cyber attestations, anti-fraud and anti-money-laundering training, and various carrier-specific compliance certifications. These obligations renew on rolling, carrier-specific deadlines. If an agency lets an E&O policy lapse, misses a producer-license renewal, or fails to return a carrier's compliance attestation, the carrier can suspend or terminate the appointment — which freezes new business and can jeopardize the commissions on the existing book tied to that carrier. For an agency carrying appointments with a dozen-plus carriers across multiple states, this is a sprawling, deadline-dense obligation that is usually tracked in spreadsheets and frequently slips.
+
+## The product
+A productized, recurring "appointment-maintenance" managed service. The service maintains a system of record of every carrier appointment, every producer, every state license, every E&O policy, and every recurring carrier attestation, with all renewal deadlines tracked centrally. Software drives the deadline engine, reminders, license-status monitoring, and document storage; the managed-service layer collects renewal evidence, completes and submits carrier attestations and certifications on the agency's behalf, and keeps a continuously audit-ready compliance file. When a carrier issues a new compliance requirement or audit request, the service responds on the agency's behalf. Delivery is remote and document-based.
+
+## Revenue model
+Annual subscription priced per agency, tiered by number of producers and number of carrier appointments, plus a monitoring component. Billed as a recurring managed-service retainer with an annual agreement; optional onboarding fee to inventory and clean up the agency's current appointment/license/attestation status. Revenue recurs because appointments, licenses, E&O, and attestations all renew continuously.
+
+## Positioning
+Sold as "keep every appointment and every commission — never lose a carrier to a missed attestation." Incumbents are sleepy agency-management consultants and licensing-administration back-office shops that handle pieces of this manually and without modern software or marketing. The offering is a sharp, productized, marketing-led service aimed at a fragmented market of independent agencies that the carriers themselves do not service and that no modern software vendor specifically targets. The wedge is the direct line from a missed attestation to lost commission income, which agency principals feel acutely.
