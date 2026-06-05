@@ -1,0 +1,66 @@
+# CTO REVIEW — CarrierProof (Appointment-Maintenance Managed Service for Insurance Agencies)
+
+ONE-PARAGRAPH TECHNICAL READ
+A low-novelty, off-the-shelf-friendly build: a deadline/obligation tracker with document storage, reminders, and a status-monitoring feed, wrapped around a human managed-service layer that does the carrier paperwork. No research problem, no ML on the critical path — the software is a CRUD system of record plus a scheduler, stood up in ~6-9 dev-weeks (Next.js + Postgres + a job runner). The one genuine technical decision moving the build from "easy" to "needs care" is the producer-license-status data source: live licensing data flows through NIPR/PDB-style gateways that are credentialed, contractually gated, not a public free API, so the team must decide early between a paid feed, an authorized vendor reseller, or manual/periodic lookups. Security surface is real but standard (PII, license numbers, E&O docs), fully addressable with a boring SaaS control set. Nothing here is a technical bomb; heavy lifting is operational and GTM, not engineering.
+
+ARCHITECTURE SKETCH
+- Frontend: single Next.js/React web app (internal ops portal + lighter read-only client view for principals). Tailwind + component kit; no native mobile at launch. ~1 dev-week scaffolding with an auth/UI starter.
+- Backend: Node/TS (or Python/FastAPI) API on a managed host. Core domain model: Agency → Producers, Appointments (carrier × state), Licenses (producer × state × line), E&O Policies, Attestations/Certifications — each with renewal/expiry dates and status.
+- Data store: Postgres (managed — Supabase/Neon/RDS). Fundamentally a relational scheduling/obligation database; the data model is the product. Document blobs (E&O dec pages, signed attestations, certs) in S3/R2 with metadata rows.
+- Async/background: scheduled job runner (cron worker, BullMQ/Temporal, or pg-cron + worker) that nightly computes "what is due in N days," fires email/SMS reminders (Resend/Postmark + Twilio), refreshes license-status checks. This deadline engine is the custom wedge and where correctness matters most — a false "all clear" is a customer-losing defect.
+- Integrations: (a) license-status data — NIPR/PDB feed or authorized vendor; the one non-trivial integration. (b) e-signature (DocuSign/Dropbox Sign). (c) email/SMS/calendar reminders. (d) Stripe recurring billing. (e) optional carrier-portal data entry, realistically human-in-the-loop (no carrier offers a clean appointment-attestation API).
+- ML/AI: none on critical path. Optional contained LLM to parse uploaded E&O dec pages/certs and pre-fill expiry dates (OCR + extraction), human-verified — v2 nice-to-have, never a dependency.
+- Auth/hosting: off-the-shelf auth (Clerk/Auth0/Supabase) with RBAC + SSO-readiness; managed Postgres + object storage; well-trodden PaaS. Complexity concentrates only in deadline-engine correctness and the legitimacy/cost of the license feed.
+
+BUILD PLAN TO REVENUE-EARNING MVP
+~6-9 dev-weeks of one developer to a version a paying agency can be onboarded onto. Critically, revenue can start before software is complete — the managed-service layer can run on a spreadsheet+calendar for the first one or two design-partner agencies. Chunks:
+1. Data model + system of record + document upload (~2 wks): the spine, get it right.
+2. Deadline/obligation engine + notifications (~1.5-2 wks): due-date computation, status rollups, reminder jobs. Core custom value.
+3. Auth, RBAC, multi-tenant isolation, audit log (~1-1.5 wks): off-the-shelf auth + row-level tenant scoping + append-only audit trail ("we attested on your behalf on date X" is the evidentiary value).
+4. Billing + onboarding flow (~0.5-1 wk): Stripe + onboarding/inventory intake.
+5. License-status monitoring integration (~1-2 wks IF feed secured; else manual lookup workflow): the variable chunk. Punt automated feed to v2, do periodic manual NIPR lookups at launch — managed-service layer absorbs it without blocking revenue.
+Punt to v2: automated license feed, LLM document extraction, carrier-portal automation, client-facing self-serve polish.
+
+CRITICAL ASSUMPTIONS
+1. License-status data accessible at acceptable cost/terms. [ASSUMED] Live producer-license/appointment data flows through NIPR's PDB, gated by credentials/contracts/per-transaction or subscription pricing — not a free public API. Verify: one-day call to NIPR/authorized vendor on access model + per-lookup price + whether the agency-customer can authorize you to pull on their behalf. Fallback: periodic manual state-portal lookups (heavier, not fatal). Impact: low if manual fallback acceptable, high if you promised "real-time monitoring" you can't deliver.
+2. Carriers have NO clean appointment/attestation API. [ASSUMED — very likely.] Submission/audit response stays human-in-the-loop via portals/email/PDF. Verify: ask three agencies how they submit attestations today. If true, the software never automates the carrier side; managed-service labor is a permanent cost line.
+3. Obligation model standardizable enough to productize. [ASSUMED] Categories (E&O, license, cyber attestation, AML training, carrier certs) are finite. Verify: inventory top 10-15 carriers' requirements from two design partners; if 80% fit a dozen templates, tractable.
+4. A wrong "you're compliant" never silently happens. The deadline engine's correctness is the whole trust proposition; a missed reminder that costs an appointment is an existential liability event. Verify with a date-logic test harness + mandatory human review gate before any "all clear."
+
+INFORMATION SECURITY POSTURE
+Data: agency/producer PII (names, NPNs/license numbers, possibly SSNs on some carrier forms), E&O documents, appointment records, signed attestations, audit trail of actions taken on the agency's behalf. Moderately sensitive PII + business-critical compliance evidence — not health/PCI, so lighter regulatory weight than HIPAA/PCI, but a breach exposes producer license numbers and possibly SSNs and is reputationally fatal for a compliance vendor. Lives in Postgres (encrypted at rest) + S3/R2 (server-side encryption, private buckets, signed URLs). Threat model: ops-user account takeover (sees all tenants), tenant-isolation failure, document-store misconfiguration. Launch controls (standard, in a managed stack): SSO/MFA on internal app, strict RBAC, per-tenant row scoping with tested isolation, TLS, encryption at rest, secrets manager, private object storage with signed URLs, append-only audit log (doubles as product value). At scale: SOC 2 Type II attainable — the founders' stated SOC 2 Type II operating experience is a direct asset, so it's a known cost not a research project. Documented breach-response plan + per-tenant logging from day one. Net: standard, fully addressable, no exotic requirements; "do the boring things correctly," and the team has.
+
+SCORES (1–10)
+1. Technical feasibility: 9 — Boring proven stack end-to-end (Next.js + Postgres + S3 + cron worker + Stripe); zero research risk, no ML on the critical path; the hardest part is a date engine, ~6-9 dev-weeks total.
+2. Build vs buy posture: 8 — Auth (Clerk/Auth0), e-sign (Dropbox Sign), billing (Stripe), notifications (Postmark/Twilio), hosting (managed Postgres) all bought; the only custom wedge is the obligation data model + deadline engine.
+3. Architecture cleanliness: 8 — One web app, one relational DB, one object store, one job runner; a clean entity graph with no distributed-systems complexity and one external integration to isolate.
+4. Time to revenue-earning MVP: 9 — Revenue can start on a spreadsheet+calendar managed-service before code ships, and the app reaches paid-onboarding quality in ~6-9 dev-weeks — well inside the fast-to-first-dollar bar.
+5. Technical-assumption risk: 6 — One genuine open question (license-data feed access/cost via NIPR/PDB) sits on the "real-time monitoring" promise; manageable with a manual fallback but unverified, so capped.
+6. Third-party dependency risk: 7 — Most deps are replaceable commodities; the license-data source is the one semi-concentrated dependency, but the managed-service layer can substitute manual lookups, blunting lock-in.
+7. Data architecture quality: 8 — Simple, owned, portable relational model in Postgres + object storage for documents; the obligation dataset is clean, queryable, arguably a retention moat, not liability sprawl.
+8. Information security posture: 8 — Standard control set fully covers the threat model (RBAC, tenant isolation, encryption, secrets manager, audit log) and SOC 2 Type II is attainable on this stack, backed by the founders' documented SOC 2 Type II operating experience.
+9. Scaling headroom: 8 — A document-and-deadline workload scales to thousands of agencies on a single managed Postgres with read replicas and a worker pool; the binding constraint is human managed-service labor, not infra — no rewrite looms.
+10. Maintenance burden: 7 — The app is near self-running once shipped (cron + notifications), low oncall; ongoing engineering load is modest, though deadline-engine correctness and any license-feed changes need vigilant attention.
+
+AVERAGE SCORE: 7.8 / 10
+
+TOP 3 TECHNICAL STRENGTHS
+- Genuinely boring, fast-to-build stack with no ML and no research risk: the whole engineering wedge is a relational obligation model + a date/notification engine, ~6-9 dev-weeks, bought-not-built everywhere else.
+- Revenue decoupled from code completion — the managed service can run manually for the first design partners, so founders earn while building and never face the "12 months before a dollar" trap.
+- Security/compliance requirements are standard and squarely within the founders' demonstrated SOC 2 Type II operating experience, making enterprise/MGA trust a known attainable cost.
+
+TOP 3 TECHNICAL RISKS
+- License-status data access: live NIPR/PDB-style data is credentialed/contracted/priced per-lookup; if "real-time monitoring" is promised but the feed is unavailable/costly, the product under-delivers on a headline claim.
+- Deadline-engine correctness as a liability surface: a single false "you're compliant" preceding a lost appointment is an existential trust/liability event; date logic and human review gating must be near-perfect.
+- Carrier-side automation structurally impossible: attestations/audits stay human-in-the-loop forever, so the model carries a permanent managed-service labor cost engineering cannot eliminate (a margin/ops issue more than tech).
+
+BIGGEST SINGLE RISK
+The correctness-and-trust coupling of the deadline engine combined with the integrity of the underlying license/appointment data. The whole value prop is "we will make sure you never miss a renewal and never lose a carrier" — the software makes a continuous safety-critical assertion on the customer's behalf. A date-math bug, timezone edge case, stale/wrong record from the license feed, or silent notification-delivery failure can tell an agency "all clear" while an appointment is in fact lapsing, and the resulting lost commissions or terminated appointment turn a satisfied customer into a churned, possibly litigious one — exactly the failure that destroys a compliance vendor's reputation in a referral-driven agency market. Mitigation is non-negotiable: a tested deterministic date/obligation engine, redundant notification channels with delivery confirmation, a mandatory human-review gate before any "compliant" status is surfaced, an append-only audit log, and explicit contractual liability scoping. All standard engineering/ops disciplines, not research — but launch requirements, not v2 polish.
+
+QUESTIONS THE FOUNDERS MUST ANSWER
+- Exact access model and per-lookup/subscription cost for producer-license/appointment data (NIPR PDB or authorized vendor), and can a customer agency authorize you to pull on its behalf? If not securable, will you launch on periodic manual lookups and position accordingly?
+- How will you guarantee the deadline engine never produces a false "compliant"? Plan for date-logic testing, notification delivery confirmation, a human-review gate, and the append-only audit trail.
+- How standardized are carrier requirements in practice? After inventorying top 10-15 carriers across two real agencies, what fraction fit a dozen reusable templates vs bespoke — and what does that imply for managed-service labor cost per agency at scale?
+
+RECOMMENDATION: GO
+From a pure technical/security standpoint a clean, low-risk, bootstrap-appropriate build: a boring relational system of record + a deadline engine, everything else bought off the shelf, reaching paid-onboarding quality in ~6-9 dev-weeks and able to earn revenue on a manual managed-service spine before code is finished. No research risk, no ML dependency, no exotic infra; security posture standard and squarely within the founders' SOC 2 Type II experience. The two things keeping it from a perfect score are discipline requirements, not blockers: nail down the license-data access model early (with a manual fallback decided in advance), and engineer the deadline engine and audit trail for correctness from day one because a false "all clear" is the one defect that can break the business. Neither requires de-risking before committing — they require execution discipline, well within reach for this team.
