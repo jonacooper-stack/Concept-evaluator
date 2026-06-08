@@ -1,0 +1,60 @@
+COO REVIEW — Niche industrial distribution (fasteners / industrial supply with vendor-managed inventory)
+
+ONE-PARAGRAPH OPERATIONS READ
+This is an inherently systematizable operating model: the unit of work is a SKU moving through a buy-stock-pick-deliver-replenish cycle, which is exactly the kind of repeatable, transaction-volume operation that field-service and inventory software were built to run. The founders' ops-modernization edge applies broadly across this industry because the typical operator is running phone/fax ordering and a legacy or no ERP, so the systemization wins (reorder automation, inventory optimization, route planning) are real and not company-specific. No trade license is required and field work is warehouse/driver/VMI-route labor a GM can manage, which is a clean operator fit. The binding operational constraints are inventory turns, fill rate, and pricing discipline — all data problems a modern operator can attack, which is what makes this attractive operationally; the risk is that the same dynamics make working capital and SKU sprawl the real bottleneck rather than headcount.
+
+THE TYPICAL OPERATING MODEL
+A representative ~$3M–$6M distributor runs four functions. (1) An inside sales / order desk takes orders by phone, fax, and email, keys them into a legacy ERP or paper, checks stock, and quotes price — this desk is the de facto pricing engine and the tribal-knowledge hub. (2) A warehouse with racking, bins, and a small crew of pickers/packers who pull orders, with receiving/put-away on the inbound side; the binding throughput constraint here is pick accuracy and how many order lines can be picked per picker-hour. (3) Delivery drivers and/or VMI route reps — the VMI rep drives a circuit of customer plants, walks the production floor, scans or eyeballs bins, counts what's low, and writes the replenishment order on the spot; this is the stickiest, most labor-defined part of the model and it is route-shaped. (4) The owner runs the top 10–20 key accounts and does purchasing — deciding what to stock, how deep, and from which vendor, which is where inventory turns are won or lost. The real day-to-day bottleneck is not the warehouse; it is purchasing/inventory decisions (carrying the wrong SKUs deep and the right SKUs thin produces both dead stock and stockouts) and the manual order desk, which caps how many transactions the business can process without adding people.
+
+STREAMLINE & MODERNIZE PLAN (typical, expected gain)
+- B2B e-commerce / reorder portal: let customers reorder online from their own order history. Shifts a large share of low-value reorder transactions off the order desk, freeing inside sales for quoting and account growth. Expected gain: 20–35% of order-desk transaction labor deflected [ASSUMED — verify by sampling one operator's order-line mix: what % of lines are pure repeat reorders of previously-bought SKUs]. Off-the-shelf: Epicor BisTrack / Eclipse, Infor, or a portal layer on top of an existing ERP.
+- Inventory optimization + reorder automation: min/max and demand-forecast-driven replenishment instead of gut-feel purchasing. Targets the binding economic — inventory turns and fill rate simultaneously. Expected gain: 1–2 turns improvement (e.g., 4 turns → 5–6) and fill rate from low-90s to ~97%+ [ASSUMED — verify by pulling current turns from any operator's books and dead-stock aging]. Tools: NetSuite/Acumatica demand planning, or specialist distribution ERP modules.
+- VMI route digitization: barcode/RFID bin scanning and a route app replacing clipboard counts, plus route optimization. Expected gain: more customer stops per rep-day and fewer count errors. [ASSUMED — verify with a ride-along: stops/day and time per stop today.]
+- Pricing analytics / dynamic margin management: margin-by-customer-by-SKU visibility to stop the order desk's habitual discounting. Distribution net margin is thin, so 1–2 points of recovered gross margin is the single highest-dollar lever. [ASSUMED — verify by analyzing 12 months of line-item margins for dispersion.]
+- KPIs/dashboards: turns, fill rate, gross-margin-return-on-inventory (GMROI), lines picked/hour, on-time delivery — none of which the typical sleepy operator measures.
+
+CAPACITY MATH (typical, show work)
+Warehouse pick capacity: assume 4 pickers, each picking ~40 order lines/hour over a ~7 productive-hour day = 4 × 40 × 7 = ~1,120 lines/day, ~5,600 lines/week. If the average order is ~8 lines, that is ~700 orders/week of physical-pick capacity. The warehouse is generally NOT the first wall — racking and an extra picker scale linearly and cheaply.
+Order-desk capacity (the real bottleneck): assume 3 inside-sales reps, each able to enter/quote ~60 orders/day manually = 180 orders/day, ~900 orders/week — but a meaningful share of their time is spent on routine reorders and pricing lookups. If a reorder portal deflects ~30% of reorder transactions, the same 3 reps absorb the equivalent of ~25–35% more order volume with no new hires, OR are redeployed to win new accounts. That is the headroom: capacity grows by deflecting transactions, not by adding desk staff.
+VMI route capacity: a route rep services ~6–10 customer plants/day depending on bin count and drive density; ~5 days × ~8 stops = ~40 plant-visits/rep/week. Route optimization + scan-based counting can lift stops/day ~15–25% [ASSUMED — verify via ride-along], and density (clustering customers) compounds it.
+Net: a modern operator can grow throughput 25%+ on the existing footprint primarily by deflecting order-desk labor and tightening routes, while inventory optimization frees working capital tied in dead stock to fund the growth.
+
+WHAT I AM DEFERRING TO DUE DILIGENCE
+- THIS owner's day-to-day grip on the top accounts and purchasing decisions (owner-as-the-buyer dependency) — universal to sleepy distributors, checked on the real listing.
+- THIS company's actual current inventory turns, dead-stock aging, fill rate, and ERP state (paper vs. legacy vs. usable) — the numbers that decide the deal, not the industry.
+- THIS company's key inside-sales / VMI-rep retention and whether pricing lives in one person's head.
+
+SCORES (1–10)
+1.  Model clarity & repeatability:      8  — Buy-stock-pick-deliver-replenish is an inherently transactional, SKU-and-route-defined model; VMI routes are literally scheduled circuits, not bespoke craft work.
+2.  Modernization-ops upside:           8  — Typical operator runs phone/fax + legacy/no ERP per the industry picture; reorder portals and inventory optimization (Epicor Eclipse, NetSuite demand planning) are off-the-shelf and high-ROI broadly.
+3.  Labor model & availability:         7  — Warehouse pickers/packers and delivery drivers are broadly available, non-credentialed labor; CDL not typically required for local box-truck delivery, though driver turnover and warehouse wage pressure are real.
+4.  Capacity & scalability:             7  — Scales by adding pickers, routes, and SKUs on the footprint; the soft wall is working capital tied in inventory, not physical space or licensing.
+5.  Supply / vendor structure:          6  — Fasteners/MRO are largely commodity inputs from many sources, but distributors carry vendor lines and import (tariff-exposed) supply, so inputs are replaceable but not friction-free; no inline named-evidence to claim broadly single-source-free, so capped at 6.
+6.  Quality & safety risk:              7  — Low rework relative to trades (no installed-workmanship callbacks); main exposure is warehouse/forklift and vehicle/delivery safety plus mis-ship/stockout risk — manageable, standard insurance profile.
+7.  Geographic / seasonality profile:   7  — Industrial reorder demand is steady year-round and not weather-bound; tied to local manufacturing/fabrication activity but not hyper-seasonal; single-warehouse-anchored which limits geographic flexibility slightly.
+8.  Roll-up / multi-site operability:   8  — Clear tuck-in path: regional distributors consolidate cleanly (Fastenal, Bunzl, and DXP grew partly by acquiring regional distributors), bolting branches/SKUs/routes onto one ERP and warehouse network.
+9.  Operator fit (the type):            8  — No trade license required and field work is warehouse/driver/VMI labor a GM directly manages; founders' edge is purchasing, pricing, and systems — the exact owner functions here.
+10. Density / route economics:          7  — VMI and delivery reward customer density and tight routing, which a modern route-optimized operator can exploit; capped below 8 because much volume is also will-call/shipped, diluting the pure route advantage.
+
+AVERAGE SCORE: 7.3 / 10
+
+TOP 3 OPERATIONAL STRENGTHS (of the type)
+1. Inherently systematizable, transaction-shaped model where the founders' purchasing/pricing/software edge maps directly onto the owner's actual job.
+2. Broad, off-the-shelf modernization levers (reorder portal, inventory optimization, route digitization) that lift the binding economics — turns and fill rate — across most operators.
+3. Clean roll-up operability with named consolidators proving the tuck-in logic, plus non-credentialed, broadly available labor.
+
+TOP 3 OPERATIONAL RISKS (of the type)
+1. Working capital tied in inventory is a structural bottleneck — growth and SKU sprawl consume cash, and bad purchasing produces simultaneous dead stock and stockouts.
+2. Pricing and key-account knowledge concentrate at the order desk / owner, making the order desk both the throughput cap and a tribal-knowledge chokepoint (industry-typical; the company-specific severity is a Stage-2 item).
+3. Driver/warehouse wage pressure and turnover, plus tariff/import exposure on supply, can squeeze a structurally moderate net margin.
+
+BIGGEST SINGLE RISK
+The defining operating risk of this TYPE is working-capital-bound scaling driven by inventory and SKU management. Unlike a route-service business where growth mostly means adding labor, a distributor grows by carrying more inventory, and getting purchasing wrong is a structural failure mode of the model itself: carry the wrong SKUs deep and cash dies on the shelf as dead stock; carry the right SKUs thin and fill rate collapses, which in a VMI model means a customer's production line stops and the relationship is at risk. This is why inventory turns and fill rate are the binding economics — they are not company quirks but the physics of the business. A modern operator with demand-planning software can turn this risk into the edge (this is precisely the systemization win), but the risk is real, it is industry-level, and it means every dollar of growth must be funded against an SBA structure that already ties up cash, so a buyer must underwrite the working-capital draw, not just the EBITDA.
+
+QUESTIONS TO ANSWER WHILE SOURCING IN THIS INDUSTRY
+1. What are the typical inventory turns and dead-stock percentage for sub-$5M distributors in this niche, and how much working capital does each $1 of revenue growth actually consume?
+2. For a representative operator, what share of order-desk transactions are pure repeat reorders that a portal could deflect, and what does that imply for labor headroom?
+3. How sticky is VMI in practice — what's the realistic switching friction and contract structure once bins are integrated into a customer's floor — and how exposed is the typical product mix to import/tariff supply shocks?
+
+RECOMMENDATION: PURSUE
+Operationally this is one of the cleaner industries in the set to hunt in: the model is inherently repeatable, the modernization levers are broad and off-the-shelf, the labor is non-credentialed and manageable by GMs, the operator fit is excellent (founders' edge = the owner's real job), and there is a named roll-up path. The honest discount is that working capital and inventory turns are a structural bottleneck, and supply/vendor structure and density economics are merely good rather than exceptional — which is why this averages 7.3, not higher. A buyer should bias toward operators with VMI stickiness and a tightenable SKU base, and underwrite the working-capital draw carefully.

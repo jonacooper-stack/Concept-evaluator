@@ -1,0 +1,61 @@
+# LEGAL / REGULATORY REVIEW — Niche Industrial Distribution (Fasteners / Industrial Supply with VMI)
+
+(Not formal legal advice — issues to take to M&A counsel, a CPA, and an SBA lender.)
+
+## ONE-PARAGRAPH RISK READ
+Independent industrial-parts distribution is one of the cleanest TYPES of business for an SBA acquisition from a legal/regulatory standpoint: it is a textbook for-profit, US-based, operating wholesale business (NAICS 423840, Industrial Supplies Merchant Wholesalers) with no occupational/trade licensing beyond an ordinary business license and a state sales/use-tax reseller permit, no specialized regulator riding day-to-day operations, and a light environmental footprint (a warehouse holds boxed steel/plastic parts, not fuel or solvents). The principal legal exposures are ordinary and well-understood: product-liability pass-through on goods the distributor resells (managed by the upstream manufacturer warranty/indemnity chain plus the "sealed/innocent seller" defenses many states give pass-through distributors), wage-hour and (if a delivery fleet runs) DOT/FMCSA exposure on warehouse staff and drivers, and customer/vendor contract assignability — the only revenue-relevant deal-structure question, since VMI supply agreements (vs. plain purchase orders) can carry change-of-control or assignment-consent clauses. None of these is a structural disqualifier; they are diligence items, not industry knock-outs.
+
+## REGULATORY & SBA-ELIGIBILITY MAP (industry-level)
+- **SBA eligibility:** Clearly eligible. A normal operating merchant wholesaler/distributor is a for-profit, US, operating company — squarely SBA 7(a)-eligible and explicitly NOT on SBA's ineligible-business list (13 CFR 120.110; SOP 50 10). The only eligibility flag would be if a specific target turned out to be a passive holding vehicle (e.g., mostly leasing its warehouse real estate or holding inventory it doesn't actively sell) rather than an operating distributor — that is a Stage-2 fact, not an industry trait. The TYPE is eligible.
+- **Operating regulators / regimes (light):**
+  - **State sales/use tax** — the distributor collects/remits sales tax where it has nexus and holds resale/exemption certificates from B2B customers (state Departments of Revenue). Routine, software-handled.
+  - **OSHA (29 CFR 1910)** — General Industry standards for a warehouse: forklift/powered-industrial-truck certification (1910.178), racking, hazard communication. Standard, low burden.
+  - **DOT / FMCSA** — applies ONLY if the company runs its own delivery fleet at/above CDL thresholds (CMVs >10,001 lbs → DOT number, hours-of-service, driver qualification files; >26,001 lbs or hazmat → CDL). Many distributors deliver in light vans/box trucks below CDL thresholds or use LTL freight carriers, sidestepping the heaviest FMCSA load. Fleet scope is a per-company fact.
+  - **EPA/RCRA** — essentially N/A for boxed metal/plastic fasteners and fittings; a clean profile unless a specific line carries regulated chemicals (e.g., certain thread lockers/aerosols → limited hazmat storage/transport rules under DOT 49 CFR / EPA).
+  - **No occupational licensing board** governs "selling fasteners" — there is no trade license to hold, transfer, or qualify for. This is a genuine plus versus the licensed trades.
+- **Rough burden:** Light. Day-to-day compliance is sales-tax filing, OSHA warehouse housekeeping, and (if fleet) FMCSA — all routine and outsourceable.
+
+## LICENSE & DEAL-TRANSFER NORMS
+- **Licensing transfer:** Not applicable in the structural sense — there is no occupational/trade license that must be personally held by an owner. A general business license + sales-tax/reseller permit are reissued to the new entity routinely. The founders' lack of a trade credential is irrelevant here; this industry needs none. (Score-2 strength.)
+- **Contract / change-of-control norms:** Mixed but generally favorable. Most volume rides on **purchase orders** — transactional, no long-term assignment problem; revenue stickiness is operational (VMI bin integration, fill-rate dependence) rather than contractual. Where formal **VMI / supply agreements** exist, they are more likely to contain assignment-consent or change-of-control clauses, and key franchise/authorized-distributor agreements with manufacturers can require manufacturer consent on a change of control. This is the one revenue-relevant transfer question and is deal-specific.
+- **Deal structure & successor liability:** Asset deals are the norm for sub-$5M distributors (buyer takes inventory, customer relationships, equipment, and goodwill; leaves the legal entity and its history behind), which limits assumed liability. The notable industry-level successor exposure is **product-liability pass-through**: a distributor in the chain of distribution can be named in a product-defect suit for goods it resold, even in an asset deal, under strict-products-liability doctrine. This is materially mitigated by (a) upstream **manufacturer warranties and indemnification/hold-harmless terms**, (b) **vendor's-products / additional-insured** coverage from suppliers, (c) the distributor's own products-completed-operations CGL coverage, and (d) **innocent-seller / sealed-container statutes** that many states have enacted to shield non-manufacturing pass-through sellers. Bulk-sales/sales-tax successor liability is handled with standard clearance certificates at closing.
+
+## WHAT I AM DEFERRING TO DUE DILIGENCE
+- **This seller's litigation/tax tail:** any pending product-liability suits, open sales/use-tax audits, or liens on this specific company.
+- **This company's actual contracts:** the real VMI/supply and manufacturer authorized-distributor agreements and their specific assignment/change-of-control/consent terms; customer-PO terms.
+- **This company's labor + fleet specifics:** I-9s, exempt/non-exempt classification of inside sales and drivers, and the actual DOT/FMCSA posture of its delivery fleet (or whether it uses third-party freight).
+
+## SCORES (1–10) (higher = lower risk)
+1.  SBA eligibility of the industry:    9  — Operating merchant wholesaler (NAICS 423840), for-profit/US/operating; not on the 13 CFR 120.110 ineligible list; only a passive-holding fact pattern would flag, and that's Stage-2.
+2.  Licensing structure of the trade:   9  — No occupational/trade license exists for selling industrial parts; only a business license + state reseller permit, both routinely reissued — nothing to personally qualify for.
+3.  Contract / change-of-control norms: 7  — Most revenue rides on transactional POs (no assignment problem); VMI/supply and manufacturer authorized-distributor agreements can carry consent/change-of-control clauses, a manageable deal-specific item.
+4.  Deal-structure / successor liab.:   7  — Asset deal is the norm at this size, but strict products-liability pass-through can attach to a chain-of-distribution reseller despite an asset deal; mitigated by manufacturer indemnity and innocent-seller statutes.
+5.  Liability & insurance profile:      7  — Routinely insurable via products-completed-operations CGL + vendor's-products/additional-insured coverage; tail is product-defect claims on resold goods, real but standard and capped, not catastrophic.
+6.  Labor regime norms:                 7  — Typically W-2 warehouse/inside-sales/drivers, generally non-union; ordinary FLSA wage-hour and FMCSA hours-of-service exposure only if a CDL-scale fleet runs.
+7.  Environmental profile:              8  — Warehousing boxed metal/plastic fasteners and fittings carries no fuel/solvent/RCRA waste exposure; no Phase II/CERCLA-type tail inherent to the TYPE (unlike fuel or chemical handlers).
+8.  Data / consumer regime:             8  — Simple B2B reorder model; no consumer auto-renewal or sensitive-PII regime; payment data via standard PCI-DSS card handling only, no FTC consumer-protection exposure.
+9.  Ongoing regulatory burden:          8  — Light to operate: sales-tax filing, OSHA warehouse standards (29 CFR 1910), optional FMCSA if fleet; no licensing board, inspections, or multi-jurisdiction permit regime governs the core business.
+10. Regulatory trajectory:              7  — Stable, mature wholesale-distribution regime with no pending legislation that changes the math; tariff/trade-policy shifts on imported steel/fasteners are a price/sourcing wildcard, not a legal-eligibility risk.
+
+## AVERAGE SCORE: 7.7 / 10
+
+## TOP 3 LEGAL/REGULATORY STRENGTHS (of the type)
+1. **No occupational licensing whatsoever** — selling fasteners requires no trade license to hold, transfer, or qualify for; founders' lack of a credential is a non-issue (eliminates Stage-1 hard constraint #4 outright).
+2. **Clearly SBA-eligible operating wholesaler** — squarely off the 13 CFR 120.110 ineligible list; financeable structure with no eligibility gymnastics.
+3. **Clean environmental and consumer profile** — boxed parts mean no RCRA/CERCLA tail; pure B2B means no consumer auto-renewal/PII regime.
+
+## TOP 3 LEGAL/REGULATORY RISKS (of the type)
+1. **Product-liability pass-through** on resold goods (chain-of-distribution strict liability), which can survive an asset deal.
+2. **Change-of-control / assignment-consent clauses** in VMI supply and manufacturer authorized-distributor agreements that can threaten the stickiest revenue on a sale.
+3. **DOT/FMCSA wage-hour and safety exposure** if the company runs its own CDL-scale delivery fleet.
+
+## BIGGEST SINGLE RISK
+The single legal issue most inherent to this TYPE is **product-liability pass-through under strict products-liability doctrine**: anyone in the chain of distribution — including a distributor that merely resold a sealed part it never manufactured — can be named as a defendant if that part fails and causes injury or property damage (e.g., a structural fastener fails on equipment). Because the claim attaches to the role of "seller of the product," it can reach the buyer even in an otherwise clean asset deal, and it is the one legal tail that distribution carries that, say, a pure service business does not. The reason it does not sink the industry is that it is routine and well-mitigated: upstream manufacturer warranties and indemnification/hold-harmless terms, vendor's-products/additional-insured endorsements pushing the risk back to the maker, the distributor's own products-completed-operations CGL coverage, and innocent-seller/sealed-container statutes in many states that dismiss non-manufacturing pass-through sellers. The result is a real but insurable, capped, non-catastrophic exposure — a diligence-and-insurance item, not an industry knock-out.
+
+## QUESTIONS FOR COUNSEL / DILIGENCE WHEN SOURCING IN THIS INDUSTRY
+1. For any target, do the **VMI/supply and manufacturer authorized-distributor agreements** contain assignment-consent or change-of-control clauses, and which manufacturers' consent is required to keep the stickiest revenue intact post-close?
+2. What is the **product-liability claims history**, and do **upstream supplier contracts provide indemnification and additional-insured status** — and does the state of operation have an **innocent-seller / sealed-container statute** shielding pass-through distributors?
+3. Does the target run its **own delivery fleet at CDL/FMCSA scale**, and if so what is its DOT safety rating, driver-qualification-file compliance, and hours-of-service posture (vs. delivering below CDL thresholds or using LTL carriers)?
+
+## RECOMMENDATION: PURSUE
+This is a low-risk, clean TYPE to hunt in: clearly SBA-eligible, no trade license to transfer or personally qualify for, light operating regulatory burden, a clean environmental and B2B consumer profile, and asset-deal norms at this size. The two industry-inherent watch-items — product-liability pass-through on resold goods and change-of-control clauses in VMI/manufacturer agreements — are insurable/diligence items, not structural defects. To further reduce risk when sourcing, favor targets whose revenue rides on **transactional POs and broad multi-vendor lines** (diluting any single manufacturer's consent leverage and product-liability concentration) and that **deliver below CDL thresholds or via third-party freight** (sidestepping the heaviest FMCSA load).
