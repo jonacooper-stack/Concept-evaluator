@@ -100,7 +100,7 @@ dimension below. A weak-pull idea is not disqualified, just scored low.)
 | 2 | **Recurring revenue strength** | 15 | True subscription/contract; >90% repeating; high retention | One-time transactions; no repeat dynamic |
 | 3 | **Competitive landscape** | 15 | Fragmented or regulation-forced market whose incumbents are stale, sleepy, poorly-marketed; any moat is bridgeable and keeps lazy entrants out | Owned/contested by high-performing, well-funded, strong-tech incumbents; winning requires outspending or out-engineering |
 | 4 | **Path to founder income (ladder)** | 15 | Conservative math reaches ~$300K+/founder by mo 12 and ~$500K+ by mo 24, with room to grow | No credible path to ~$300K/founder even by mo 24 without heroics |
-| 5 | **Probability of success** | 10 | Proven demand, clear customer, low novelty risk | Speculative; requires market creation |
+| 5 | **Probability of success** | 10 | Demand evidenced by existing market signals (current spend, analogous markets, named buyers); clear, reachable customer; low novelty risk | Speculative; requires market creation |
 | 6 | **Capital efficiency** | 10 | Launchable for low four/five figures; cash-flow positive fast | Needs significant capital before first revenue |
 | 7 | **Operational tractability** | 5 | Lean, remote-first, low-touch; NOT trucks/installs/field visits | Field-service/manual-labor-heavy or large ops team day one |
 | 8 | **Scalability optionality** | 5 | Can stay lifestyle OR scale into something larger/passable | Inherently capped, no growth lever |
