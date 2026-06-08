@@ -1,0 +1,72 @@
+CTO REVIEW — Commercial Refrigeration Service Company (recurring PM contracts + emergency break-fix)
+
+ONE-PARAGRAPH TECHNICAL READ
+This is a textbook "sleepy" field-service business running on essentially nothing: no dispatch software, no CRM, no remote monitoring, manual scheduling and invoicing, and a book of business that lives in the retiring owner's head and his relationships. That is bad inherited-systems condition but excellent modernization upside — there is almost no technical debt to unwind because there is almost no system to unwind, and the entire industry-standard off-the-shelf stack (field-service management, IoT remote monitoring, digital invoicing/payments, B2B CRM) can be configured and migrated in weeks, not built. The one genuinely hard problem is not technology; it is that the institutional knowledge (customer history, equipment lists, PM schedules, pricing) is undocumented, so the migration is really a knowledge-extraction project against a retiring owner's exit clock. IoT remote monitoring is the rare case where the founders' tech edge can create a NEW high-margin recurring revenue line, not just cut cost — that is the thing that makes this technically interesting rather than just clean-up.
+
+INHERITED-SYSTEMS SKETCH
+- Dispatch / scheduling: manual — paper, whiteboard, or phone calls [ASSUMED — confirm in diligence]. No field-service-management (FSM) platform. This is the single biggest operational-systems gap.
+- CRM / customer records: none. Customer relationships, contacts, and account history live in the owner's memory and referral network — the highest-risk "system" in the deal.
+- Invoicing / AR: manual invoicing; likely QuickBooks Desktop or paper [ASSUMED — verify accounting package and version]. T&M emergency billing done by hand, which on $3.2M revenue almost certainly means slow billing and revenue leakage.
+- Equipment / asset records: PM schedules and per-customer equipment inventories (compressor racks, walk-ins, display cases, ice machines) likely on paper or in one tech's head — the asset that IoT monitoring and PM optimization depend on.
+- Marketing / web: no website worth the name, no digital marketing, no online booking — irrelevant for emergency commercial work (it's phone/relationship driven) but relevant for showing up in B2B procurement searches.
+- Remote monitoring: none today. Refrigeration assets are increasingly sensor-capable; the absence of a monitoring service plan is unrealized recurring revenue, not just a missing feature.
+- Data debt: low in volume, high in inaccessibility — little is "trapped in a bad system"; most simply isn't recorded anywhere portable.
+- Lock-in: essentially none on the software side (nothing to be locked into); the lock-in risk is human (owner + key techs), not technical.
+
+MODERNIZATION PLAN
+
+90-day quick wins (configure + migrate, not build):
+1. Field-service management platform — deploy ServiceTitan (commercial-refrigeration-capable) OR a lighter Housecall Pro / Jobber if account complexity is moderate. Recommend evaluating ServiceTitan given commercial contract/PM complexity and multi-tech dispatch; fall back to Jobber if the ServiceTitan price/implementation is too heavy for ~$3.2M revenue. Effort: [ASSUMED 4–8 weeks] to configure dispatch, PM-contract scheduling, mobile tech app, and digital work orders; verify by scoping a demo/implementation quote with the vendor and counting customer/asset records to migrate. Expected gain: faster dispatch, captured T&M billing, fewer missed PMs — [ASSUMED 5–10% revenue recovery from billing capture + PM compliance], verify against current billing-lag and PM-completion rates.
+2. Invoicing & payments — QuickBooks Online + integrated card/ACH (Stripe or QBO Payments) wired to the FSM platform so jobs invoice on close. Effort: [ASSUMED 1–2 weeks]. Expected gain: days-to-weeks faster cash collection, lower DSO; verify current AR aging.
+3. CRM / account capture — stand up HubSpot (free/starter tier initially) and run a structured owner-debrief to extract every account, contact, contract terms, and equipment list BEFORE the owner leaves. Effort: [ASSUMED 2–4 weeks of disciplined data entry], the single most important transition task. Expected gain: de-risks the #1 transfer threat; not optional.
+
+Longer program (6–12 months):
+4. IoT remote monitoring service plans — deploy a refrigeration-monitoring platform (e.g., a sensor/gateway service such as those from established cold-chain monitoring vendors, or compressor-rack controller telemetry where Emerson/Copeland or Danfoss controllers already exist) to offer customers 24/7 temperature/asset alerting as a NEW paid recurring plan. Effort: [ASSUMED 8–16 weeks] for vendor selection, a pilot on 3–5 anchor accounts, and a sellable service-plan SKU; verify by pricing hardware + monitoring SaaS per site and confirming which customer assets already have networkable controllers. Expected gain: new high-margin MRR + fewer emergency catastrophes + stickier contracts — the founders' true tech edge, but [ASSUMED] and pilot-dependent.
+5. AI / automation layer — AI after-hours call handling/triage for emergency intake, automated PM-renewal and appointment reminders, and AI-assisted review generation for B2B reputation. Effort: [ASSUMED 3–6 weeks] layered on the FSM/CRM once those exist. Expected gain: reduced missed after-hours calls and admin labor; honest limit — AI cannot diagnose a failing compressor or replace a certified tech, so the leverage is intake/scheduling/comms, not the trade itself.
+
+CRITICAL ASSUMPTIONS
+1. The customer base, contract terms, and per-site equipment lists CAN be extracted from the owner and crew into a CRM/FSM during transition. If this knowledge walks out the door undocumented, the migration fails. Verify: insist on a documented customer/equipment list and a paid transition/consulting period in the LOI; spot-check whether ANY written records exist today.
+2. The certified technicians will adopt mobile FSM software in the field. Aging blue-collar crews often resist; adoption, not configuration, is where FSM rollouts stall. Verify: interview the lead techs about current tools and phone comfort; check tech tenure/age mix.
+3. Customer assets are monitorable. The IoT revenue line assumes a meaningful share of customers run controllers/racks that can be sensored economically. Verify: audit controller brands/models on 5–10 representative sites before underwriting any monitoring revenue.
+4. Accounting/financial data is exportable (QuickBooks file, not shoebox). Verify: request the accounting file and a chart of accounts in diligence.
+5. There is no hidden custom system or single contractor the business secretly depends on. Low risk given the paper picture, but confirm: ask who, if anyone, "does the computers."
+
+INHERITED INFORMATION-SECURITY POSTURE
+Data held: commercial customer contacts and site/equipment details, T&M/contract pricing, employee PII and payroll, and — once payments modernize — cardholder/ACH data. Today it almost certainly lives on one or two unmanaged office PCs, personal email, and paper, with [ASSUMED] no MFA, shared/owner passwords, no formal backups, and an unpatched Windows machine running QuickBooks Desktop — verify by inspecting the office IT in diligence. Inherited threat model: low external attack surface (no e-commerce, little online presence), but high "small-business ransomware / lost-PC / no-backup" exposure typical of an un-IT'd operation; the realistic loss event is a ransomwared office PC that takes the only copy of scheduling and AR with it. First-90-day controls: Microsoft 365 Business with enforced MFA, managed cloud backup, endpoint protection, a password manager, and moving records OFF local PCs into the SaaS stack (FSM/CRM/QBO) which by itself outsources most of the security burden to vendors. At scale: keep PCI scope minimal by using a tokenized processor (Stripe/QBO Payments) so the company never stores card data, and a basic written incident/backup-restore plan. None of this is exotic; it's a [ASSUMED 1–2 week] MSP engagement plus disciplined SaaS migration. Incident readiness today is effectively zero and must be treated as a day-one fix, not a someday item.
+
+SCORES (1–10)
+1.  Inherited systems condition:        3  — Manual scheduling/invoicing, no FSM, no CRM; relationships live in the owner's head — near-paper operation.
+2.  Technical & data debt:              5  — Low data VOLUME and no dead custom system to unwind, but key records are unrecorded/inaccessible, capping this at mediocre.
+3.  Modernization upside — tech/AI:     9  — Rare: full off-the-shelf FSM (ServiceTitan/Jobber) + IoT monitoring as NEW recurring MRR + AI intake, on a base with zero existing tech — high-ROI and largely greenfield-on-top.
+4.  Effort to modernize:                7  — FSM + QBO + CRM are configure-and-migrate in [ASSUMED 4–8 weeks] with early quick wins, not a build; only the IoT line is a multi-month program.
+5.  Critical dependency risk:           5  — No software lock-in, but a real human single-point-of-failure (retiring owner holds the customer/equipment knowledge); tech risk low, knowledge-transfer risk material.
+6.  Cybersecurity posture inherited:    4  — [ASSUMED] no MFA, no backups, unmanaged office PCs holding PII/AR; ransomware-ripe, and a small but real day-one remediation list.
+7.  Data ownership & migration:         6  — Company owns its data and there's no vendor lock to escape, but much must be hand-extracted from people/paper, so migration is labor-real, not clean-export.
+8.  Automation / AI leverage:           7  — Concrete reliable wins: AI after-hours intake/triage, automated PM renewals/reminders, billing automation; honest limit — AI can't perform or diagnose the trade.
+9.  Scaling / tech headroom:            8  — A modern SaaS FSM/CRM/QBO stack scales to more crews, routes, and bolt-on acquisitions without re-platforming (ServiceTitan runs multi-location commercial fleets).
+10. Ongoing maintenance burden:         8  — Post-migration the stack is all managed SaaS (ServiceTitan, HubSpot, QBO, Stripe, M365); no custom code or on-call burden for two owner-operators.
+
+AVERAGE SCORE: 6.2 / 10
+
+TOP 3 TECHNICAL STRENGTHS
+- Near-greenfield modernization: with essentially no incumbent system, the founders deploy the industry-standard FSM + payments + CRM stack as configure-and-migrate, capturing billing leakage and PM compliance fast.
+- A genuine NEW revenue line, not just cost-cutting: IoT remote-monitoring service plans turn the founders' tech edge into high-margin recurring MRR that also makes contracts stickier and prevents customer catastrophes.
+- Self-running end state: the entire target stack is managed SaaS, so once configured it imposes near-zero engineering/on-call burden and scales cleanly to bolt-on acquisitions.
+
+TOP 3 TECHNICAL RISKS
+- Customer/equipment knowledge is undocumented and tied to a retiring owner — the migration is really a race to extract institutional knowledge before he leaves.
+- Field-tech software adoption: certified refrigeration techs may resist a mobile FSM app, and adoption (not configuration) is where these rollouts die.
+- IoT monitoring revenue is unproven for THIS customer base — it depends on customers' assets being economically monitorable and willing to pay, which is [ASSUMED] until piloted.
+
+BIGGEST SINGLE RISK
+The single most dangerous systems issue is that this business has no system of record — the customer list, the contract terms, the pricing, the PM schedules, and the per-site equipment inventories effectively live in the retiring owner's head and in the techs' familiarity with their routes. There is no CRM or FSM to export and no documented book to hand over. If the deal closes without a disciplined, contractually-required transition period in which that knowledge is extracted into HubSpot/ServiceTitan while the owner is still present and motivated, the founders inherit a $3.2M business they cannot actually run or modernize, because they don't know who the customers are, what's under contract, or what equipment they're maintaining. This is not a technology problem the founders' software skill solves on its own; it is a knowledge-capture problem with a hard deadline (the owner's exit), and the modernization stack is only as good as the data they manage to load into it.
+
+QUESTIONS THE FOUNDERS MUST ANSWER BEFORE I'M COMFORTABLE
+- What written records exist TODAY — is there any customer list, contract register, PM schedule, or equipment inventory in any digital or paper form, or is it entirely in the owner's and techs' heads? And will the owner commit to a paid transition period to document it?
+- What accounting system is in use (QuickBooks Desktop/Online version, or shoebox), and can the financial and AR data be cleanly exported for migration and QoE?
+- What is the technicians' tenure, age mix, and comfort with smartphones/apps — i.e., how real is the field-adoption risk for a mobile FSM platform?
+- On a sample of 5–10 representative customer sites, what refrigeration controllers/racks are installed (Emerson/Copeland, Danfoss, etc.), and how many are economically sensor-capable — to validate or kill the IoT monitoring revenue thesis before underwriting it?
+- Who, if anyone, currently administers the office PCs and email, and what does backup/MFA/endpoint security look like today?
+
+RECOMMENDATION: GO
+Technically this is an attractive acquisition: minimal inherited technical debt, an entirely off-the-shelf managed-SaaS modernization path the software-capable founder can execute in weeks for early quick wins, a clean self-running end state, and a rare NEW recurring-revenue line in IoT monitoring. The GO is conditioned on two non-technical-looking but technical-in-effect diligence items being satisfied: (1) a contractually-required, paid owner transition period dedicated to extracting the customer/equipment/contract knowledge into the new CRM/FSM before he exits, and (2) a day-one (first-90-day) security remediation — M365 with enforced MFA, managed backup, endpoint protection — treated as a closing-week task, not a someday item. If the seller will not commit to a real transition/knowledge-transfer period, this shifts toward RE-TRADE (price down for the undocumented-book risk and the higher migration cost), because the modernization stack is only worth what data the founders can load into it before the owner's knowledge walks out the door.
