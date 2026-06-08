@@ -70,7 +70,7 @@ How strong is the evidence that the pain is real, urgent, and already paid for �
 | 7 | Brand / story compounding | Story that pulls customers in over time | Every sale is a fresh fight |
 | 8 | Competitive air | Sleepy or fragmented market, defensible niche | Crowded with funded competitors |
 | 9 | Defensibility | Real moat develops with traction | Trivially copyable |
-| 10 | Customer truth | Founder knows the customer cold | Customer is hypothetical |
+| 10 | Customer & demand evidence | Specific, reachable customer; pain well-evidenced from available sources | Vague customer; no evidence the pain is real or paid for |
 
 **Scoring discipline:** 5 is mediocre. 7 is good. 9+ is rare. Do not cluster.
 
@@ -101,7 +101,7 @@ SCORES (1–10)
 7.  Brand / story compounding:         [n]  — [one-line reason]
 8.  Competitive air:                   [n]  — [one-line reason]
 9.  Defensibility:                     [n]  — [one-line reason]
-10. Customer truth:                    [n]  — [one-line reason]
+10. Customer & demand evidence:        [n]  — [one-line reason]
 
 AVERAGE SCORE: [x.x] / 10
 
