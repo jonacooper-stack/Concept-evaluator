@@ -55,7 +55,7 @@ Name the competitors. Real ones. Who owns the customer's attention today? What w
 Once it works, what stops the next team from copying it? Network effects, switching costs, brand, data, community, distribution lock-in?
 
 ### 10. Customer truth
-Does the founder actually know the customer, or are they guessing? Has the customer been talked to? Is the pain real, urgent, and willing to be paid for?
+How strong is the evidence that the pain is real, urgent, and already paid for — drawn from whatever sources exist at this stage (secondary research, observable budgets/spend, analogous markets, named buyers, public filings)? Is the target customer specific and reachable, or vague? IMPORTANT: this evaluation is run BEFORE primary customer interviews by design — do NOT deduct points merely because the founders have not yet interviewed customers. Score the strength of the demand thesis on the evidence available, and list the interviews that should come next as a recommendation, not a scoring penalty.
 
 ## Scoring rubric — 1 to 10 on each dimension
 
