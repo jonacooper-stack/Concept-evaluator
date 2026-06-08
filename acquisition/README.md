@@ -11,27 +11,42 @@ runtime: different objective docs, different rubrics, different agents.
 
 ## The thesis
 Retiring Baby Boomer owners are selling large numbers of profitable, durable, but
-**un-modernized** small businesses. Buying day-one cash flow at a fair multiple — and
-running the same business better with modern marketing, systems, and AI — is a faster
-path to founder free cash flow than building. See `01-objectives.md`.
+**un-modernized** small businesses. Buying proven cash flow at a fair price — and running
+the same business better with modern marketing, systems, and AI — is a faster path to
+founder free cash flow than building. See `01-objectives.md`.
 
-## The doc set (mirrors the build council, re-pointed to buy-side)
-| File | Lens | What changed from the build council |
+## Two stages (the key design choice)
+- **STAGE 1 — Industry Screen** (`01`–`07`): decide **which TYPES of business (industries)
+  to hunt in**. Score only industry-level traits knowable from the outside. Verdict per
+  industry: **PURSUE / MAYBE / PASS**. Output: ~3 industries to source real deals in.
+- **STAGE 2 — Target Due Diligence** (`10-due-diligence.md`): on a **real listing**, check
+  the company-specific tells (earnings quality, owner-dependency, systems, key staff,
+  customer concentration). Verdict per deal: **GO / PASS / OFFER A LOWER PRICE**.
+
+**Why split them?** Every sleepy, retiring-owner business has owner-dependency, un-verified
+earnings, and old systems. Those are *universal* — they don't help you choose an industry,
+they just drag every score down — so Stage 1 leaves them out and Stage 2 checks them on the
+actual company.
+
+## The doc set
+| File | Lens | What it scores |
 |---|---|---|
-| `01-objectives.md` | Source of truth | Deal box, DSCR ≥1.25–1.5x, transferability, owner-replaceability, modernization upside, SBA eligibility |
-| `02-council-cfo.md` | CFO | Earnings quality / add-backs, valuation & multiple, sources & uses, DSCR, working capital, resale arbitrage |
-| `03-council-cmo.md` | CMO | Customer concentration, brand-vs-owner, retention through transition, **modernizing sleepy marketing** |
-| `04-council-coo.md` | COO | Owner-dependency, key-staff retention, transition, **streamlining/modernizing ops** |
-| `05-council-legal-regulatory.md` | Legal | SBA eligibility, license/contract transfer, deal structure, seller liability tail, PG exposure |
-| `06-council-cto.md` | CTO | Inherited systems condition, tech debt, **modernizing with off-the-shelf tech + AI** |
-| `07-product-manager-synthesizer.md` | Deal lead | Produces a **Deal Memo** → LOI/thesis → 100-day plan → SBA package; verdict GO / NO-GO / RE-TRADE |
+| `01-objectives.md` | Source of truth | Two-stage model; industry-level rubric (durability, financeability, deal supply, modernization upside, competition, operator fit) |
+| `02-council-cfo.md` | CFO | The industry's economics — typical margins, normal multiples, SBA financeability, typical-deal DSCR, capital intensity |
+| `03-council-cmo.md` | CMO | The industry's customer/demand shape + how sleepy its **marketing** is (founders' edge) |
+| `04-council-coo.md` | COO | The industry's operating model + how systematizable its **operations** are (founders' edge) |
+| `05-council-legal-regulatory.md` | Legal | The industry's SBA eligibility, license-transfer norms, typical liability/environmental profile |
+| `06-council-cto.md` | CTO | The industry's typical systems + how modernizable with **off-the-shelf tech + AI** (founders' edge) |
+| `07-product-manager-synthesizer.md` | Deal lead | Produces an **Industry Memo**; verdict **PURSUE / MAYBE / PASS** + red-team |
 | `08-founder-profile.md` | Founders | Same founders as **full-time owner-operators** who manage (not perform) a field crew |
-| `09-discovery-loop.md` | Orchestration | Cheap-to-expensive funnel over **target profiles** |
-| `CLAUDE.md` | Operating rules | Honesty-first discovery for acquisitions |
+| `09-discovery-loop.md` | Orchestration | Cheap-to-expensive funnel over **candidate industries** → ~3 PURSUE |
+| `10-due-diligence.md` | **Stage 2** | Company-specific checklist on a real listing; verdict **GO / PASS / OFFER A LOWER PRICE** |
+| `CLAUDE.md` | Operating rules | Honesty-first, two-stage discovery |
 
-The COO, CMO, and CTO lenses all explicitly credit the founders' edge of **taking a
-sleepy old business and modernizing it** (modern marketing, modern systems, modern
-tech/AI) — that upside is a scored dimension in each.
+The CMO, COO, and CTO lenses each credit the founders' edge of **taking a sleepy old industry
+and modernizing it** (marketing, systems, tech/AI) — a scored dimension in each. The
+"obvious tells" (owner-dependency, earnings verification, this company's systems) are
+deliberately moved OUT of Stage 1 and INTO `10-due-diligence.md`.
 
 ## Agents (in `.claude/agents/`)
 The acquisition council uses dedicated agents prefixed `acq-`:

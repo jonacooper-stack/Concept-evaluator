@@ -77,19 +77,23 @@ a failing business; they are professionalizers of a healthy, sleepy one.
 - A portion of the injection may be a **standby seller note** where the seller is
   motivated. The founders accept the SBA **personal guarantee** [confirm comfort level].
 
-## How the acquisition council should use this
-- **Operational tractability (rubric dim 7):** score HIGH when the founders can run/
-  oversee the business and the field work is done by a managed inherited crew; score LOW
-  only when the founders themselves would have to hold a non-bridgeable credential or do
-  sustained manual labor personally. Do NOT penalize merely for having a blue-collar
-  workforce — managing one is in scope.
-- **Modernization upside (dim 4):** score HIGH when marketing/ops/tech are clearly stale
-  and the founders can plausibly capture the upside; score LOW when the business is
-  already modern and professionally run (less edge for these founders).
-- **Transferability (dim 3):** score HIGH when the business runs on systems/crew/contracts
-  that survive the owner's exit; score LOW when it IS the owner.
-- **Competitive landscape (dim 8):** score HIGH for fragmented sleepy fields; score LOW
-  when a well-funded PE consolidator is actively bidding the market up.
-- Treat a managed field workforce, a bridgeable licensed-employee requirement, and a
-  levered SBA structure as **normal and acceptable** — they are the model here, not red
-  flags.
+## How the acquisition council should use this (two-stage model)
+Remember the split (see `01-objectives.md`): **Stage 1** scores the INDUSTRY/TYPE; **Stage 2**
+(`10-due-diligence.md`) checks the specific company. Use this profile accordingly.
+
+- **Operator fit (Stage-1 dim 7):** score HIGH when the founders can run this TYPE of
+  business as GMs and the field work is done by a managed crew; score LOW only when the
+  *model* structurally requires the owner to personally hold a non-bridgeable credential or
+  do sustained manual labor. Do NOT penalize merely for a blue-collar workforce — managing
+  one is in scope.
+- **Modernization upside (Stage-1 dim 4):** score HIGH when the INDUSTRY is broadly stale
+  (un-marketed, manual, old tech) so the founders' edge applies across most operators; score
+  LOW when the industry is already modern and professionalized.
+- **Competitive structure (Stage-1 dim 6):** score HIGH for fragmented sleepy fields; score
+  LOW when a well-funded PE consolidator is actively bidding the market up.
+- **Owner-dependency, transferability, this company's systems, and earnings verification are
+  NOT Stage-1 industry factors** — they are universal across retiring-owner businesses and
+  are checked in Stage-2 due diligence on a real listing. Do not let them drag the industry
+  score.
+- Treat a managed field workforce, a bridgeable licensed-employee requirement, and a levered
+  SBA structure as **normal and acceptable** — they are the model here, not red flags.
