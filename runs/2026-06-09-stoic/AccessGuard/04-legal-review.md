@@ -1,0 +1,60 @@
+LEGAL / REGULATORY REVIEW — AccessGuard
+
+Not legal advice: I am not a licensed attorney and this is not formal legal advice. I am an experienced operator with regulatory pattern-recognition flagging issues the founders must take to real counsel.
+
+ONE-PARAGRAPH RISK READ
+AccessGuard is, from a regulatory standpoint, a refreshingly clean business that happens to sit next to a very messy area of law — which is the whole point. The founders are NOT the regulated party; their mid-market customers are the ones exposed under ADA Title III and state analogs (CA Unruh, NY State/City Human Rights Law). AccessGuard sells software-plus-managed-service into that exposure. That structural distinction matters: the company itself needs no license, sits in no licensed industry, and collects modest B2B data. The two genuine landmines are (1) the temptation to drift into unauthorized practice of law (UPL) by characterizing its conformance documentation as a legal defense or advising on litigation, and (2) marketing-claim liability — a category the FTC has already entered (enforcement against an overlay vendor), so claims like "lawsuit-proof," "ADA compliant," or "we keep you protected" are a live regulatory and false-advertising risk. Manage those two, structure the contract to disclaim outcomes, and the posture is good — not rare-good, but good.
+
+REGULATORY MAP
+- ADA Title III (42 U.S.C. §12181 et seq.) — DOJ-enforced, private right of action. This is the customer's exposure, not AccessGuard's. AccessGuard is a vendor of remediation/documentation, not a covered place of public accommodation. Risk to AccessGuard is reputational/contractual if a documented client still gets sued.
+- FTC Act §5 (unfair/deceptive acts) — FTC. Direct and material. AudioEye settled FTC charges (Jan 2025) over deceptive accessibility claims and undisclosed endorsements. Any claim of "compliance," "ADA-proof," "guaranteed," or unqualified "accessible" is squarely in FTC's documented enforcement lane. Ongoing claims-substantiation discipline; moderate but real.
+- Unauthorized Practice of Law (UPL) — state bar regulators (e.g., CA Bus. & Prof. Code §6125, NY Judiciary Law §478). Direct. The positioning ("so your lawyer has a case," "demand-letter rapid response") flirts with legal services. Stay on technical conformance artifacts and route legal strategy to client's counsel and it's fine; cross into advising on settlement or drafting legal responses and UPL opens in every operating state.
+- WCAG 2.1/2.2 AA — W3C standard, not a statute. No regulator owns it; de facto benchmark courts and DOJ reference. No accreditation needed.
+- State consumer-subscription / auto-renewal laws (CA B&P §17600, NY GBL §527-a, FTC Negative Option Rule). Low relevance — customers are businesses on annual B2B contracts. Keep renewal terms clear in the MSA.
+- Data acquisition / scraping — CFAA, state UDAP, court-records ToS. Scraping public Title III filings for lead gen: public dockets are generally lawful to access, but bulk scraping can violate PACER/state e-filing ToS and post-hiQ v. LinkedIn the law is fact-specific. Low-to-moderate.
+- CAN-SPAM and TCPA. B2B email outbound: CAN-SPAM applies (functional unsubscribe, accurate headers — low burden). TCPA matters only for cold calls/texts to mobiles; B2B email is the clean channel.
+- Data privacy (CCPA/CPRA, state laws). Generally a service provider/processor for client site data; will scan pages that may render end-user PII. No HIPAA covered-entity status unless touching a healthcare client's patient data. Standard DPA + reasonable security; moderate.
+
+LICENSING SUMMARY
+No occupational or industry license is required to operate AccessGuard. Web-accessibility consulting and SaaS are not licensed activities in any US state. No exam, no CE, no per-state registration beyond ordinary foreign-qualification of the entity. The founders' lack of credentials is a non-issue — WCAG conformance is a skill/standard, not a licensed practice; IAAP (CPACC/WAS) certifications are reputationally useful but legally optional and easily scaffolded. The one license-adjacent trap is UPL: never sell or describe the offering as legal services — keep legal work referred out to partner defense firms. Net: confidently, no license needed.
+
+LIABILITY POSTURE
+The core question: what happens when a client who paid AccessGuard still gets a demand letter or loses a Title III suit and blames the vendor? This is contractual, not regulatory. Managed (not eliminated) by: (a) an MSA explicitly disclaiming any guarantee of legal outcome, ADA "compliance," or litigation immunity — AccessGuard provides conformance work product and documentation, period; (b) a limitation-of-liability clause capping damages at fees paid; (c) tech E&O insurance, readily available at modest premium ([ASSUMED] ~$3K-$10K/yr early-stage; verify with two broker quotes); (d) general liability and cyber for the data tail. FTC §5 exposure mitigated entirely by claims discipline. Personal founder exposure is the ordinary pre-entity exposure — form the entity, sign in the entity's name. The residual no contract fully eliminates: a high-profile client losing a suit and arguing AccessGuard's documentation was negligently produced — an E&O claim, which is what E&O insurance exists for.
+
+SCORES (1–10)  (higher = lower risk)
+1. Industry regulatory burden: 8 — AccessGuard is not a covered place of public accommodation under ADA Title III; it is an unlicensed B2B software/consulting vendor adjacent to its customers' exposure, not inside a regulated industry.
+2. Licensing requirements: 9 — No occupational license exists for web-accessibility services in any US state; WCAG is a W3C standard, not a licensed practice; nothing to obtain beyond entity foreign-qualification.
+3. Data privacy exposure: 6 — Service provider/processor under CCPA/CPRA touching client site code and B2B contacts; manageable with a DPA and reasonable security, but healthcare-practice clients could pull it into HIPAA business-associate territory, capping below 8.
+4. Employment & contractor risk: 8 — Remote software/service team, no field workers entering homes, no inherent W-2/1099 misclassification pressure; standard multi-state remote-employment hygiene is the only item.
+5. Consumer protection complexity: 8 — Customers are businesses on annual B2B contracts, largely outside consumer auto-renewal statutes (CA B&P §17600, FTC Negative Option Rule) that target consumer subscriptions.
+6. IP cleanliness: 7 — Original crawler/reporting software, no restricted proprietary API dependence; the watch-item is lead-gen scraping of court systems (PACER/state e-filing ToS, CFAA post-hiQ), keeping it short of 8.
+7. Contract simplicity: 6 — Not pure clickwrap; mid-market annual deals want a negotiated MSA with disclaimer, LoL cap, DPA, and the "active litigation" tier raises onboarding sensitivity — a templated MSA is achievable but not frictionless.
+8. Liability exposure: 6 — Insurable with tech E&O/cyber at [ASSUMED] modest premium (verify via two broker quotes), but the "we keep you protected" value prop structurally invites blame when a documented client still gets sued — a real, managed-not-eliminated tail.
+9. Jurisdictional simplicity: 7 — The company operates from one domicile and sells nationally without per-state licensing; complexity comes only from customers' multi-state exposure bleeding into product scope and marketing claims.
+10. Regulatory trajectory: 7 — Tailwind: DOJ's 2024 ADA Title II web rule (28 CFR Part 35, WCAG 2.1 AA for state/local gov) signals momentum toward codifying web accessibility, and plaintiff-bar activity sustains demand; offsetting risk is FTC scrutiny of accessibility claims (AudioEye 2025).
+
+AVERAGE SCORE: 7.2 / 10
+
+TOP 3 LEGAL/REGULATORY STRENGTHS
+- The regulated exposure belongs to the customer, not AccessGuard — selling into ADA Title III risk without being a covered entity or licensed industry (42 U.S.C. §12181).
+- No licensing regime to clear — web-accessibility services require no occupational license, exam, or CE in any state, so the founders' lack of credentials is irrelevant.
+- Regulatory trajectory is a tailwind — DOJ's 2024 Title II WCAG rule and sustained plaintiff-bar filing volume keep demand forced and growing.
+
+TOP 3 LEGAL/REGULATORY RISKS
+- FTC Act §5 deceptive-claims exposure — the whole category is on the FTC's radar (AudioEye settlement, Jan 2025); "compliance," "protection," "lawsuit-proof" claims are a false-advertising landmine.
+- Unauthorized practice of law — "demand-letter rapid response" and arming "your lawyer" can slide into legal-services characterization, triggering UPL under state bar statutes across every operating state.
+- Vendor blame / E&O tail — a documented client who still gets sued is structurally positioned to blame AccessGuard; the value prop invites this, and only a tight MSA plus E&O insurance contains it.
+
+BIGGEST SINGLE RISK
+The single most likely thing to bite is FTC §5 marketing-claims liability compounded by the implicit promise baked into its own positioning. AccessGuard's pitch — "Stop paying ADA demand-letter settlements," "provably accessible," "keep the receipts so your lawyer has a case" — sells protection from litigation. But conformance to WCAG 2.1/2.2 AA is not a legal safe harbor; there is no federal standard that, once met, immunizes a website from a Title III claim, and courts have repeatedly held overlay/automated approaches insufficient. So the company is selling an outcome (reduced litigation risk) it cannot guarantee, in a category where the FTC has already brought an enforcement action against a peer (AudioEye, 2025) for exactly this kind of overclaiming. The failure mode is twofold: a regulator (FTC, or a state AG under a UDAP statute) challenges the claims, or a burned client who got sued anyway sues for misrepresentation/breach. The mitigation is within the founders' control and cheap — disciplined, substantiated, qualified claims, a contract disclaiming legal outcomes, and E&O coverage — but it requires the marketing-led founders to resist the most persuasive version of their own message, which is precisely the temptation their strength creates.
+
+QUESTIONS FOR REAL COUNSEL BEFORE LAUNCH
+1. Claims substantiation: review marketing language line-by-line against FTC §5 and state UDAP — which claims are substantiated and what qualifiers/disclaimers must run alongside?
+2. UPL boundary: where exactly is the line between producing conformance documentation (permissible) and providing legal services (UPL under CA B&P §6125, NY Judiciary Law §478)? Can "demand-letter rapid response" include any communication to plaintiff/counsel, or must everything route through the client's attorney?
+3. MSA terms: draft the disclaimer of legal-outcome/compliance guarantee, LoL cap (fees-paid), indemnification carve-outs, and DPA. What survives if a client is sued despite full conformance?
+4. HIPAA exposure: for healthcare/dental clients, does crawling/remediating their public site ever access PHI such that a BAA is required (45 CFR Part 160/164)?
+5. Lead-gen data sourcing: is scraping Title III dockets/demand-letter data compliant with PACER/state e-filing ToS and CFAA post-hiQ?
+6. Insurance scope: confirm tech E&O/cyber covers the "documented client still got sued" scenario; obtain two broker quotes.
+
+RECOMMENDATION: GO
+From a legal and regulatory standpoint this is a green light. AccessGuard occupies the rare sweet spot of selling into a heavily litigated regime while bearing almost none of that regime's burden itself — no license, no regulated-industry status, modest data exposure, clean B2B contracting. The two real risks (FTC §5 claims liability and UPL drift) are both self-inflicted-if-careless and entirely controllable through disciplined positioning, a competent MSA, and E&O insurance. No structural change is needed; the only mandatory pre-launch work is retaining counsel to bless the marketing claims and draft the MSA/disclaimer stack, and to map the UPL line so the "rapid response" tier stays on the documentation side of it.
