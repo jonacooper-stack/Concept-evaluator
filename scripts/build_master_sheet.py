@@ -16,16 +16,16 @@ HEADER = [
 ]
 # Sorted by Objectives Score (desc). All three reached full council.
 ROWS = [
-    ["1", "Permit & License Renewal Management", "Operational continuity (license to operate)",
-     "System of record + done-for-you renewals so a multi-location operator never loses a site to a lapsed permit",
-     "9", "6", "79",
-     "8.2", "7.4", "7.1", "7.5", "7.5", "6.9",
-     "5 (CompAn encroachment)", "SERIOUS-BUT-MANAGEABLE", "B (top of band)", "REFINE -> GO (narrow to one vertical)"],
-    ["2", "Certified-Payroll & Prevailing-Wage Compliance", "Critical input to getting paid (+ regulatory mandate)",
+    ["1", "Certified-Payroll & Prevailing-Wage Compliance", "Critical input to getting paid (+ regulatory mandate)",
      "Weekly certified-payroll filing for public-works subcontractors so their government progress payment is never withheld",
      "9", "5", "76.5",
      "7.6", "7.8", "7.4", "7.7", "7.5", "5.8",
      "4 (CompAn diff/encroach)", "SERIOUS-BUT-MANAGEABLE", "B (top of band)", "REFINE -> GO (pick a slice Miter won't chase)"],
+    ["2", "Permit & License Renewal Management", "Operational continuity (license to operate)",
+     "System of record + done-for-you renewals so a multi-location operator never loses a site to a lapsed permit",
+     "8", "6", "75.5",
+     "8.2", "7.4", "7.1", "7.5", "7.5", "6.9",
+     "5 (CompAn encroachment)", "SERIOUS-BUT-MANAGEABLE", "B (top of band)", "REFINE -> GO (narrow to one vertical)"],
     ["3", "MoCRA Cosmetics Compliance Program", "Regulatory mandate (FDA / MoCRA)",
      "Done-for-you FDA registration/listing/safety/adverse-event program for indie beauty brands",
      "8", "4", "69",

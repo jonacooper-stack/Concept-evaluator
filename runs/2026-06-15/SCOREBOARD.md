@@ -43,10 +43,16 @@ stage-aware (concept stage), with Legal as a risk GATE (only FATAL gates down).
 |---|---------|-----------|--------------|----------|-----|-----|-----|-------|-----|--------|-----------|-----------|-----------|------|
 | 1 | MoCRA Cosmetics Compliance | 1 regulatory | 8 | 4 | 7.9 | 7.0 | 7.6 | 7.3 | 7.9 | 4.7 | **69** | 3 (CompAn) | SERIOUS-BUT-MANAGEABLE | **B** (weak, REFINE) |
 | 2 | Certified-Payroll Compliance | 3 critical-input/cash | 9 | 5 | 7.6 | 7.8 | 7.4 | 7.7 | 7.5 | 5.8 | **76.5** | 4 (CompAn) | SERIOUS-BUT-MANAGEABLE | **B** (top of band, REFINE→GO) |
-| 3 | Permit & License Renewal | 4 continuity | _ | _ | 8.2 | 7.4 | 7.1 | 7.5 | 7.5 | 6.9 | _synth running_ | _ | SERIOUS-BUT-MANAGEABLE | _pending_ |
+| 3 | Permit & License Renewal | 4 continuity | 8 | 6 | 8.2 | 7.4 | 7.1 | 7.5 | 7.5 | 6.9 | **75.5** | 5 (CompAn/COO) | SERIOUS-BUT-MANAGEABLE | **B** (top of band, REFINE→GO) |
 
-## Surfaced top 2–3
-- _pending_
+Two FATAL screen-outs (hard-constraint #5, never councilled): Retail PIM/Data Syndication (Salsify well-funded strong-tech + heavy integration); EDI Integration-as-a-Service (SPS Commerce dominant strong-tech incumbent).
 
-## Notes / failure modes
-- _pending_
+## Surfaced top 3 (ranked by Objectives Weighted Score, after two-directional red-team)
+1. **Certified-Payroll & Prevailing-Wage Compliance — 76.5 / 100, Tier B** (critical-input/cash). Co-leader.
+2. **Permit & License Renewal Management — 75.5 / 100, Tier B** (continuity). Co-leader (within ~1 pt; best competition position of the field).
+3. **MoCRA Cosmetics Compliance Program — 69 / 100, Tier B** (regulatory). A weak B / REFINE-leaning-NO-GO — surfaced honestly as the field's third-strongest.
+
+All three are Tier B (Promising). No A-tier in the field: every concept's competition dimension (dim 2) fell below the A-gate of 7 — the honest result, not inflated.
+
+## Notes / recurring failure mode
+The web-enabled Competitive Analyst repeatedly found funded/strong incumbents the surface thesis missed: Registrar Corp + Certo + Cosmetica (MoCRA), Miter + Foundation/Thoma Bravo (Certified-Payroll), Avalara/Vista reach-down (Permit). Competition is the binding constraint across the field; each concept's path to A is the SAME move — narrow to a defensible slice the funded players won't profitably chase, and lead with the managed-service moat over the commodity software.

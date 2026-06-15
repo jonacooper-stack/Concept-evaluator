@@ -1,0 +1,15 @@
+MASTER COMPARISON SHEET — Concept Evaluator run 2026-06-15
+"SURFACED TOP 3 (full six-member council + two-directional red-team), sorted by Objectives Score"
+Rank,Concept,Forcing-function type,What it is (one line),MustHave/10,Competition/10,Objectives Score/100,CFO,CMO,COO,Legal,CTO,Competitive,Lowest sub-score,Legal risk-gate,Tier,Verdict
+1,Certified-Payroll & Prevailing-Wage Compliance,Critical input to getting paid (+ regulatory mandate),Weekly certified-payroll filing for public-works subcontractors so their government progress payment is never withheld,9,5,76.5,7.6,7.8,7.4,7.7,7.5,5.8,4 (CompAn diff/encroach),SERIOUS-BUT-MANAGEABLE,B (top of band),REFINE -> GO (pick a slice Miter won't chase)
+2,Permit & License Renewal Management,Operational continuity (license to operate),System of record + done-for-you renewals so a multi-location operator never loses a site to a lapsed permit,8,6,75.5,8.2,7.4,7.1,7.5,7.5,6.9,5 (CompAn encroachment),SERIOUS-BUT-MANAGEABLE,B (top of band),REFINE -> GO (narrow to one vertical)
+3,MoCRA Cosmetics Compliance Program,Regulatory mandate (FDA / MoCRA),Done-for-you FDA registration/listing/safety/adverse-event program for indie beauty brands,8,4,69,7.9,7.0,7.6,7.3,7.9,4.7,3 (CompAn diff/encroach/response),SERIOUS-BUT-MANAGEABLE,"B (weak, bottom of band)",REFINE (lean NO-GO as written)
+
+SCREENED FIELD (reached triage; not advanced to full council) + notable screen-outs
+Rank,Concept,Forcing-function type,What it is (one line),MustHave/10,Competition/10,Objectives Score/100,CFO,CMO,COO,Legal,CTO,Competitive,Lowest sub-score,Legal risk-gate,Tier,Verdict
+—,RIA Compliance-as-a-Service (1st council alternate),Regulatory,SEC-forced compliance retainer for small RIAs,,,triage 7.5,,,,,,,,MINOR/SERIOUS,screened (not councilled),alternate
+—,ISO-17025 Calibration-Certificate Mgmt,Critical input (production),Expired calibration cert halts shipments; cert system of record,,,triage 7.6,,,,,,,,NONE,screened,candidate
+—,Supplier-Quality Doc Management,Contractual (prime-mandated),PPAP/cert docs for Tier-2/3 manufacturers; no docs = no PO,,,triage 7.5,,,,,,,,NONE,screened (one-pager drafted),candidate
+—,Cyber-Insurance Readiness,Risk mitigation (insurer-mandated),Attested controls SMBs need to bind/renew cyber insurance,,,triage 7.8,,,,,,,,MINOR,screened,candidate (funded insurtech competition)
+—,Retail PIM / Data Syndication,Critical input,Product-data syndication to retailer portals,,,FATAL,,,,,,,,—,screened-out,FATAL: Salsify well-funded strong-tech + heavy integration
+—,EDI Integration-as-a-Service,Critical input,EDI onboarding to big-box retailers,,,FATAL,,,,,,,,—,screened-out,FATAL: SPS Commerce dominant strong-tech incumbent
