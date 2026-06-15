@@ -1,0 +1,118 @@
+# Concept Evaluator — What We Changed and Why
+
+Prepared for Jon and Mike — 2026-06-15
+
+This is a plain-English summary of the upgrades made to the business-concept
+evaluation system. The goal of the system is unchanged: **find 2–3 need-to-have
+businesses we can launch on low cash and grow fast, scored the way real expert
+advisors would score them.** The changes below fix the things that were getting in
+the way of that.
+
+---
+
+## The core problem we fixed
+
+The old system was quietly built to **hold scores down**. Three things combined to
+do it:
+
+1. The expert reviewers were told to back any high score with hard evidence (named
+   competitors, real numbers) — but they had **no way to look anything up** (no web
+   access). So they couldn't justify a high score honestly, and defaulted to mediocre.
+2. Anything not backed by a hard number was **capped at 6 out of 10**.
+3. The bar to "pass" was an average above 8.0 with no score below 7.
+
+Put together, the math was nearly impossible: the system's own notes admit every
+idea clustered at 6.6–7.2 and **nothing ever passed**. The only way to "pass" was to
+fudge numbers — which the rules then forbade. So the system was stuck, and the
+scores felt artificially suppressed. They were.
+
+**The fix:** give the market-facing reviewers real web research, make the evidence
+standard match the fact that we're at the concept stage, and make scoring honest in
+**both** directions — a genuinely strong idea should earn an 8 or 9, and we say so.
+
+---
+
+## The five upgrades
+
+### 1. We now score at the right stage (concept stage)
+A new ground-rule doc states plainly: we are evaluating **concepts**, before customer
+interviews and before anything is built. Reviewers can no longer dock points because
+we "haven't talked to customers yet" or "haven't built it." Those become the **list
+of cheap things to test next**, not penalties. A strong idea backed by a named
+comparable and sound math can now score an 8 or 9 — which is how a real advisor would
+score it.
+
+### 2. Competition gets a real, dedicated analyst
+Competition was one paragraph inside the marketing review, written by someone who
+couldn't browse the web. We added a **dedicated Competitive Analyst with web access**
+whose whole job is the competitive teardown: name the real players, pull their
+pricing and funding, judge whether they're genuinely sleepy and beatable or actually
+dangerous, check whether a big platform could move into the niche, and war-game what
+the incumbents do when we start winning. Competition is now one of the two
+heaviest-weighted factors — because out-positioning sleepy incumbents is our edge.
+
+### 3. "Must-have" no longer means "regulated"
+We were over-indexing on compliance. Now a must-have is defined by its **forcing
+function** — what breaks, and how fast, if the customer doesn't buy — and there are
+**five equally valid kinds**:
+
+1. A regulation or compliance mandate forces the buy.
+2. A customer, prime contractor, insurer, lender, or franchisor requires it.
+3. It's a **critical input to their production** — without it, their line stops or
+   their product can't ship. (Your raw-material example — now treated as exactly as
+   strong as a compliance mandate.)
+4. Without it they lose money, customers, or the ability to operate.
+5. It's effectively mandatory risk mitigation that responsible operators won't skip.
+
+Regulation is one favorite path, never required. A raw material a factory can't run
+without scores just as high.
+
+### 4. Regulation is no longer an over-weighted drag
+The old setup had a perverse bug: the Legal reviewer scored "more regulation = worse
+score," which **punished exactly the forced-demand businesses we like**. Now Legal
+runs a **risk gate** instead — it flags exposure as None / Minor / Serious-but-
+Manageable / Fatal. A regulated business with a clear, navigable compliance path is
+**not** marked down for being regulated; it just carries a due-diligence checklist.
+Only a genuinely fatal legal problem can sink a concept. The *upside* of regulation
+(it forces demand) is now credited where it belongs — in the must-have score.
+
+### 5. Plain-English artifacts you can actually share
+Everything used to live as dense markdown in GitHub, which is hard for you to read
+and hard to share with Mike. Now every concept we surface comes with:
+
+- A **Concept Dossier** in plain English (what it is, who pays and why they can't say
+  no, the money in simple terms, why we win, the competition, the top risks, what to
+  test next, and the scores explained in plain sentences).
+- A **one-page Scorecard**.
+- A **master comparison sheet** ranking the whole field at a glance.
+
+These are generated as **Word (.docx), PDF, and text (.txt)** files, saved in the
+project, **pushed to your Google Drive**, and sent to you as attachments — no GitHub
+required. (This very document was produced by that new pipeline as a test.)
+
+---
+
+## How scoring works now (and what "passing" means)
+
+We dropped the rigid "must average above 8.0" gate. Instead each concept gets an
+**Objectives Score out of 100** and an honest **tier**:
+
+- **A — Advisor-Ready:** strong enough to put in front of expert advisors and defend.
+- **B — Promising:** worth a deeper look before committing.
+- **C — Pass:** drop it.
+
+The deliverable is always the **honest top 2–3 of the field, ranked**. If the best we
+find are B-tier, we'll say so and still hand you the top 2–3 with exactly what would
+move them up — because you're going to compare them against real experts anyway. We
+do not inflate to manufacture a winner, and we no longer suppress a real winner out
+of caution.
+
+---
+
+## What to do next
+
+When you're ready to run a search, start a fresh session and use one of the run
+modes (the simplest is the `/goal` command in doc 09). It will brainstorm widely
+across all five must-have types, run the six-member council on the survivors, and
+hand you plain-English dossiers for the top 2–3 in your Google Drive. Then take those
+to your real advisors and compare — which was the point all along.

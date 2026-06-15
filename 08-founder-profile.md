@@ -35,11 +35,16 @@ not be scored as if a business must match a narrow skill — penalize only genui
   consultancies, generalist MSPs, old-line vendors — in fragmented or
   regulation-forced markets where nobody has shown up with modern positioning,
   productization, and a sharp message. This is the sweet spot.
-- In **regulated / compliance / mandate-driven markets** where demand is forced,
-  recurring, and budgeted — PROVIDED the required expertise can be SCAFFOLDED
-  (advisors, a named practitioner, partners, a hire, or the founders' own
-  compliance-operator background). A moat here is an asset: it forces the buy and
-  deters lazy competition. The CMMC concept is the model.
+- In **forced-demand markets** where the buy is mandatory, recurring, and budgeted —
+  driven by ANY of the forcing functions in 01-objectives.md (a regulatory/compliance
+  mandate; a contractual requirement from a prime/insurer/lender/franchisor; a
+  **critical input to a customer's production/revenue process**; operational/financial
+  continuity; or effectively-mandatory risk mitigation). Regulation is one favorite
+  path, not the only one — a raw material a factory line can't run without is just as
+  strong. PROVIDED any required expertise can be SCAFFOLDED (advisors, a named
+  practitioner, partners, a hire, or the founders' own compliance-operator
+  background). A moat here is an asset: it forces the buy and deters lazy competition.
+  The CMMC concept is one illustration of the pattern, not the template.
 - Where acquisition is **marketing/positioning/relationship-led**, not
   capital-auction-led.
 
