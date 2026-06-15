@@ -1,0 +1,76 @@
+CTO REVIEW — Certified-Payroll & Prevailing-Wage Compliance for Public-Works Contractors
+
+ONE-PARAGRAPH TECHNICAL READ
+This is a boring-in-the-good-way data-transformation-and-document-generation product: ingest weekly payroll rows, join them against a versioned table of wage determinations and fringe rules, run a deterministic rule-validator, and emit fixed-format certified-payroll documents (federal WH-347 PDF plus a growing set of state/prime targets). None of the core is a research problem — no required ML, no novel algorithm, nothing that hasn't been built in fintech/payroll tooling. The genuine technical risk is NOT the software; it is the long, heterogeneous, partially-undocumented tail of OUTPUT destinations (state portals like CA DIR eCPR, and prime-collection systems like LCPtracker) where many endpoints have no public API and must be handled by file-format export or, worst case, human-in-portal upload — an integration-and-ops grind, not an engineering wall. For a two-founder bootstrap with one capable dev, a revenue-earning MVP scoped to federal WH-347 + one anchor state (almost certainly California) + CSV/PDF export is realistically 8–12 dev-weeks, with a thin owned off-the-shelf stack and one custom rule engine as the wedge.
+
+ARCHITECTURE SKETCH
+- Frontend: a single multi-tenant web dashboard (Next.js/React on Vercel, or a server-rendered monolith). Per-contractor view: jobs, weeks, "filed/clean vs at-risk" status, exception queue. Forms-and-tables, not real-time.
+- Backend/API: a conventional monolith (Rails/Django/Nest) on Render/Fly/Heroku-class hosting. High-value custom code is one module: the prevailing-wage rule engine + validator (classification/overtime/fringe-credit/apprenticeship-ratio checks) and the WH-347 generator. Everything else bought.
+- Data store: a single Postgres. Entities — contractor (tenant), project, wage determination (versioned, classification→rate/fringe rows), worker, weekly payroll line, generated report, audit event. S3/R2 for imports + PDFs. Data is small (low millions of rows even at hundreds of contractors).
+- Integrations IN (payroll/accounting): start with CSV import as universal floor; add QuickBooks Online + one cloud payroll (Gusto has a clean API; ADP/Foundation harder/partnered). Read-only pulls — low risk.
+- Integrations OUT (the real complexity): three tiers — (a) WH-347: deterministic PDF fill, owned, trivial; (b) state portals (CA DIR eCPR XML upload spec; others PDF-upload or manual); (c) prime-collection systems (LCPtracker, B2Gnow, Elation) — mostly CSV/XML import templates per system, some with no programmatic ingress. Model each as a pluggable "exporter."
+- Async: a simple job queue (Sidekiq/Celery/BullMQ + Redis) for weekly generation, import parsing, missing-week reminders. Cron for nudges.
+- ML/AI: none required on the critical path (a strength) — keep it out of compliance-determining logic. Optional bounded LLM only as an onboarding assist (suggest a classification mapping for a human to approve), never the authority that signs a federal certification.
+- Auth/hosting: off-the-shelf auth (Clerk/Auth0/Cognito or framework-native), RBAC (admin/preparer/viewer), managed PaaS + managed Postgres.
+- Where complexity hides: (1) the wage-determination data itself (keeping DOL/state determinations current, versioned, mapped to projects — a content/ops problem); (2) the output-destination matrix (N portals × evolving formats); (3) correctness liability (a wrong number on a certification has real consequences; the validator must be conservative + auditable).
+
+BUILD PLAN TO REVENUE-EARNING MVP
+~8–12 weeks of one experienced dev to a payable version; ~6 weeks to a credible demo. [ASSUMED — verify with a week-one spike: WH-347 generator + a CA DIR eCPR export.]
+1. Data model + CSV import + WH-347 generation (wks 1–4): schema; robust CSV importer with column mapping; deterministic WH-347 PDF fill with the statement of compliance. Replaces the spreadsheet — demoable value. Irreducible core.
+2. The rule engine / validator (wks 3–6, overlapping): versioned determination tables; classification→rate/fringe lookup; underpayment/overtime/fringe-credit/apprenticeship checks; exception queue surfacing "what gets your payment withheld this week." The actual wedge.
+3. One state portal + dashboard (wks 6–9): anchor on California (largest market, eCPR XML spec); state-format export + "every job filed/clean" dashboard. Punt other states to v2, one connector at a time.
+4. Billing + auth + audit trail (wks 8–11): Stripe Billing (per-project + base fee maps to tiered/metered), production auth/RBAC, immutable audit log. Required before charging.
+5. One payroll API (wks 10–12, can slip): QuickBooks Online or Gusto pull. Punt-able: the managed-service onboarding layer is human, so software doesn't need automated wage-determination setup at launch.
+v2: more states, more payroll connectors, LCPtracker/B2Gnow auto-push, automation of the determination content pipeline.
+
+CRITICAL ASSUMPTIONS
+- The validation logic is deterministic, not judgment-bound. [ASSUMED true — rules are tabular: rate by classification × locality × date; fringe arithmetic; ratio thresholds.] Verify: have the named specialist encode three real projects by hand and confirm a flowchart engine reproduces the answers with no "it depends." If large swaths are discretionary, the managed layer absorbs it but must be scoped or it becomes a consulting business with a thin app.
+- Enough output destinations accept a file rather than a human in a portal. [ASSUMED partially true — CA eCPR XML, WH-347 PDF attach, LCPtracker import templates.] Verify by enumerating the first cohort's top 5 destinations. Risk: if the most common destination requires manual keying, "files it for you" degrades to "produces the file you upload" — reposition honestly.
+- Wage-determination data is obtainable + maintainable at acceptable effort. [ASSUMED — DOL publishes determinations (SAM.gov/wdol); states publish theirs; they change periodically, not chaotically.] Verify by pulling current determinations + estimating cadence. Risk: ongoing content-ops cost; under-budgeting → stale rates → wrong certifications (worst failure).
+- Payroll source data is clean enough to ingest. [ASSUMED.] Verify with three real exports. Risk: if classification lives only in a human's head, onboarding effort rises + the managed layer thickens.
+- One dev can hold federal + one state in 8–12 weeks. [ASSUMED; week-one spike is the test.] If it slips, descope to "WH-347 + CSV only" for the first customer.
+
+INFORMATION SECURITY POSTURE
+Data is meaningfully sensitive: payroll PII — worker names, addresses, and the last four of SSN appear on WH-347 itself, plus wages, hours, employer identity. Higher-stakes than generic B2B SaaS; design in from day one.
+- Where it lives: single managed Postgres + object storage, both with encryption at rest (plus app-layer field encryption for the SSN-fragment) and TLS 1.2+ in transit; managed secrets store — no secrets in code/env.
+- Access controls: strict multi-tenant isolation (every query scoped by tenant_id; Postgres RLS as backstop), RBAC, least-privilege DB roles, MFA on the admin console. Prime secondary buyers eventually need scoped read-limited access to only their subs' payrolls — design tenancy for that boundary early.
+- Audit logging: the product IS an audit trail — immutable append-only logging of every report generated/edited/submitted + credential used; doubles as wage-dispute evidence.
+- Threat model: (1) tenant data leakage, (2) credential compromise of stored portal logins if auto-filing (treat as crown-jewel, vault-encrypted, ideally per-tenant), (3) PII breach of SSN-bearing reports. Launch readiness: encrypted backups + tested restore, an incident-response runbook, breach-notification awareness (SSN data triggers state laws), dependency/secret scanning in CI.
+- SOC 2: not required to land SMB at launch, but prime/GC + agency-adjacent buyers will ask; the architecture is SOC 2 Type II-attainable on a normal timeline, which the founders' SOC 2 operating background makes an advantage.
+
+SCORES (1–10)
+1.  Technical feasibility:             9  — Pure deterministic data-transform + document generation; no research risk, no required ML; proven shape in fintech/payroll tooling.
+2.  Build vs. buy posture:             8  — Auth/billing (Stripe)/hosting/queue/storage/payroll-pull APIs all bought; only custom code is the rule engine + WH-347 generator.
+3.  Architecture cleanliness:          8  — One Postgres, one monolith, one queue, a pluggable exporter pattern; few moving parts; exporter matrix adds breadth, not depth.
+4.  Time to revenue-earning MVP:       8  — 8–12 dev-weeks to a paid MVP (federal + one state + CSV) with a week-one spike to de-risk; under a quarter to first dollar.
+5.  Technical-assumption risk:         6  — Software assumptions low-risk, but two bite: some output destinations may require human-in-portal upload, and wage-determination content must stay current/correct (a wrong rate on a certification is a serious failure).
+6.  Third-party dependency risk:       6  — No single chokepoint API, but OUT-integrations (CA eCPR, LCPtracker/B2Gnow templates, state portals) are externally controlled, can change format, and several lack clean public APIs/ToS — a connector grind + maintenance tax.
+7.  Data architecture quality:         8  — Small, owned, portable, conventional Postgres; versioned determination table + immutable audit log are clean; audit trail doubles as a switching-cost moat.
+8.  Information security posture:       7  — Stack SOC 2-attainable, encryption/RBAC/secrets/audit designed-in; held to 7 because SSN-bearing payroll PII raises stakes and stored portal credentials (if auto-filing) are a crown-jewel risk to handle from day one; earned with the founders' SOC 2 background.
+9.  Scaling headroom:                  9  — Workload tiny (low-millions of rows, batch weekly), embarrassingly horizontal; one Postgres + a queue carries hundreds of contractors with no rewrite.
+10. Maintenance burden:                6  — The app runs itself, but the content/integration pipeline doesn't: keeping determinations current + chasing format changes across N destinations is ongoing engineering+ops load — predictable + bounded, but a permanent line item for two founders.
+
+AVERAGE SCORE: 7.5 / 10
+
+TOP 3 TECHNICAL STRENGTHS
+- The core is deterministic and proven — payroll-in, rules-validate, fixed-forms-out — no ML, no novel algorithm, no scaling cliff; one capable dev ships the revenue wedge in ~8–12 weeks on a fully off-the-shelf stack.
+- Data is small, owned, portable, and the audit trail is simultaneously a feature, a security control, and a switching-cost moat — once filings + history live in the system, mid-project migration is painful.
+- The hard parts are bounded operational grind, not engineering walls — the output-destination matrix + determination content pipeline grow one connector/state at a time, sequenced by customer demand; no bet-the-company unknown.
+
+TOP 3 TECHNICAL RISKS
+- The output-destination tail: state portals + prime-collection systems vary wildly, several lack clean public APIs/permissive ToS, a few may require a human in the portal — can downgrade "files it for you" to "produces the file you upload."
+- Correctness liability on the determination content: a stale or mis-mapped rate produces a wrong federal certification — the single worst failure mode; keeping determinations current + the validator conservative is an under-appreciated cost.
+- Permanent maintenance tax on connectors + content (not a build risk, an after-launch one): upstream format changes + quarterly determination updates mean the system is never fully "done."
+
+BIGGEST SINGLE RISK
+The most likely thing to bite is not the build — it is the gap between "generate the correct certified-payroll file" and "actually deliver it into the destination the agency or prime mandates, automatically, every week." Producing a correct WH-347 or CA eCPR XML is easy; the promise that holds up a six-figure progress payment is that the right document lands in the right system on time. That destination layer is owned by third parties with no obligation to you: some (CA DIR, LCPtracker) offer file/XML ingress; others expose only a human-operated portal with no API and ToS that may not bless automation. If a meaningful share of the first cohort's jobs route to manual-only portals, you either reposition to "we produce the perfect file, you upload it" (weaker promise, more friction) or absorb the manual upload into the managed layer (thickening human ops + converting margin from software to labor — which the founders explicitly do not want). Every stored portal credential held to auto-file becomes a crown-jewel security liability. The mitigant is cheap and pre-build: enumerate the actual destinations the first ten target customers file into, classify each API/file-upload/manual-only, and scope the auto-filing promise to what's real.
+
+QUESTIONS THE FOUNDERS MUST ANSWER BEFORE I'M COMFORTABLE
+- For the first cohort, what are the top 5–7 actual filing destinations (which states, which prime-collection systems), and for each is there a documented file/XML/CSV spec or public API — or a human in a portal? Sets build scope, the auto-filing promise, and ops margin.
+- Is prevailing-wage validation truly rule-deterministic, or are there common cases (contested classifications, multi-classification workers, fringe-credit edges) requiring human judgment? Have the specialist encode three real projects by hand.
+- How will you source, version, and keep current the federal + state determinations, what is the update cadence/effort, and who owns the content pipeline so a contractor is never certified against a stale rate?
+- Will you store contractors' portal/system credentials to auto-file? If yes, the plan to vault + isolate per-tenant (they become the highest-value target, atop SSN-bearing PII)?
+- Can you land the v1 cohort with federal WH-347 + one anchor state + CSV import (human-run onboarding), and which single state is the anchor maximizing addressable jobs for least integration work?
+
+RECOMMENDATION: GO
+Technically a strong, low-novelty, bootstrap-appropriate build: a deterministic transform-and-generate engine on a fully off-the-shelf stack with one custom wedge (rule engine + form generator), no required ML, no scaling cliff, a small owned dataset, and a SOC 2-attainable posture that plays to the founders' compliance-operator background — MVP realistically 8–12 dev-weeks. Two scope disciplines attached rather than blocking: (1) scope the MVP to federal WH-347 + one anchor state (likely California) + CSV, run the human-led managed layer for onboarding/determination setup, add states + payroll connectors one at a time; (2) run the week-one spike (WH-347 + one CA eCPR export + an honest enumeration of the first cohort's real destinations) to confirm the auto-filing promise + lock the ops/margin model. Only thing that would move toward REFINE is discovering the dominant destinations are manual-portal-only; then reposition to "produce the perfect file." Neither risk threatens feasibility. GO.

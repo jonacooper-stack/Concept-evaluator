@@ -1,0 +1,50 @@
+CFO REVIEW — Certified-Payroll & Prevailing-Wage Compliance for Public-Works Contractors
+
+ONE-PARAGRAPH FINANCIAL READ
+The numbers pencil well, and the financial shape is close to ideal for a bootstrap: recurring SaaS revenue on a forced, weekly, already-budgeted buy, with software doing the high-volume work and a thin founder-led managed layer on top. ARPU of ~$300–$1,200/month per contractor against a near-zero marginal cost of serving an incremental filing means gross margins should sit in the 70s–80s once the wage-determination library and validation rules are built, and onboarding fees largely offset CAC. The genuine financial risks are not whether the model makes money — it does — but (a) onboarding/edge-case labor that can quietly compress margin if the managed layer doesn't productize, (b) the multi-jurisdiction rules-engine build (50 states + federal, each with its own forms and portals) being a deep, perpetual content-maintenance cost rather than a one-time engineering spend, and (c) a real but bridgeable concentration on California early. The path to ~$300K/founder by month 12 and ~$500K+ by month 24 is reachable with low-hundreds of contractors, conservative against a national base of tens of thousands of public-works subs — a healthy, financeable, sellable recurring-revenue business.
+
+THE MATH
+Target combined founder income ≈ $600K/yr by mo12, ~$1.0M+/yr by mo24. Owner earnings = revenue − COGS − lean opex.
+ARPU [ASSUMED] blended ~$600/mo = ~$7,200/yr ($300–$1,200/mo range; small sub low, mid sub high). Verify with tiered landing pages + 15–20 discovery calls.
+Gross margin [ASSUMED] 72–82%, model ~75%. COGS = compute/storage (trivial), e-filing/portal integration (low), payroll API/data (low), and the real cost: managed-service human time for onboarding + edge-case classification. Verify by time-tracking first 10 onboardings + a quarter of tickets.
+Month 12 (~$600K founder pool): GP needed ≈ $600K + ~$150K opex = ~$750K → revenue ≈ $1.0M ARR → ~139 contractors at $7,200 (or ~93 at $10,800).
+Month 24 (~$1.0M founder pool): GP ≈ $1.0M + ~$200K opex = ~$1.2M → revenue ≈ $1.6M ARR → ~222 contractors at $7,200 (or ~148 at $10,800).
+Whole ladder reachable in low hundreds of contractors (~90–140 by mo12, ~150–220 by mo24). Market signal: tens of thousands of specialty-trade public-works subs nationally; CA DIR-registered public-works contractors number in the high tens of thousands; LCPtracker (named incumbent) reports 100,000+ contractor users — base is large, ~150–220 accounts is a fraction of one state. Customer math is not the constraint.
+Onboarding economics: onboarding fee ~$500–$2,000 vs. [ASSUMED] CAC $800–$2,500 → net CAC near zero, payback near-immediate, then ~75% margin recurring.
+
+SCORES (1–10)
+1.  Startup capital efficiency:        8  — Low five figures: founders' build time + part-time PW specialist + modest contract dev for the WH-347/CA-DIR rules engine; no inventory/deposits/equipment; onboarding fee front-loads cash.
+2.  Working-capital profile:           8  — Platform fee + onboarding paid up front before marginal filing cost; no AR float to agencies; annual billing makes it cash-positive on signing.
+3.  Cash flow self-funding:            8  — Onboarding fee (~$500–$2,000) offsets CAC ($800–$2,500), each account roughly self-financing then ~75% recurring margin; only cash drag is the fixed/amortizing rules-engine build.
+4.  Unit economics quality:            8  — ~$7,200 ARPU × ~75% = ~$5,400 GP/account/yr; switching costs (audit trail + filings in-system) support multi-year retention; LTV ~$16K–$27K vs near-zero net CAC → LTV/CAC >5, payback <4 months on margin.
+5.  Gross margin:                      7  — Modeled 72–82% (~75%); held at 7 because the managed-service layer (onboarding setup + edge-case classification support) is real recurring human cost that drags blended margin if not productized; software portion 85%+, services portion compresses.
+6.  Path to founder-income ladder:     8  — ~90–140 accounts → ~$300K/founder by mo12; ~150–220 → ~$500K/founder by mo24, at conservative $7,200 ARPU + 75% margin; counts are a fraction of one state's base.
+7.  Realistic obtainable market:       8  — Tens of thousands of specialty-trade public-works subs; LCPtracker 100,000+ users, CA DIR high-tens-of-thousands registrations — SOM dwarfs the ~220 accounts needed.
+8.  Financial risk concentration:      6  — Customer-count diversification excellent (no single-customer dependency), but real EARLY geography/regime concentration (CA/DIR first year) and possible prime-collection channel concentration; held at 6 until 2nd/3rd state live.
+9.  Scaling economics:                 7  — Software margin improves with density per jurisdiction (rules engine built once, amortized), but each new state is a step-function content/engineering cost; net positive leverage, lumpy by jurisdiction.
+10. Financeability / exit optionality: 8  — Recurring, contracted, high-retention vertical-compliance SaaS with embedded switching costs is exactly what vertical-SaaS/PE acquirers buy on ARR multiples (LCPtracker/Points North in-category); clean, transferable, financeable.
+
+AVERAGE SCORE: 7.6 / 10
+
+TOP 3 FINANCIAL STRENGTHS
+- Forced, recurring, already-budgeted buy tied to GETTING PAID: certified payroll is a weekly precondition for the contractor's progress payment, so willingness-to-pay is anchored to cash they already collect — durable ARPU, low churn (you don't cancel the thing that releases your six-figure progress payment).
+- Excellent bootstrap cash mechanics: no hard-asset capital, onboarding fee front-loads cash + offsets CAC, optional annual billing cash-positive on signing, ~75% recurring margin — growth substantially self-funds.
+- Strong operating leverage on the software spine: per-jurisdiction rules engine + wage-determination library built once and amortized across every contractor in that state; LTV/account (~$5,400/yr GP, multi-year, switching-cost-protected) vs near-zero net CAC → >5 LTV/CAC.
+
+TOP 3 FINANCIAL RISKS
+- Managed-service margin creep: the "thin" founder + specialist layer for onboarding + edge cases is real recurring labor; if not aggressively productized, blended margin slides from ~75% toward 50s–60s and caps the founder pool.
+- Multi-jurisdiction content as a perpetual cost, not a one-time build: every state has its own form/portal/rules (CA DIR, NY, WA, federal WH-347…), determinations change; the rules engine is never-finished content maintenance, each new state a lumpy step cost.
+- Early geographic/regime concentration + a possible accuracy-liability tail: first year leans on one regime; a wrong filing that withholds a customer's payment or triggers a back-wage/penalty is a low-probability but real cash event that must be capped + insured.
+
+BIGGEST SINGLE RISK
+The single financial issue most likely to cap (not kill) this business is gross-margin erosion from the managed-services and content layers being underestimated as "thin." Prevailing-wage compliance is genuinely hairy at the edges — reclassification disputes, split-classification, fringe-credit accounting, apprenticeship-ratio shortfalls, per-project determinations that change — and the value prop explicitly promises to catch/handle exactly those. That promise is the moat and the reason a contractor pays, but it's a labor magnet: the hardest 20% of accounts/tickets can consume a disproportionate share of specialist time. If onboarding stays bespoke and support stays high-touch, blended margin compresses toward 50s–60s, the part-time specialist becomes one-or-two full hires sooner, and the founder-income pool at any account count shrinks — pushing the ~$500K/founder rung from ~150–220 accounts out to a materially larger base. It doesn't break the model; it's the difference between a high-margin software business hitting the ladder on low-hundreds of accounts and a services-heavy one needing far more. The thesis hinges on the ratio of software-handled volume to human-handled exceptions — currently an assumption.
+
+QUESTIONS THE FOUNDERS MUST ANSWER BEFORE I'M COMFORTABLE
+- True cost-to-serve per account: specialist-hours for onboarding (wage-determination setup + payroll connection) and support hours/account/month for edge cases — at what account count does the part-time specialist become full-time/second hire? (Time-track first 10 onboardings + a quarter of tickets.)
+- Real blended ARPU + active-job distribution: 15–20 discovery calls on concurrent job counts, willingness-to-pay at $300/$600/$1,200, per-project vs flat.
+- CAC and channel: direct-to-contractor (SEO/trade-association webinars/content) vs prime/GC-driven distribution (primes mandating the tool) — realistic CAC, close rate, onboarding-fee-to-CAC ratio (stand up one funnel).
+- Accuracy-liability posture: contractual liability cap, E&O/professional-liability cost, and how that premium hits COGS if a wrong filing withholds a payment.
+- Jurisdiction coverage to make the ladder + build-and-maintenance cost per added state + how fast determinations/rules change (content run-rate).
+
+RECOMMENDATION: GO
+The financial structure is strong and well-suited to a bootstrap: a forced, recurring, already-budgeted buy tied directly to getting paid; favorable working capital (cash in before cost out, onboarding fee offsetting CAC); high software-led gross margin with real per-jurisdiction operating leverage; a conservative path to the ladder at only low-hundreds of accounts against a documented base of tens of thousands; and a clean, transferable, financeable asset at exit. GO and not a higher reflex because two verifiable assumptions (true cost-to-serve; per-jurisdiction content/expansion cost) plus an early geographic-concentration and accuracy-liability tail must be capped and insured. Fund the cheap experiments (cost-to-serve time-tracking, 15–20 willingness-to-pay calls, one acquisition funnel, an E&O quote) before scaling spend; on the numbers available now, financially sound, GO.

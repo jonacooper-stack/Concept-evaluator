@@ -1,0 +1,85 @@
+Certified-Payroll & Prevailing-Wage Compliance for Public-Works Contractors — Concept Dossier
+
+Tier: B — Promising (Deep-Dive), top of band  |  Objectives Score: 76.5 / 100  |  June 15, 2026
+
+*Ranked #2 of 3 surfaced concepts. Forcing function: CRITICAL INPUT to getting paid (with a regulatory mandate behind it).*
+
+---
+
+1. In one paragraph
+When a construction company works on a government-funded project — a road, a school, a transit line — the law forces it to pay government-set "prevailing wages" and to file a special report called a CERTIFIED PAYROLL, every single week, for every worker, on every job. If that report is late, missing, or wrong, the government (or the general contractor above them) WITHHOLDS the company's payment for work already done. Most of these companies are small regional specialty subcontractors (electricians, plumbers, concrete crews) with one overworked bookkeeper wrestling this by hand in a spreadsheet. We'd sell them a "certified payroll, handled every week" subscription: our software takes their payroll data, applies the right wage rules, catches the errors that get payments held up, produces the exact required forms, and files them — with a thin human help layer for the tricky setup. They pay a monthly fee to make a weekly paperwork landmine quietly go away so they always get paid.
+
+2. Who pays — and why they can't say no
+The buyer: the owner, controller, or office manager at a small-to-mid public-works subcontractor (~5–150 field workers). Secondary buyer: the general contractor above them, who is on the hook to collect and check their subs' reports before the government pays HIM. The forcing function: a CRITICAL INPUT TO GETTING PAID (type #3) with a regulatory mandate (#1) behind it. What breaks if they don't buy, and how fast: their progress payment — often six figures — gets withheld within the week. Keep getting it wrong and they face fines (~$13,500 per violation) and can be banned from bidding public work for up to three years. Nobody has to be convinced — every public-works contractor lives this weekly. On this single most-important measure, this concept scores 9/10 — the strongest part of the idea.
+
+3. The money (plain terms)
+~$300–$1,200/month per contractor (more jobs = more), plus a $500–$2,000 setup fee that also roughly covers the cost of winning the customer. Call it ~$600/month average ("ARPU") as a middle estimate — confirm with 15–20 sales calls. Math to ~$300K/year each: ~$7,200/yr per customer × ~75% margin = ~$5,400 profit per customer per year; ~120–140 customers puts ~$300K in each pocket. Honest caveat (ops review): because setup is hands-on (6–15 skilled hours each), month 12 is a stretch — more realistically 60–90 customers at month 12, with the full ~$300K-each landing ~month 15–18; the ~$500K-each rung (~220 customers) is very reachable by month 24. Why the money is good: customers pay us BEFORE we incur most cost, software does the repetitive work at near-zero extra cost, and they almost never cancel (they'd be cancelling the thing that releases their payment). Tens of thousands of these contractors exist, so ~220 is a tiny slice.
+
+4. Why we win
+Our edge is exactly what we're good at: sharp marketing/positioning and a personal, relationship-led close — into a market where most competitors market badly. Position on the OUTCOME the contractor fears ("so your payment never gets held up") and on DONE-FOR-YOU service, not "better software." Our best channel is a gift: the general contractor above our customer is legally on the hook for the sub's paperwork and already chases subs weekly — a GC who adopts us hands us a warm list of 10–40 subs per project. Start narrow (federal forms + California) and expand deliberately. Why now: government infrastructure money (IIJA, IRA, CHIPS — hundreds of billions) is pouring into exactly these projects and attaching these wage rules to more of them.
+
+5. The competition (from the analyst — read carefully)
+The honest weak spot, and why this is a B not an A. The market is NOT the sleepy, empty field we like best:
+- Miter — the dangerous one. Modern, SF, construction-specific payroll. Founded 2021, raised $38M from top VCs (Bessemer, Coatue), 700+ contractors. ALREADY does native certified payroll for exactly our buyer. A well-funded strong-tech competitor in our target — the exact thing to avoid.
+- Foundation / Payroll4Construction — owned by Thoma Bravo (huge PE firm). Already sells a done-for-you certified-payroll service bundled with the accounting system many contractors use. Deep pockets, sticky.
+- Points North — same thing from ~$175/month (cheaper than our floor), rides ADP's distribution.
+- eBacon — modern, construction-specific, ~$1,000/month. Capable, beatable on marketing but real.
+- LCPtracker — the government-side portal contractors are FORCED to file into. Often free to the sub but clunky. We don't replace it; we make feeding it painless (its bad contractor-side UX is our best argument).
+
+Good news: the actual STATUS QUO for the smallest contractors — spreadsheets, a generalist bookkeeper, an invisible regional consultant — IS sleepy and beatable; we can take that share with better marketing. Bad news: scaling nationally on product alone walks into Miter and Foundation, who can bundle this into the payroll the contractor already runs and undercut us. Procore ships certified payroll today, and Miter IS the move-in. Realistic win = a focused REGIONAL, service-differentiated book, not "conquer the category."
+
+6. The biggest risks (top 3, plain)
+1. A funded competitor (Miter) is already building exactly this for exactly our customer. We can win a focused slice but can't out-spend/out-engineer a $38M company head-on — we must pick a niche they won't chase.
+2. The companies that ARE the contractor's payroll (Miter, Foundation) can bundle this in for almost nothing, and our product sits ON TOP of payroll rather than being it — easier to replace than them.
+3. The "every state is different" tax. Every state has its own forms/portals/rules and they change; a wrong wage rate = a wrong legal filing, the worst failure (all four technical/finance reviewers flagged this).
+
+7. What we'd test next (cheap experiments — next steps, not reasons the score is lower)
+1. Pick and pressure-test our defensible slice: 5 GC + 8–10 small-sub conversations to confirm a niche (one state + one trade, OR the smallest 5–40-worker subs, OR the GC-side angle) where Miter/Foundation are shallow. The make-or-break experiment.
+2. One-week build spike: generate a federal WH-347 + a California DIR e-filing export, and list where the first 10 targets actually file — to confirm whether we truly "file it for them" or only "make the file they upload."
+3. 15–20 sales/pricing calls to confirm the ~$600/month average and willingness to pay over the free (clunky) government portal.
+4. Time the setup work on the first 10–20 customers to confirm margin holds in the 70s.
+5. Get an insurance quote (E&O / tech-E&O) and have a lawyer draft the contract so the legal certification stays with the contractor — before the first paying customer.
+
+8. The scorecard (plain)
+1. Must-have / forcing function (9/10): Textbook painkiller — no compliant weekly report = withheld payment, fines, possible debarment. Strongest part.
+2. Competition (5/10): The weak spot. A funded construction-native competitor (Miter) and a PE-backed bundler (Foundation) already in our target; commoditized core; cheap floor.
+3. Path to our income (7/10): ~$300K each by ~month 15–18 (not a clean month 12), ~$500K by month 24 — genuine, just slower.
+4. Recurring revenue (8/10): True weekly-recurring forced buy; real switching costs once records are in-system.
+5. Demand evidence (8/10): Documented and proven — named competitors already charge $49–$1,000+/mo against an expanding mandate.
+6. Capital efficiency (8/10): ~8–12 weeks to a paid product, no big upfront cost, cash-positive on signing.
+7. Operations / not field-ops (8/10): Fully remote, zero trucks/installs; drag = hands-on setup + multi-state content upkeep.
+8. Founder fit (8/10): Squarely our marketing/positioning/software wheelhouse; the one expertise gap (a prevailing-wage specialist) is hireable.
+9. Scalability (7/10): Great as a focused regional book; national scale contested by funded players.
+- Legal risk-gate: SERIOUS-BUT-MANAGEABLE (gentle end) — we're the tool, not the regulated party; the contractor signs the legal certification, not us. No license. Insurable, capped by contract. Not fatal, no tier hit.
+
+What moves it up a tier (B → A): Pick ONE defensible slice the funded competitors won't chase — own California + one trade end-to-end, OR serve the smallest 5–40-worker subs the big suites ignore, OR flip to the general-contractor side — and confirm with ~5 GC + ~8–10 sub interviews that the funded players are shallow there. The must-have, recurring, capital, and operations scores are already A-grade; a defensible niche choice is the ONLY thing standing between this and an A.
+
+9. Appendix — full council packet
+The six complete expert reviews (CFO, CMO, COO, Legal, CTO, Competitive Analyst), the PM synthesis, and the documented two-directional red-team are saved verbatim in the repository at runs/2026-06-15/reviews/02-certpayroll-*.md.
+
+---
+
+One-Page Scorecard — Certified-Payroll & Prevailing-Wage Compliance
+
+Tier B (Promising — top of band)  |  Objectives Score: 76.5 / 100  |  June 15, 2026
+
+WHAT IT IS: A "certified payroll, handled every week" subscription for small public-works construction subcontractors — software (plus a thin human layer) that produces and files the weekly wage-compliance reports the government requires before the contractor gets paid.
+
+| # | Dimension (weight) | Score | One-line reason |
+|---|---|---|---|
+| 1 | Must-have / forcing function (25) | 9 | No compliant weekly report = withheld payment + fines + debarment. Textbook painkiller. |
+| 2 | Competition & defensibility (18) | 5 | Funded construction-native rivals (Miter $38M; Foundation/Thoma Bravo) in-segment; commoditized core; cheap floor. |
+| 3 | Path to founder income (13) | 7 | ~$300K each by ~mo15–18, ~$500K by mo24; real but slower than a clean mo12. |
+| 4 | Recurring revenue strength (12) | 8 | True weekly-recurring forced buy; real switching costs once records are in-system. |
+| 5 | Probability / demand evidence (10) | 8 | Named competitors already charge $49–$1,000+/mo; expanding IIJA/IRA/CHIPS mandate. |
+| 6 | Capital efficiency (8) | 8 | ~8–12 dev-weeks to paid MVP; no big upfront spend; cash-positive on signing. |
+| 7 | Operations (not field-ops) (5) | 8 | Fully remote, zero field ops; drag = hands-on setup + multi-state content upkeep. |
+| 8 | Skill / founder fit (5) | 8 | Marketing/positioning/software wheelhouse; PW-specialist gap is hireable. |
+| 9 | Scalability optionality (4) | 7 | Strong as a regional book; national scale contested by funded players. |
+
+Weighted total: 76.5 / 100 → Tier B (Promising)
+
+- Six expert averages: CFO 7.6 · CMO 7.8 · COO 7.4 · Legal 7.7 · CTO 7.5 · Competitive 5.8
+- Legal risk-gate: SERIOUS-BUT-MANAGEABLE (gentle end) — the tool, not the regulated party; no license; insurable; capped. No tier hit.
+- Lowest single sub-score anywhere: 4/10 — tied: "differentiation durability" and "encroachment/reach-down risk" (Competitive Analyst).
+- What moves it up a tier (B → A): Choose ONE defensible niche the funded competitors won't profitably chase (CA + one trade end-to-end, OR the smallest 5–40-worker subs, OR the GC side); confirm with ~5 GC + ~8–10 sub interviews. Everything else is already A-grade.
