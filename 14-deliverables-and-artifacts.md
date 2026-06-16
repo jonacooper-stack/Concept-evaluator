@@ -1,6 +1,6 @@
 ---
 name: deliverables-and-artifacts
-description: The plain-English artifacts the founders actually read and share — a Concept Dossier and a one-page Scorecard per concept, plus a master comparison sheet across the whole field. Defines the required sections, the plain-language standard, and exactly how to render them to .docx / .pdf / .txt, save them to the repo, and push them to Google Drive. The point: NEVER make the founders dig through GitHub markdown to understand or share a concept.
+description: The plain-English artifacts the founders actually read and share — a Concept Dossier and a one-page Scorecard per concept, plus a master comparison sheet across the whole field. Defines the required sections, the plain-language standard, and exactly how to render them to Word (.docx), text (.txt), Markdown (.md), and Excel (.xlsx), save them to the repo, and deliver them as attachments. No Google Drive. The point: NEVER make the founders dig through GitHub markdown to understand or share a concept.
 ---
 
 # 14 — Deliverables & Artifacts (plain English, shareable)
@@ -77,33 +77,34 @@ each — name, forcing-function type, Objectives Score, the six expert averages,
 sub-score, Legal risk-gate rating, tier, and a one-line "what it is." Sorted by
 Objectives Score. This is the at-a-glance scoreboard the founders skim first.
 
-## Rendering & delivery (REQUIRED formats: .docx, .pdf, .txt)
-Write each artifact as Markdown first, then render. Use the helper script in this
-repo, which is tool-agnostic and degrades gracefully:
+## Rendering & delivery (REQUIRED formats: .docx, .txt, .md; .xlsx for the sheet)
+Write each prose artifact (Concept Dossier, Scorecard) as Markdown first, then render
+with the helper script in this repo:
 
 ```
-python3 scripts/build_deliverables.py <input.md> --outdir deliverables/
+# Prose dossier / scorecard -> .md + .txt + .docx
+python3 scripts/build_deliverables.py deliverables/<concept>-dossier.md --outdir deliverables/
+
+# Master comparison sheet / scoreboard: write a .csv, render to .xlsx
+python3 scripts/build_deliverables.py deliverables/scoreboard.csv --outdir deliverables/
 ```
 
-It emits `<name>.txt`, `<name>.docx` (via python-docx), and `<name>.pdf` (via
-LibreOffice headless converting the .docx where available; otherwise a structured
-PDF rendered directly with reportlab). Install the backends once if missing:
-`pip install python-docx reportlab`. (Note: in some sandboxed environments LibreOffice
-headless can't load files — the script detects this and falls back to reportlab
-automatically, so PDFs still get produced.) For the master comparison sheet, write it
-as a `.csv` directly (and `.xlsx` if openpyxl is available) so it opens as a
-spreadsheet.
+The prose mode emits `<name>.md`, `<name>.txt`, and `<name>.docx` (via python-docx).
+The CSV mode emits `<name>.csv` and a formatted `<name>.xlsx` (via openpyxl). Install
+the backends once if missing: `pip install python-docx openpyxl`. (PDF is NOT part of
+the standard set; pass `--pdf` only if someone explicitly wants one — it needs
+LibreOffice or reportlab.)
 
 Then:
 1. Save all rendered files under `deliverables/<run-date>/` in the repo.
-2. **Push them to the founders' Google Drive** via the Google Drive MCP tools
-   (create a folder like `Concept Evaluator / <run-date>` and upload the .docx/.pdf/
-   .txt + the comparison sheet). If Drive is unavailable, say so and still deliver.
-3. **Attach the files to the user** in chat (the dossiers and the comparison sheet)
-   so they can open and forward to Mike without touching GitHub.
+2. **Deliver every file to the user as an attachment** (the Concept Dossiers, the
+   Scorecards, and the Excel comparison sheet) so they can open and forward to Mike
+   without touching GitHub. Do NOT use Google Drive or any external upload — just
+   attach the files.
 
 ## Acceptance check
 A run is not "done" until, for each surfaced concept, a Concept Dossier + Scorecard
-exist as .docx + .pdf + .txt, the master comparison sheet exists, all are saved to
-the repo and pushed to Google Drive, and the dossiers read in plain English a
-non-expert could act on. Burying the analysis in markdown does not count.
+exist as .docx + .txt + .md, the master comparison sheet exists as .xlsx (+ .csv),
+all are saved to the repo AND delivered to the user as attachments, and the dossiers
+read in plain English a non-expert could act on. Burying the analysis in markdown
+does not count.

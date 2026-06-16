@@ -1,0 +1,4 @@
+Concept,Forcing Function,Objectives /100,CFO,CMO,COO,Legal,CTO,Competitive,Lowest Sub-score,Legal Risk Gate,Tier,What it is (one line)
+EXAMPLE: Managed CMMC readiness for small defense subs,Regulatory mandate,84,7.8,8.4,7.5,8.0,8.2,8.6,7,Serious-but-manageable,A,Productized recurring compliance service for DoD subcontractors
+EXAMPLE: Calibration & cert management for device makers,Critical input to production,76,7.2,7.6,6.8,8.5,7.4,7.1,6,Minor,B,Recurring required calibration/cert tied to QC product release
+EXAMPLE: Generic AI writing assistant,(none - vitamin),48,5.0,4.5,6.0,8.0,6.5,3.2,3,None,C,Undifferentiated nice-to-have in a crowded funded market

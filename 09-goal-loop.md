@@ -28,7 +28,7 @@ END STATE (done when ALL are true):
 - The surfaced concepts are materially distinct from each other on customer AND market AND forcing function AND revenue mechanism (not flavors of one idea).
 - Each surfaced concept has a COMPLETE frozen council packet: all SIX independent expert reviews (CFO, CMO, COO, Legal, CTO, Competitive Analyst) in their exact doc formats via the .claude/agents subagents run as a fresh parallel batch, plus a doc-07 PM Synthesis with a two-directional red-team.
 - Each concept is scored on the doc-01 weighted rubric, assigned an Objectives Weighted Score (0-100) and a TIER (A Advisor-Ready / B Promising / C Pass), with the Legal RISK-GATE rating recorded. Surface the honest TOP 2-3 of the field, ranked — drawn from A and, if needed, the strongest B concepts. If the best are B-tier, say so plainly and surface them anyway; do NOT inflate to manufacture an A.
-- For each surfaced concept, the doc-14 deliverables exist: a plain-English Concept Dossier + one-page Scorecard rendered to .docx, .pdf, and .txt, saved to the repo, pushed to Google Drive, and delivered as attachments; plus a master comparison sheet covering the whole field.
+- For each surfaced concept, the doc-14 deliverables exist: a plain-English Concept Dossier + one-page Scorecard rendered to Word (.docx), text (.txt), and Markdown (.md), saved to the repo and delivered to the user as attachments (NO Google Drive); plus a master comparison sheet in Excel (.xlsx) covering the whole field.
 - Each packet was produced under CLAUDE.md "Fresh-Evaluation Protocol": a clean-room restatement, no version number, no prior scores, no target disclosed to any council subagent.
 
 CHECK (surface in plain text):
@@ -57,4 +57,5 @@ CONSTRAINTS (hold throughout):
   the strongest B concepts through to manual advisor review — the founders compare
   the top 2–3 against real experts regardless.
 - The deliverables (doc 14) are mandatory: you should end every run with shareable
-  .docx/.pdf/.txt dossiers in Google Drive, not just markdown in the repo.
+  .docx/.txt/.md dossiers + an .xlsx master comparison sheet, delivered to the user
+  as attachments — not just markdown in the repo, and not via Google Drive.

@@ -86,9 +86,10 @@ and hard to share with Mike. Now every concept we surface comes with:
 - A **one-page Scorecard**.
 - A **master comparison sheet** ranking the whole field at a glance.
 
-These are generated as **Word (.docx), PDF, and text (.txt)** files, saved in the
-project, **pushed to your Google Drive**, and sent to you as attachments — no GitHub
-required. (This very document was produced by that new pipeline as a test.)
+These are generated as **Word (.docx), text (.txt), and Markdown (.md)** files — and
+the scoreboard as an **Excel (.xlsx)** file — saved in the project and **sent to you
+directly as attachments** (no Google Drive, no GitHub digging). (This very document
+was produced by that pipeline as a test.)
 
 ---
 
@@ -114,5 +115,5 @@ of caution.
 When you're ready to run a search, start a fresh session and use one of the run
 modes (the simplest is the `/goal` command in doc 09). It will brainstorm widely
 across all five must-have types, run the six-member council on the survivors, and
-hand you plain-English dossiers for the top 2–3 in your Google Drive. Then take those
+hand you plain-English dossiers for the top 2–3 as attachments. Then take those
 to your real advisors and compare — which was the point all along.

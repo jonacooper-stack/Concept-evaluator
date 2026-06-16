@@ -145,11 +145,13 @@ produce the **doc-14 deliverables**:
 - the **scoreboard** (every brainstormed idea, screen result, and for every concept
   that reached council: the six expert averages, the Objectives Weighted Score, the
   lowest sub-score, the legal risk-gate rating, and the tier A/B/C) — as a **master
-  comparison sheet** (file);
+  comparison sheet** in **Excel (.xlsx)** (plus .csv), saved to the repo and delivered
+  as an attachment;
 - for each of the **top 2–3**: a **plain-English Concept Dossier** + a one-page
   **Scorecard** + the full uncompressed council packet appendix + the documented
-  red-team — generated as **.docx, .pdf, and .txt**, saved to the repo, pushed to
-  the founders' **Google Drive**, and delivered as attachments;
+  red-team — generated as **Word (.docx), text (.txt), and Markdown (.md)**, saved to
+  the repo and **delivered to the founders as attachments** (no Google Drive, no
+  external upload);
 - one line on how the surfaced concepts differ on customer + market + forcing
   function + revenue mechanism.
 Write the dossiers for a smart non-expert (the other founder, Mike) — plain

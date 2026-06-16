@@ -137,8 +137,9 @@ For every concept you surface (especially the top 2–3), you MUST also produce 
 Concept Dossier and a one-page Scorecard written for a smart non-expert (the other
 founder, Mike), in plain language with no jargon. These are the artifacts the
 founders read and share; the Synthesis Report above is the internal decision record.
-The orchestrator renders them to **.docx, .pdf, and .txt**, saves them to the repo,
-pushes them to Google Drive, and includes them in a **master comparison sheet**.
+The orchestrator renders them to **Word (.docx), text (.txt), and Markdown (.md)**,
+saves them to the repo, **delivers them to the founders as attachments** (no Google
+Drive), and includes every concept in a **master comparison sheet** in Excel (.xlsx).
 Do not skip this — burying the analysis in markdown is the exact failure this
 framework is fixing. See doc 14 for the required dossier sections and format.
 

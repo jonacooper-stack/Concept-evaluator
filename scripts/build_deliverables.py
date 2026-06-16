@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
 """
-build_deliverables.py — render a plain-English Markdown artifact to .txt, .docx, .pdf.
+build_deliverables.py — render founder-facing deliverables (doc 14) as attachments.
 
-Used by the discovery loop to turn Concept Dossiers / Scorecards (doc 14) into
-shareable files the founders can open and forward without touching GitHub.
+Two modes:
+  * Markdown prose (Concept Dossier / Scorecard / summary):  .md in  ->  .md, .txt, .docx
+    (and optional .pdf with --pdf).
+  * Tabular data (master comparison sheet / scoreboard):      .csv in ->  .csv, .xlsx.
+
+The point: produce files the founders can open and forward as attachments — Word
+(.docx), text (.txt), Markdown (.md), and Excel (.xlsx). No Google Drive, no GitHub
+digging required.
 
 Usage:
-    python3 scripts/build_deliverables.py <input.md> [--outdir deliverables/] [--name NAME]
+    python3 scripts/build_deliverables.py <input.md>  [--outdir deliverables/] [--name NAME] [--pdf]
+    python3 scripts/build_deliverables.py <input.csv> [--outdir deliverables/] [--name NAME]
 
-Behavior (degrades gracefully):
-    .txt  — always (plain text, light markdown stripping).
-    .docx — via python-docx if installed (`pip install python-docx`).
-    .pdf  — via LibreOffice headless converting the .docx (preferred);
-            falls back to fpdf2/reportlab text PDF; else skipped with a warning.
-
-It parses headings, bullet/numbered lists, pipe tables, bold (**...**),
-horizontal rules, and code fences. It is intentionally dependency-light.
+Backends (install once if missing): pip install python-docx openpyxl  (reportlab only if --pdf).
+Parses headings, bullet/numbered lists, pipe tables, bold (**...**), rules, code fences.
 """
 import argparse
 import os
@@ -281,29 +282,84 @@ def to_pdf(md, docx_path, pdf_path, outdir):
     return False
 
 
+# ---------- xlsx (master comparison sheet / scoreboard) ----------
+def to_xlsx_from_csv(csv_path, xlsx_path):
+    try:
+        import csv as _csv
+        from openpyxl import Workbook
+        from openpyxl.styles import Font, PatternFill, Alignment
+        from openpyxl.utils import get_column_letter
+    except Exception as e:
+        print(f"[warn] openpyxl not available ({e}); skipping .xlsx (.csv still written). "
+              f"Install with: pip install openpyxl", file=sys.stderr)
+        return False
+    with open(csv_path, newline="", encoding="utf-8") as f:
+        rows = list(_csv.reader(f))
+    if not rows:
+        return False
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Scoreboard"
+    header_fill = PatternFill("solid", fgColor="1F3864")
+    header_font = Font(bold=True, color="FFFFFF")
+    for r, row in enumerate(rows, start=1):
+        for c, val in enumerate(row, start=1):
+            cell = ws.cell(row=r, column=c, value=val)
+            if r == 1:
+                cell.fill = header_fill
+                cell.font = header_font
+                cell.alignment = Alignment(horizontal="center", vertical="center")
+    ncol = len(rows[0])
+    for c in range(1, ncol + 1):
+        width = max((len(str(row[c - 1])) for row in rows if c - 1 < len(row)), default=10)
+        ws.column_dimensions[get_column_letter(c)].width = min(max(width + 2, 10), 48)
+    ws.freeze_panes = "A2"
+    wb.save(xlsx_path)
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("input", help="input Markdown file")
+    ap.add_argument("input", help="input Markdown (.md) or CSV (.csv) file")
     ap.add_argument("--outdir", default="deliverables", help="output directory")
     ap.add_argument("--name", default=None, help="base name for outputs")
+    ap.add_argument("--pdf", action="store_true", help="also emit a .pdf (off by default)")
     args = ap.parse_args()
 
     os.makedirs(args.outdir, exist_ok=True)
-    md = read_md(args.input)
     base = args.name or os.path.splitext(os.path.basename(args.input))[0]
 
-    txt_path = os.path.join(args.outdir, base + ".txt")
-    docx_path = os.path.join(args.outdir, base + ".docx")
-    pdf_path = os.path.join(args.outdir, base + ".pdf")
+    # Tabular mode: CSV -> CSV + XLSX (master comparison sheet / scoreboard)
+    if args.input.lower().endswith(".csv"):
+        csv_out = os.path.join(args.outdir, base + ".csv")
+        if os.path.abspath(csv_out) != os.path.abspath(args.input):
+            shutil.copyfile(args.input, csv_out)
+        print(f"[ok] {csv_out}")
+        xlsx_path = os.path.join(args.outdir, base + ".xlsx")
+        if to_xlsx_from_csv(args.input, xlsx_path):
+            print(f"[ok] {xlsx_path}")
+        return
 
+    # Prose mode: MD -> MD + TXT + DOCX (+ optional PDF)
+    md = read_md(args.input)
+    md_out = os.path.join(args.outdir, base + ".md")
+    if os.path.abspath(md_out) != os.path.abspath(args.input):
+        shutil.copyfile(args.input, md_out)
+    print(f"[ok] {md_out}")
+
+    txt_path = os.path.join(args.outdir, base + ".txt")
     with open(txt_path, "w", encoding="utf-8") as f:
         f.write(to_txt(md))
     print(f"[ok] {txt_path}")
 
+    docx_path = os.path.join(args.outdir, base + ".docx")
     if to_docx(md, docx_path):
         print(f"[ok] {docx_path}")
-    if to_pdf(md, docx_path, pdf_path, args.outdir):
-        print(f"[ok] {pdf_path}")
+
+    if args.pdf:
+        pdf_path = os.path.join(args.outdir, base + ".pdf")
+        if to_pdf(md, docx_path, pdf_path, args.outdir):
+            print(f"[ok] {pdf_path}")
 
 
 if __name__ == "__main__":

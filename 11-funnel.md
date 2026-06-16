@@ -35,7 +35,7 @@ END STATE (done when ALL true):
 - >= 100 theses generated; the full pool triaged; the triage scoreboard saved and shown.
 - All 5 deep-dive candidates have a COMPLETE, uncompressed six-member council packet + pm-synthesizer two-directional red-team.
 - Each of the 5 is labeled TIER A / B / C on the Objectives Weighted Score (with the Legal risk-gate rating). Surface the honest top 2–3, ranked. Do not pad and do not inflate to reach a tier.
-- For each finalist, the doc-14 deliverables exist (plain-English Concept Dossier + Scorecard as .docx/.pdf/.txt, saved to repo + Google Drive) + a master comparison sheet.
+- For each finalist, the doc-14 deliverables exist (plain-English Concept Dossier + Scorecard as .docx/.txt/.md, saved to the repo and delivered as attachments — NO Google Drive) + a master comparison sheet in Excel (.xlsx).
 - Finalists are materially distinct on customer / market / forcing function / revenue mechanism.
 
 CHECK (surface in plain text AND saved files):

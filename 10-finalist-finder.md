@@ -35,7 +35,7 @@ END STATE (done when ALL true):
 - Every concept that passed the screen received a FULL independent SIX-member council pass — cfo/cmo/coo/legal/cto-reviewer + competitive-analyst via the .claude/agents subagents, run as a fresh parallel batch per concept — and an honest score, then pm-synthesizer with a two-directional red-team.
 - A ranked shortlist of up to 5 finalists is produced, labeled by TIER (A/B/C) on the Objectives Weighted Score, shown top-down. Include the strongest concepts even if the best are B-tier, each labeled with the exact dimensions holding it back.
 - Finalists are materially distinct on customer / market / forcing function / revenue mechanism.
-- For each finalist, the doc-14 deliverables exist (plain-English Concept Dossier + Scorecard as .docx/.pdf/.txt, saved to repo + Google Drive), plus a master comparison sheet for the whole field.
+- For each finalist, the doc-14 deliverables exist (plain-English Concept Dossier + Scorecard as .docx/.txt/.md, saved to the repo and delivered as attachments — NO Google Drive), plus a master comparison sheet in Excel (.xlsx) for the whole field.
 
 CHECK (surface in plain text AND saved files):
 - Scoreboard: every brainstormed idea, its screen result, and for each council-scored concept its six expert averages, the Objectives Weighted Score, the lowest single sub-score, the Legal risk-gate rating, and its TIER.

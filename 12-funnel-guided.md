@@ -47,7 +47,7 @@ After you've named the finalists, paste:
 END STATE (done when ALL true):
 - Each selected finalist has a clean-room one-pager and a COMPLETE, uncompressed council packet: cfo-reviewer, cmo-reviewer, coo-reviewer, legal-reviewer, cto-reviewer, competitive-analyst dispatched as a fresh parallel batch (each sees only the one-pager + its own doc + 00 + 01, never the target or each other), each review written to a file, then pm-synthesizer with a two-directional red-team.
 - Each finalist is labeled TIER A (Advisor-Ready) / B (Promising) / C (Pass) on the Objectives Weighted Score (with the Legal risk-gate rating). Surface the honest top 2-3. Do not pad and do not inflate to reach a tier.
-- For each finalist, the doc-14 deliverables exist (plain-English Concept Dossier + Scorecard as .docx/.pdf/.txt, saved to repo + Google Drive) + a master comparison sheet.
+- For each finalist, the doc-14 deliverables exist (plain-English Concept Dossier + Scorecard as .docx/.txt/.md, saved to the repo and delivered as attachments — NO Google Drive) + a master comparison sheet in Excel (.xlsx).
 
 CHECK (plain text + saved files):
 - Scoreboard: each finalist's six expert averages, the Objectives Weighted Score, lowest sub-score, Legal risk-gate rating, TIER.
