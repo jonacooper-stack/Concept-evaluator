@@ -1,0 +1,25 @@
+# Muster — One-Page Scorecard
+
+**Concept:** Managed, artifact-only NIST 800-171 / SPRS-and-CMMC readiness for small defense subcontractors
+**Tier: B (Promising)  |  Objectives Weighted Score: 76 / 100  |  Date: 2026-06-21**
+
+| # | Dimension (weight) | Score | One-line reason |
+|---|--------------------|-------|-----------------|
+| 1 | Market pull / must-have (25) | 9 | Federal DFARS mandate live today + CMMC cliff Nov 2026; blank SPRS = lost POs now; recurring, budgeted, forced. |
+| 2 | Competition & defensibility (18) | 6 | Beatable sleepy tail + real "artifact-only" seam, BUT HIGH platform reach-down (Secureframe live Mar 2026) and 2 of 3 differentiators already commoditized. |
+| 3 | Path to founder income (13) | 8 | Shown: ~30-46 customers to ~$300K/founder mo12; ~70-90 to ~$500K+ mo24; staffable by 2 founders + 1 analyst. |
+| 4 | Recurring revenue (12) | 8 | True subscription on an indefinitely-renewed obligation; real switching costs from live SSP/POA&M + questionnaire library. |
+| 5 | Probability / demand evidence (10) | 8 | Named DoD figures (80-118K need L2), existing $15-50K/yr spend lines; haircut for crowded-field execution risk. |
+| 6 | Capital efficiency (8) | 9 | Low five-figure launch; onboarding cash roughly self-funds delivery; negative working capital; no inventory/facility. |
+| 7 | Operational tractability (5) | 8 | Remote knowledge work, no field ops; only constraints are expert sign-off + evidence-chasing. |
+| 8 | Skill / founder fit (5) | 8 | Compliance operator + regulated-industry closer + can build software; credential gap bridgeable (fractional RP). |
+| 9 | Scalability optionality (4) | 8 | Lifestyle or sellable; recurring compliance revenue is acquirable; margins improve with scale. |
+| | **TOTAL** | **76/100** | |
+
+**Six expert averages (secondary):** CFO 8.4 | CMO 7.5 | COO 7.6 | Legal 8.1 | CTO 8.2 | Competitive 6.6
+
+**Legal risk-gate rating:** SERIOUS-BUT-MANAGEABLE (FCA preparer shadow + E&O; navigable, insurable — does NOT lower the tier)
+
+**Lowest single sub-score anywhere:** 3 — Competitive Analyst, "Encroachment / reach-down risk" (Secureframe Defense live March 2026; Vanta $504M / Drata tooling shipped; managed/partner SKU 2-4 quarters away)
+
+**What moves it up a tier (B → A):** A written government-contracts-counsel opinion confirming "artifact-only" keeps the company OUT of CMMC/ESP scope (a legal-structural moat, not cosmetic), AND ≥2 channel partners (APEX/MEP or prime programs) committed faster than the platforms verticalize. That plausibly lifts competition 6 → 7 and the score to ≈80 (A).
