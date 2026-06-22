@@ -1,0 +1,25 @@
+# ONE-PAGE SCORECARD — Managed CMMC Compliance for Small Defense Shops
+**Tier: B — Promising  |  Objectives Score: 76.4 / 100  |  Forcing function: Regulatory mandate (type 1)  |  Date: 2026-06-22**
+
+| # | Dimension (weight) | Score | One-line reason |
+|---|---|:---:|---|
+| 1 | Must-have / forcing function (25) | 9 | Federal CMMC mandate, hard Nov-2026 deadline, contract-gating, recurring (3-yr recert + annual affirmation) — forced, budgeted, no internal selling. |
+| 2 | Competition & defensibility (18) | 6 | Fragmented services layer (good), but Workstreet on-thesis in-market, Summit 7 reaching down, discovery wedge commoditized (FutureFeed+Teramis, 2026-06-17); moat is brand/distribution, not structural. |
+| 3 | Path to founder income (13) | 7 | Bottoms-up reaches the ladder ($3.5–4M run-rate by mo24), but mo-12 is a stretch and the whole path rides on the unproven clients-per-FTE margin. |
+| 4 | Recurring revenue strength (12) | 8 | Retainer renews structurally (mandated affirmation + recert) with real switching cost (provider holds SSP/evidence/CUI map); attach rate to verify. |
+| 5 | Probability / demand evidence (10) | 7 | Demand sourced and near-certain (~1.4% of 76,598 certified); success probability discounted for execution against a crowding field. |
+| 6 | Capital efficiency (8) | 9 | Low-five-figure launch, cash collected before delivery cost, negative-WC-leaning; Vanta/Drata services-partner analog. |
+| 7 | Operational tractability (5) | 7 | Remote-first, fixed 110-control standard, no field ops — held below 8 because outcome rides on assessors (6-mo backlog) and partners not controlled. |
+| 8 | Skill / founder fit (5) | 7 | Software + marketing + SOC2/HIPAA operator experience; C3PAO correctly not pursued; two bridgeable gaps (credentialed lead, discovery ML). |
+| 9 | Scalability optionality (4) | 8 | Lifestyle OR financeable/acquirable recurring book; multi-tenant SaaS scales without rewrite. |
+| | **OBJECTIVES WEIGHTED SCORE** | **76.4** | Σ(score×weight)÷10 = 764÷10. |
+
+**Six expert averages (secondary):** CFO 8.0 · CMO 7.7 · COO 6.8 · Legal 7.4 · CTO 6.8 · Competitive 6.8 (mean ≈ 7.25).
+
+**Legal risk-gate:** SERIOUS BUT MANAGEABLE — does NOT lower the tier (per 01); a due-diligence checklist (RPO not C3PAO, tech-E&O, FCA-affirmation firewall, CUI/ITAR architecture, non-contingent assessor referral).
+
+**Lowest single sub-score anywhere:** 4 — COO / Vendor-partner dependency risk (outcome promise on assessors + implementation partners the firm doesn't control).
+
+**Red-team effect (one line):** 79.2 → 76.4 (−2.8); three evidenced down-moves (income, probability, ops); the competition dimension was scrutinized and held at 6 — NOT inflated to reach A, because the 2026 encroachment facts are sourced, not timidity.
+
+**What moves it up a tier (to A):** (1) prove ~15+ clients-per-FTE on 3–5 real paid jobs (lifts income to 8 and confirms the margin); (2) carve and lock a sharp, defensible vertical + referral flywheel fast enough that competition honestly earns a 7. Both together would clear the 80 threshold and the competition gate.
