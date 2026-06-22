@@ -1,0 +1,138 @@
+# BRD — Reposition Muster as Self-Service CMMC Compliance (with AI guidance + form-fill)
+
+**Prepared:** 2026-06-22
+**Repo to edit:** `jonacooper-stack/cmmc` (the site behind `cmmc-bay.vercel.app`)
+**Stack:** Next.js (App Router) + React + Tailwind + TypeScript
+**How to use this doc:** This is the plan of work. Build in the order shown. Confirm exact
+file names in the repo before editing. **Important: the AI assessment and document
+storage already exist and work — extend them, do not rebuild them.**
+
+**Goal in one sentence:** Reposition and extend the product into a **tech-first,
+self-service way for a small defense supplier to become CMMC compliant without paying for
+an expensive consultant** — the AI assesses where they stand (free), walks them
+step-by-step through fixing the gaps (paid), and then **fills out the security
+questionnaires their prime sends them** from what the platform already knows about them
+(paid). One stored knowledge base gets smarter with every answer, which improves both
+their compliance and their future form-fills.
+
+**New one-line positioning:** *"CMMC compliance without the consultant. See exactly where
+you stand, get walked through fixing it step by step, and let us fill out your prime's
+security forms from what we already know about you."*
+
+---
+
+## 1. Who this is for (this drives everything)
+The **small defense supplier** — a machine shop, welder, or small manufacturer — that:
+- usually works with **one prime** (not many),
+- has **little or no in-house IT/security expertise**,
+- **needs CMMC** (Level 1 or 2) to keep or win DoD work, and
+- **can't afford** a $20k–$50k+ consultant.
+
+We are their **consultant replacement.** (Note: a "fill out lots of prime forms" tool only
+helps big multi-prime shops, who need help least — that is **not** who we build for. The
+form-fill here is a *bonus* of doing the compliance work, not the headline.)
+
+## 2. What already exists (do NOT rebuild — build on top)
+- A **working AI assessment**: the user uploads their security **policies**, and the tool
+  scores them against the **110 NIST 800-171 control objectives**, shows the **detailed
+  gap** and **what needs to change**, and produces an estimated SPRS score.
+- **Document storage**: the platform already **stores the user's policy documents** for
+  future use.
+- A polished marketing site (~8 pages) — but it currently sells an **operated, "we run it
+  for you" fixed-price service.** The positioning must change to **self-service** (see §5-A).
+
+## 3. What we're adding (the three new things)
+1. **A step-by-step DIY guidance layer** (NEW — needs building). Today the assessment says
+   *what* is wrong; this turns that into *how to fix it yourself*: for each failing
+   objective, a plain-English explanation, a **policy template / example to adopt**,
+   concrete steps, and **progress tracking to "done."** This is what replaces the consultant.
+2. **A prime questionnaire form-filler** (NEW — the main new build). Upload a prime's
+   security questionnaire and the tool **auto-answers it from the stored knowledge base**,
+   runs a plain-English interview for anything missing (and **routes the deeply technical
+   questions to "your IT provider"**), then lets the user review and **export**.
+3. **One learning loop that connects them.** The platform keeps a **private knowledge base
+   per customer** that grows from their policies, their assessment answers, their
+   remediation choices, and their form answers. That one knowledge base powers **both**:
+   keeping their compliance/score current **and** auto-filling future forms — so every
+   answer makes both better.
+
+## 4. The free vs. paid split (recommended — confirm in §8)
+- **Free (the hook):** run the **assessment** — upload policies, get the estimated SPRS
+  score, and see every gap and what's wrong. Real value, no card required. (Free = a
+  one-time look; documents are not persisted long-term on the free tier.)
+- **Paid (self-service subscription):**
+  - the **step-by-step fix-it guidance** + policy templates,
+  - **document storage** and upkeep,
+  - the **prime questionnaire form-fill**,
+  - **recurring re-assessment** that keeps the score current over time.
+
+## 5. The work list (build in this order)
+
+### A. Reposition the marketing site (copy first — explicitly in scope)
+- Switch the whole story from **"we operate it for you, fixed price"** to **"do it
+  yourself, fast, with our AI — no consultant."** Lead the home hero with the §intro
+  one-liner.
+- Make clear: **the assessment is free; the guidance, storage, form-fill, and recurring
+  re-assessment are the paid product.** Mention the form-fill as the payoff ("then we fill
+  out your prime's forms for you").
+- Update `/the-difference`, `/how-it-works`, `/pricing`, FAQ to match the self-service
+  model and the new free/paid split.
+- `/about` (`app/about/page.tsx`): replace placeholder bios with **real founder names** +
+  the DoD/DIB advisor.
+
+### B. Free/paid plumbing (accounts + billing + gating)
+- Ensure user **accounts** exist (the document store implies they do — confirm). Add a
+  **self-serve subscription** (credit-card signup, no sales call) and **gate the paid
+  features** behind it. The assessment stays open/free behind a light email signup.
+- Make sure every assessment/lead is **persisted** and the founders are notified (confirm
+  this works end-to-end before any paid traffic).
+
+### C. Build the DIY guidance layer (paid core #1)
+- For each failing NIST 800-171 objective from the existing assessment, generate: a
+  plain-English "what this means," a **ready-to-adopt policy template/example**, the
+  concrete **steps to fix it**, and a **checklist that tracks the gap to "done."**
+- Write completed remediations back into the customer's **knowledge base** (feeds §E).
+
+### D. Build the prime questionnaire form-filler (paid core #2 — the main new build)
+- Signed-in customer **uploads a prime's security questionnaire** (Excel/Word/PDF).
+- The tool **auto-answers** each item from the customer's knowledge base (policies +
+  assessment answers + remediation data), each answer marked with a **confidence level**.
+- For gaps, a **plain-English interview**; **route the deeply technical questions to "your
+  IT provider"** instead of guessing.
+- The customer **reviews** every answer (each a **draft they decide to send**), edits, and
+  **exports** the completed questionnaire.
+- Approved answers feed back into the **knowledge base** (feeds §E).
+
+### E. Wire the learning loop (connect C + D)
+- Maintain **one private knowledge base per customer**, growing from policies + assessment
+  + remediation + form answers. Use it to (1) keep the **recurring assessment/score**
+  current and (2) make **each new form-fill** faster and more complete.
+
+### F. Recurring re-assessment (paid)
+- Periodic **re-assessment + reminders** so the score and answers stay current as the
+  customer's posture (and the rules) change.
+
+## 6. Guardrails — keep these true
+- **Data boundary (already true — keep it):** the platform takes in **policies and
+  questionnaire answers**, never CUI, device configs, logs, or scan results. This is both
+  the legal protection and part of the moat. *(No wording change needed — the current
+  "we don't ask for your CUI" message is accurate.)*
+- **Claims discipline (legal):** every score is an **estimate**; every generated policy or
+  answer is a **draft the customer adopts/attests**; **never guarantee a CMMC pass or a
+  specific score**; we are **not an accredited assessor (C3PAO)**.
+- **Privacy/isolation:** each customer's knowledge base is private. **Never use one
+  customer's data to fill another customer's forms or assessment.**
+
+## 7. Out of scope for now (note as "later")
+Exporting into each prime's exact form template; integrations with Vanta/Drata/MSP tools;
+a public blog/resources section; hosting a CUI enclave for customers.
+
+## 8. Decisions to confirm
+- **Free/paid line:** confirm §4 (assessment free; guidance + storage + form-fill +
+  recurring = paid). *(Recommended as written.)*
+- **Price point:** set the subscription price — self-serve and well under consultant cost
+  (target the small-shop budget, e.g., low hundreds/month). The current operated tiers
+  ($1.5k–$3.5k/mo) should be replaced or demoted.
+- **Keep a higher "done-with-you" tier?** Optional: a premium assisted tier alongside the
+  self-serve plan, for shops that want hand-holding.
+- **Brand/domain:** confirm the name/domain (trademark check was flagged pending).
