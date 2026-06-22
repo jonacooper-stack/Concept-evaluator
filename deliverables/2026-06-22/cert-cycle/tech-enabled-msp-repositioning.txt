@@ -1,0 +1,135 @@
+CertCycle, Repositioned → "Your AI-Powered CMMC Compliance Team"
+The Tech-Enabled Compliance MSP model — what it is, how to position it, and what we'd need to build and staff
+
+*Working strategy note for Mike & Jon. Plain English. Date: 2026-06-22.*
+*(This is an internal strategy doc, not a sales page and not a council submission. The numbers labeled [ILLUSTRATIVE] still need the CFO model.)*
+
+---
+
+1. The one-paragraph version
+We stop selling software that *tells* a defense shop how to get CMMC-certified, and start selling a managed outcome: "We will get you certified, and keep you certified — done *with* you, not do-it-yourself." The thing that makes this work (and makes it different from the old-fashioned $250/hour consultants) is that AI does the heavy document and analysis labor — finding gaps, writing policies, drafting the System Security Plan, mapping evidence, prepping you for the assessor — while a small human team owns the result and orchestrates the technical fixes. We sit in the empty middle of the market: far more hands-on than any self-service tool (FutureFeed, Vanta, Drata), and far cheaper and faster than the premium managed shops (Summit 7, CyberSheath) that only really serve big contractors. Our opening wedge is the scariest, most-skipped first question — *"where is your sensitive government data, and is it leaking out of bounds?"* — answered automatically on day one.
+
+---
+
+2. What is actually different (tool vs. outcome)
+Self-service tools sell a map and a filing cabinet. We sell an outcome. Here is the real CMMC journey, and exactly where the tools stop and we keep going:
+
+| Step in the journey | What the self-service tools do (FutureFeed/Vanta/Drata) | What WE do differently |
+|---|---|---|
+| 1. Find the CUI (where is your sensitive gov't data?) | Nothing — they assume you already know your scope | Auto-discover and continuously monitor CUI (incl. CAD/PDF/scanned drawings) — Teramis-style. This is step one and the tools skip it. |
+| 2. Scope the boundary | A questionnaire you fill in (and a non-technical owner gets wrong) | We *determine* the smallest correct boundary for you — which shrinks the cost of everything downstream |
+| 3. Gap assessment | A self-graded checklist → a SPRS score you compute | AI-driven gap analysis validated by a human who knows what "FIPS-validated crypto" actually means |
+| 4. Write the SSP & policies | Blank templates you fill in | AI writes the real narrative tied to *your* environment, reviewed by us — not a template |
+| 5. Fix the gaps (implement controls) | "Here's a to-do list of 110 controls. Good luck." | We implement or orchestrate the fixes — MFA, the GCC High enclave, logging, endpoint, incident response — with partners + AI runbooks |
+| 6. Collect evidence | A repository you upload screenshots into | We auto-collect evidence from connected systems and assemble the assessor package |
+| 7. The assessment | You're on your own with the C3PAO | We prep you, run a mock assessment, and sit in the room — we own whether you pass |
+| 8. Stay certified | Reminder emails | Done-for-you continuous monitoring, drift alerts, the annual affirmation, and 3-year re-cert |
+
+The one-line version: a tool hands a non-technical owner a to-do list and wishes them luck. We do the work, own the result, and keep it up year over year — at a price the small shop can actually afford, because AI strips out most of the labor that makes traditional consultants expensive.
+
+This is the part worth internalizing: the previous evaluation's biggest risk was *"this quietly turns into a low-margin consultancy."* In this model, services are the product on purpose, and AI is the thing that keeps a services business at near-software margins. We're not trying to avoid being hands-on; we're trying to be hands-on at a fraction of the labor cost. That is squarely the founders' edge (we have personally run SOC 2 / HIPAA / GDPR programs).
+
+---
+
+3. Where Teramis-style CUI discovery fits (the wedge feature)
+Teramis (teramis.us) automatically scans for, identifies, and continuously monitors Controlled Unclassified Information across a company's environment — with very high accuracy and, crucially, it finds CUI in the file types our buyers actually live in: AutoCAD files, PDFs, images, and scanned documents. Most discovery tools miss those.
+
+Why this is the perfect *opening* move for us:
+- It answers the first, scariest question. Every shop owner's first real question is "where is my CUI and am I already mishandling it?" Tools skip this; we lead with it.
+- It's technical and credible — it signals "these people actually know what they're doing," which is exactly the trust a non-technical owner needs before signing a managed engagement.
+- It directly lowers the customer's total cost. Less CUI sprawl = smaller compliance boundary = cheaper to certify and maintain. Great sales story ("we'll likely *save* you money by shrinking your scope").
+- It creates recurring, sticky value — continuous monitoring means new CUI showing up (a new contract, a new drawing) triggers us, not a missed control at re-cert time.
+
+Recommendation: integrate/partner with Teramis (or an equivalent — Spirion, MIND.io, Microsoft Purview are adjacent) as the discovery engine in the near term; consider building or white-labeling our own later. Do not let "build our own scanner" block the launch.
+
+---
+
+4. The repositioning (from → to)
+
+FROM (the version that scored a B and lost the tool-vs-tool fight):
+> "Self-serve software that walks you through CMMC and matches you to an assessor."
+> — competes head-on with FutureFeed, who already owns the assessor marketplace; differentiation is copyable.
+
+TO (the managed-outcome version):
+> "Your CMMC compliance team — AI-powered. We get you certified and keep you certified, without you hiring a security department or paying six figures to a consultant."
+
+What changes in the messaging:
+- Headline is an outcome and a relationship, not a feature. "We get you certified" — with an implied/explicit confidence guarantee — replaces "software that helps you."
+- Lead with the CUI-discovery wedge: "First, we find your sensitive data — even in your CAD files and scanned drawings — and tell you exactly what's in scope. Most tools can't even do that."
+- The assessor handoff becomes a *feature*, not the pitch. Reframe it as "we hand a fully-prepared package to an independent assessor from our vetted network" — a neutral, multi-assessor convenience, not our differentiator (FutureFeed already owns that lane).
+- The AI is the proof of "modern, not kludgy." Your read on FutureFeed — thorough but old-fashioned, no AI — is the opening. Position as: "the only CMMC partner where AI writes your policies, your security plan, and your remediation plan in plain English, so a 40-person shop gets a Fortune-500 compliance program without the Fortune-500 team."
+- Name the buyer's relief, not the framework: "You run your shop. We run your compliance." Owners don't want to learn 110 controls; they want the contract.
+- Anchor price against the premium incumbents, not the cheap tools: "A fraction of what Summit 7 charges, because our AI does the work their consultants bill by the hour."
+
+---
+
+5. What we'd need to BUILD beyond what we have today
+Today we have: AI policy review + AI gap analysis. That's the analytical core. To deliver a managed outcome, here's the gap, grouped by priority.
+
+Tier 1 — the three capabilities that *define* the model (without these it's still just a tool)
+1. CUI discovery & continuous monitoring — partner/integrate Teramis-class scanning (CAD/PDF/scanned-doc aware) → "where is your CUI" answered automatically, then watched continuously.
+2. Remediation / implementation orchestration — the "we actually do it" layer. This is the biggest build and the heart of the model. It is part software (AI-generated, step-by-step remediation runbooks; configuration baselines; ticketed workflow that tracks each control to *done*) and part human/partner execution (someone stands up the GCC High enclave, turns on MFA, configures logging). The software makes a small human team able to carry many clients.
+3. Managed continuity engine — continuous-monitoring dashboard, configuration-drift alerts, the annual affirmation workflow, and automated 3-year re-cert prep. This is the recurring revenue spine.
+
+Tier 2 — capabilities that make the outcome credible and efficient
+4. AI SSP & body-of-evidence generator — writes the System Security Plan *from the client's real environment* (not a blank template), and keeps it current as things change.
+5. Automated evidence collection — integrations (Microsoft 365/GCC High, identity, endpoint, SIEM) that pull configs/logs/screens so we're not chasing screenshots.
+6. Scoping & asset-categorization engine — turns the discovery output into the formal CUI/Security-Protected/CRMA asset inventory the assessor expects.
+7. Mock-assessment / assessor-prep module — runs the client through the assessment before the real one; produces the gap-to-pass list.
+
+Tier 3 — the customer-success surface
+8. Client portal + AI compliance co-pilot — plain-English "what do I need to do this week," a chat assistant that answers control questions in machinist-speak, and a project plan the owner can actually follow.
+9. Success-manager console — the internal tool that lets one human manage a portfolio of clients (status, risk flags, what needs a human touch this week). This is the lever that determines our margin.
+
+---
+
+6. What we'd need BEYOND technology
+A managed-outcome business is people + trust + partnerships, not just code. Honest list:
+
+People & expertise
+- A CMMC-credentialed lead (Registered Practitioner / Certified CMMC Professional, ideally a Certified CMMC Assessor's knowledge) — the human who can defend a scope decision and own "you will pass." This is the scarce expertise the prior review flagged; it's bridgeable for us but it must be hired or contracted, not faked.
+- Compliance success managers — the humans who run client portfolios. AI leverage decides how many clients each can carry (the single most important number in the whole model — see §8).
+- Implementation muscle — security engineers who can actually configure GCC High, MFA, logging, etc. Likely fractional or partner-provided at first, not full-time hires.
+
+Credentials & status (what *we* register as)
+- Become a Registered Provider Organization (RPO) with the Cyber-AB — the recognized "we help you get ready" credential. Pursue CCP/CCA certifications for staff.
+- Deliberately do NOT become a C3PAO (the assessor). Staying on the *readiness* side keeps us independent, keeps liability lower, and lets us partner with many assessors. (This was a deliberate, correct choice in the prior analysis — keep it.)
+
+Partnerships (the ones that make the outcome deliverable)
+- Microsoft GCC High / CSP partner (or a reseller relationship) — almost every CUI shop ends up needing a government-cloud enclave; we must be able to deliver or broker it. (This is Summit 7's moat — we need a credible answer.)
+- A C3PAO network — 2–3 vetted independent assessors with capacity in our clients' deadline windows, who *want* pre-prepared clients from us.
+- An implementation/MSP partner network — the hands that do the technical work we orchestrate, until/unless we build it in-house.
+- CUI-discovery partner — Teramis or equivalent.
+- Channel: NIST MEP centers & APEX Accelerators — the federally funded small-manufacturer help networks that already push shops toward CMMC; warm distribution.
+
+Insurance & legal (this goes UP in this model)
+- Higher E&O / professional liability and cyber coverage — because we now *own the outcome* and *touch the implementation*, our exposure is larger than a tool vendor's. Budget for it.
+- Tighter contracts — Master Services Agreement + Statement of Work templates that define what "managed" includes, plus the independence firewall language (we prepare; an independent C3PAO certifies; the customer signs their own affirmation). The previous Legal review's checklist still applies and gets a bit heavier here.
+
+Capital & operating reality
+- Human delivery means real cost of goods, so gross margin lands lower than pure SaaS — but ACV and stickiness go *up*. This is a financeable, sellable business; it's just a different shape (see §8).
+
+---
+
+7. The honest trade-offs (what gets harder)
+1. New competitive set. We stop competing with FutureFeed (a tool) and start competing with RPOs, MSSPs, and managed shops (Summit 7, CyberSheath, local IT/MSPs). The good news: they're premium/big-contractor-focused and not AI-leveraged; the bad news: some are entrenched and credentialed. The repositioned model needs its own competitive review.
+2. We carry liability we didn't before. Owning "you will pass" and touching implementation raises the stakes (and the insurance bill). Manageable, not free.
+3. Lower gross margin than a pure tool — offset by higher price, higher retention, and harder-to-copy defensibility. The whole bet rides on AI leverage being real.
+4. Slower to scale than software (humans in the loop), so the growth curve and the path to the income ladder change shape — fewer clients at much higher value.
+5. Channel conflict with the client's existing IT/MSP — sometimes they'll see us as a threat. Often better to *partner with* the client's MSP than replace them; worth deciding early.
+
+---
+
+8. How the money changes (illustrative — needs the CFO model)
+Rough shape, all [ILLUSTRATIVE / TO MODEL]:
+- Pricing moves up a lot: from $5–15K/yr (self-serve tool) to perhaps a one-time get-certified project ($15–40K) plus a managed retainer of $1,500–$5,000/mo ($18–60K/yr) — still a *fraction* of Summit 7's ~$265K all-in for a 25-person shop, which is the headline of the pitch.
+- Fewer customers to the ladder: at, say, a ~$36K blended annual value, ~55 clients ≈ $2M/yr; the prior self-serve model needed ~150+. Smaller, higher-touch book.
+- Margin: likely ~55–70% (vs. ~82% pure SaaS) depending entirely on how many clients one success manager can carry with AI doing the document/analysis work — that ratio is the business.
+- The single metric that proves the model: *clients managed per human FTE at target margin.* If AI lets one person carry 15–25 clients to a passing outcome, this is an excellent business. If it's 5, it's a boutique consultancy. Everything rides on that number.
+
+---
+
+9. Recommended next step
+This is a genuine structural pivot — different delivery model (managed/done-with-you vs. self-serve), different revenue mechanism (retainer + project vs. subscription), different competitive set (RPO/MSSP vs. tool). Per our own evaluation protocol, that means it should go through the council as a fresh, clean-room candidate with no lineage — because the things that capped the last version at B (competition, services-margin risk) are exactly the things this model changes, and we need an honest, un-anchored re-score to see if it now clears A. I'd want the Competitive Analyst (new map: Summit 7 / CyberSheath / MSPs, not FutureFeed) and the CFO (the clients-per-FTE margin model) to weigh in hardest.
+
+Suggested path: (1) lock this positioning and the Tier-1 feature scope; (2) I write a neutral clean-room one-pager from it; (3) run the full six-member council fresh; (4) compare its score head-to-head with the self-serve version on the master scoreboard. In parallel, the two cheapest real-world validations: (a) get Teramis (or equivalent) to run a discovery scan on 2–3 friendly shops and watch their reaction to the "here's your CUI" moment; (b) stand up one client end-to-end by hand and *measure the human hours* — that single number tells us whether the margins are real.
