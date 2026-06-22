@@ -1,0 +1,26 @@
+# ONE-PAGE SCORECARD — CertCycle (CMMC Lifecycle Platform for Small Defense Shops)
+
+**Tier: B (Promising — Deep-Dive)  |  Objectives Weighted Score: 80.7 / 100  |  Date: 2026-06-22**
+**Forcing-function type: Regulatory mandate (type 1) + Contractual flow-down (type 2)**
+
+| # | Dimension (weight) | Score | One-line reason |
+|---|--------------------|-------|-----------------|
+| 1 | Market pull / must-have (25) | 9 | Federal mandate + prime flow-down, dated Nov 10 2026, recurring 3-yr re-cert; lose certification = lose the contract. |
+| 2 | Competition & defensibility (18) | 6 | Fragmented/beatable readiness layer, but FutureFeed already ships the "assessor handoff" wedge and Vanta/Drata can reach down in 4–8 quarters — copyable, not a moat. |
+| 3 | Path to founder income (13) | 8 | ~90 customers → ~$300K/founder by mo12; ~150 → ~$500K+ by mo24; pace decelerates. |
+| 4 | Recurring revenue strength (12) | 8 | Mandated annual affirmation + 3-yr re-cert; canceling re-exposes a contract-killing lapse — stickier than normal SaaS. |
+| 5 | Probability / demand evidence (10) | 9 | ~80K firms, hard deadline, ~0.5% certified, $75K–$150K already spent — rare concept-stage demand evidence. |
+| 6 | Capital efficiency (8) | 9 | Founder-built software, no inventory/license, annual prepay funds growth; CAC payback ~5 months. |
+| 7 | Operational tractability (5) | 8 | Remote software; ~30 delivery-hrs/week at 160 customers; no field ops. |
+| 8 | Skill / founder fit (5) | 8 | Marketing/positioning/software core; SOC 2/HIPAA/GDPR operator background bridges the expertise gap. |
+| 9 | Scalability optionality (4) | 8 | Margins improve with scale; high-retention compliance revenue is highly financeable/sellable. |
+
+**Six expert averages (secondary, not the gate):** CFO 8.4 | CMO 7.7 | COO 7.5 | Legal 8.0 | CTO 8.0 | Competitive 7.1 (mean 7.78)
+
+**Legal risk-gate rating:** SERIOUS BUT MANAGEABLE (due-diligence checklist; does not lower tier; no FATAL element)
+
+**Lowest single sub-score anywhere:** 5 — tie: Competitive "encroachment/reach-down risk" (Vanta/Drata clock) and COO "vendor/partner dependency" (~100 C3PAOs, independence rule caps internalization)
+
+**Red-team effect:** competition (dim 2) corrected 7 → 6 on the dedicated analyst's evidence (FutureFeed already runs the marketplace; durability copyable in 6–12 months); score moved 82.5 → 80.7; no dimension was deflated and corrected up.
+
+**What moves it up a tier (B → A):** get competition (dim 2) to ≥ 7 — prove the delivery model is software not services (5-shop hand-run cohort), lock 2–3 capacity-committed differentiated auditor partners, and own the content/brand position on present-tense CMMC-assessment pain.

@@ -1,0 +1,80 @@
+# CertCycle — CMMC "Get Certified, Stay Certified" Platform for Small Defense Shops
+
+**Tier: B (Promising — Deep-Dive)  |  Objectives Score: 80.7/100  |  Date: 2026-06-22**
+
+*(Written for Mike — plain English, no jargon. The acronyms get a plain gloss the first time they appear.)*
+
+## 1. In one paragraph
+Small companies that do defense work — think a 40-person precision machine shop or a specialty electronics firm — are about to be legally required to pass a cybersecurity audit to keep their government contracts. The rule is called **CMMC Level 2** (Cybersecurity Maturity Model Certification), it starts phasing into contracts on **November 10, 2026**, and it is not a one-time thing: you re-certify every three years and sign an annual "yes, we're still compliant" statement in between. The catch is brutal: these shops have no security staff (maybe one outside IT contractor), the audit checks **110 separate security controls**, and there are only about **100 accredited auditors in the whole country** for tens of thousands of companies that need one. We sell a software subscription that walks the shop owner through the whole journey — figure out where you stand, fix the gaps, assemble the exact evidence the auditor will ask for, get matched to an available independent auditor, and then keep you compliant year after year. We charge roughly **$5,000–$15,000 a year**. We never do the audit ourselves, we never issue the certificate, and we never store their actual classified data — we deliberately stay on the "help you get ready" side of the line, which keeps us legally clean.
+
+## 2. Who pays — and why they can't say no
+**The buyer:** the owner (or the single ops/quality lead) of a 15–100-employee U.S. defense contractor or subcontractor that handles sensitive government information ("Controlled Unclassified Information," or CUI) and whose contracts require a third-party audit — not a self-graded checklist.
+
+**The forcing function — this is a type 1 (regulatory mandate) stacked on a type 2 (contractual requirement):**
+- *Regulatory mandate:* federal rule (32 CFR Part 170) requires the certification to win or keep CUI-bearing Department of Defense contracts.
+- *Contractual requirement:* the big prime contractors flow the requirement down into their subcontracts with hard dates attached.
+
+**What breaks, and how fast, if they don't buy:** without a current certification the firm becomes **ineligible to bid or to keep the contract** — i.e., it loses live, revenue-bearing work. That is about as concrete and fast a consequence as a small business faces. The buy is forced, recurring (every 3 years plus an annual affirmation), already budgeted (these firms are quoted $75K–$150K for the traditional consultant-plus-audit path today), and bought without anyone having to convince the owner the problem is real — a prime already told them, with a date. This is a painkiller, not a vitamin. It passes the need-to-have test cleanly; the must-have dimension scored a 9.
+
+## 3. The money (plain terms)
+- **Price:** about **$400–$1,200 per month**, i.e. **$5,000–$15,000 per year**, billed annually (which means the customer pays us up front, before we spend much — great for cash flow). Tiered by company size. *These exact prices are an educated estimate to be tested with real pricing calls.*
+- **A second income stream:** because we hand auditors a pre-organized, ready-to-pass client (which saves them work), auditors pay us a **referral / qualified-handoff fee**. We've left this out of the core math below to be conservative — it's upside.
+- **The simple math to each founder's income:**
+  - Assume an average customer pays about **$9,000/yr** (the midpoint) and software margins run ~82% (normal for this kind of product).
+  - **~90 customers ≈ $800K/yr in revenue** → after a lean ~$200K of non-founder costs, that's roughly **$300K to each of the two founders by about month 12** (Rung 1 of the goal).
+  - **~150 customers ≈ $1.35M/yr** → roughly **$500K+ to each founder by about month 24** (Rung 2). Notice the pace actually *slows* — 7–8 new customers a month in year one, ~5 a month in year two — so it doesn't require heroics.
+  - For scale: 150 customers is **0.75%** of a conservative 20,000-shop slice of the market. We are nowhere near running out of customers.
+- **The one number that can wreck this math:** if the average price lands at the $5K floor instead of $9K, the customer count needed roughly doubles. And if we get sucked into doing the fix-it work by hand for panicked customers, our 82% software margin collapses toward a 40–55% consultancy margin. Both are flagged as the first things to test.
+
+## 4. Why we win
+The companies serving this market are mostly slow, manual, or aimed at the wrong customer — exactly the kind of sleepy field the founders are built to out-position:
+- **Expensive hourly consultants** (Registered Provider Organizations) charge $250–$400/hr, do a one-time project, leave you at the finish line, and have nothing recurring. They can't scale their own labor.
+- **Heavy "managed enclave" providers** (e.g., Summit 7 at roughly **$265,000** for a 25-person project) are built for big, well-funded contractors — far too heavy and pricey for a 40-person shop. Their very existence proves the small end is under-served.
+- **Generic compliance-automation tools** (Vanta, Drata) are built for tech startups that already have a security person, cover many frameworks shallowly, and stop at "you're ready on paper."
+
+Our edge is the founders' actual strengths: marketing and positioning, building the software themselves, and a genuinely smart distribution plan that needs **no enterprise sales team**. We co-market with the capacity-starved auditors (who have more demand than they can handle and want pre-prepared clients), and we plug into the federally funded small-manufacturer help networks (the NIST MEP centers and APEX Accelerators) that exist specifically to push these shops through CMMC. The founders have also personally run SOC 2, HIPAA, and GDPR compliance programs — so the hard part (knowing what an auditor actually wants) is bridgeable, not a fantasy.
+
+**Why now:** the November 10, 2026 deadline creates a multi-year wave of first-time, must-buy customers, and only about 0.5% of the market is certified so far.
+
+## 5. The competition (from the analyst — read this part twice)
+This is the part that keeps the concept at B instead of A, so here it is straight:
+- **FutureFeed — the real danger.** It's the recognized specialist for exactly this market ("TurboTax for CMMC"), has raised about $9.3M, and — this is the uncomfortable fact — **already runs the auditor-matching marketplace** that our one-pager pitched as our novel feature, with 260–300+ providers on it. So our single most differentiated piece is not greenfield; we'd be a fast-follower there, not a first-mover. The good news: FutureFeed is an 11-person, lightly funded, thinly-reviewed team spread across many frameworks, and its pricing ($99–$399/mo) signals "cheap tool," not "we get you all the way to passing." Beatable on depth and hand-holding for the non-technical owner — not on "we invented the handoff."
+- **Vanta ($220M revenue) and Drata ($100M revenue) — the encroachment clock.** Both already ship CMMC features. Today they're contained because their evidence is built for a different audit (SOC 2) and their buyer is a tech company with a security team, not a machine shop. But they're funded horizontals with CMMC on the roadmap; a small-business CMMC product is within their reach in roughly 4–8 quarters. This is the biggest external risk, and it's a clock, not a single event.
+- **ComplyUp / Totem — the price floor.** Cheap document tools ($5K–$7K/yr, and ComplyUp advertises "industry's lowest price" plus a free scoring tool). They anchor buyer price expectations low on the paperwork, which squeezes our pricing from below.
+- **CyberSheath + ControlCase / Kratos — the structural squeeze.** Managed-service firms and auditors assembling their own "get-ready-then-audit" pipelines. They show others can build the same handoff from the other direction.
+
+**Plain-English read on defensibility:** the paperwork features are copyable in under 90 days; the durable stuff (the small-shop brand, owning the search traffic on "getting through a CMMC assessment," and a curated auditor network) takes a competitor 6–12 months to copy. That's real but modest protection — it's a positioning-and-execution race, not a structural moat. **Could a big platform move in? Yes, within 4–8 quarters** — which is exactly why speed and brand matter.
+
+## 6. The biggest risks (top 3, plain)
+1. **The product quietly turns into a consultancy.** A non-technical owner, six weeks from an audit, panicking on a control they can't meet, begs us to "just fix it." Say yes twenty times and we've built the hourly-consultant business we were trying to beat — and our healthy software margins evaporate. This is the single most likely thing to break the money math.
+2. **The competitive wedge is contested and copyable.** Our flashiest feature (auditor matching) is already live inside FutureFeed, and a funded player (Vanta/Drata) could ship a small-business CMMC product within 4–8 quarters. We win on positioning and speed or not at all.
+3. **The whole demand wave is pegged to a date that has slipped before.** If the November 10, 2026 phase-in moves 6–12 months, urgency softens, the auditor-partner appetite cools, and revenue pushes right. (Also in this bucket: the auditor referral fee — half the second revenue stream — has to be structured carefully so it doesn't trip the auditors' independence rules, or they'll refuse it.)
+
+## 7. What we'd test next (cheap experiments, before building much)
+1. **The delivery-model test (most important).** Hand-run 5 real shops through readiness, by hand, and *measure* it: how many support hours per customer, how many "just get on a call" escalations, what's the first-attempt pass rate. This tells us whether the software can truly carry a non-technical owner — or whether we're secretly a services firm. Cost: founder time.
+2. **The pricing test.** A fake pricing page plus 10–15 calls to shops mid-prep (ask what they actually paid consultants). Does $400–$1,200/mo hold, or does it get dragged toward $300–$500/mo by the cheap tools? Test "audit-ready outcome + auditor handoff" framing vs. plain "compliance software" framing.
+3. **The auditor-partner test.** Call 10–15 accredited auditors from the public Cyber-AB Marketplace. Will they (a) refer their overflow/unready leads to us, (b) actually have capacity in customers' deadline windows, and (c) sign a referral fee that survives their independence rules? Get 2–3 signed letters of intent before building the matching feature. (This also answers the legal question.)
+4. **The "is the handoff really better than FutureFeed's" test.** Be honest about whether our curated, evidence-package handoff genuinely beats FutureFeed's existing 260-provider directory — and check the search traffic to confirm there's winnable air for a small-shop-native voice.
+5. **The content-churn test.** Log how often the CMMC rules actually change over 60–90 days. That single number decides whether one founder can keep the 110-control library current or whether we need a content hire in month one.
+
+*(These are next steps, not reasons the score is lower — at concept stage we have no product or interviews yet, and that is normal.)*
+
+## 8. The scorecard (plain)
+| # | What we're judging | Score /10 | Why, in one sentence |
+|---|--------------------|-----------|----------------------|
+| 1 | Is it a must-have? (forcing function) | 9 | A federal mandate plus prime-contract flow-down, with a hard date and a "lose the contract" consequence — about as forced as it gets. |
+| 2 | Competition & defensibility | **6** | Fragmented and beatable on the readiness layer, but our flashiest feature already ships inside FutureFeed and funded players could reach down — a positioning race, not a moat. |
+| 3 | Path to founder income | 8 | Conservative math reaches ~$300K each by month 12 (~90 customers) and ~$500K+ by month 24 (~150), with the pace decelerating. |
+| 4 | Recurring revenue strength | 8 | The renewal is legally mandated and canceling re-exposes the firm to a contract-killing lapse — much stickier than ordinary software. |
+| 5 | Probability / demand evidence | 9 | Demand is documented to a rare degree: ~80,000 firms, a hard deadline, ~0.5% done, $75K–$150K already being spent. |
+| 6 | Capital efficiency | 9 | Founders build it themselves, no inventory or license, customers prepay annually — the business funds itself early. |
+| 7 | Operationally tractable (not field-ops) | 8 | Fully remote software; ~30 hours/week serves 160 customers; no trucks, installs, or site visits anywhere. |
+| 8 | Founder fit | 8 | Squarely marketing/positioning/software, and the founders have actually run SOC 2/HIPAA/GDPR programs — the expertise gap is bridgeable. |
+| 9 | Scalability optionality | 8 | Margins improve with scale and high-retention compliance revenue is among the most sellable/financeable asset classes there is. |
+
+**Legal risk-gate rating:** SERIOUS BUT MANAGEABLE — a due-diligence checklist (structure the auditor referral fee carefully; firewall the affirmation-and-failure liability with disclaimers and insurance; confirm no stored file is itself classified data). Per the framework this does **not** lower the tier. There is no fatal legal problem.
+
+**Honest tier: B (Promising).** **What would move it to A:** the competition dimension has to earn a 7+. Concretely — prove the delivery model is genuinely software (not services) on a 5-shop hand-run cohort, lock up 2–3 differentiated, capacity-committed auditor partners FutureFeed doesn't have, and demonstrate an ownable content/brand position on present-tense audit pain. Do those and dimension 2 moves from 6 to 7, the score clears 80 with the competition gate satisfied, and this is a defensible A.
+
+## 9. Appendix — full council packet
+The six complete expert reviews (CFO, CMO, COO, Legal/Regulatory, CTO, Competitive Analyst), the PM synthesis, and the documented two-directional red-team are reproduced verbatim alongside this dossier for anyone who wants the full rigor. The reviews live in the `reviews/` folder next to this dossier; the synthesis and red-team are in `synthesis-and-red-team.md`.
