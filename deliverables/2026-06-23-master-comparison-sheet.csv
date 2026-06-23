@@ -1,0 +1,19 @@
+Concept,Customer,Forcing function (must-have type),Revenue model,CFO,CMO,COO,Legal,CTO,Competitive,OBJECTIVES /100,Lowest sub-score,Legal risk-gate,TIER,Recommendation
+CommissionTrue-Up,BGAs/IMOs/FMOs & benefits GAs,Critical revenue input + financial continuity (the agency's OWN commission income is mispaid),Contingency wedge -> recurring subscription,8.2,7.5,7.6,7.4,6.6,5.9,72.6,4,Serious-but-manageable,B,REFINE
+WelfareDoc Suite,Employers 50-500 EE via benefits brokers/TPAs,"Regulatory/compliance mandate (ERISA + IRC; uncapped $2,000+/day 5500 penalty)",Recurring annual subscription (broker-distributed),7.8,5.5,7.9,7.8,7.6,5.8,71.6,3,Minor,B,REFINE
+EOIglide,Life/DI carrier group divisions & benefits brokers,Critical revenue input + risk/liability mitigation (DOL-settlement compliance),Hybrid: PEPM subscription + per-approved-app success fee,7.9,5.5,7.0,6.7,6.6,5.3,65.3,3,Serious-but-manageable,C,REFINE
+
+"SCREEN SHORTLIST (screen-level estimate, not a full council)"
+Rank,Concept,Screen Objectives /100,Status
+1,EOIglide,80,Councilled -> B (65.3)
+2,CommissionTrue-Up,80,Councilled -> B (72.6)
+3,WelfareDoc Suite,79,Councilled -> B (71.6)
+4,GroupBillRecon,77,Shortlisted - not yet councilled
+5,COBRAsignal,76,Shortlisted - not yet councilled
+6,COIRecover,75,Shortlisted - not yet councilled (highest durability pick)
+7,InforceLedger,74,Shortlisted - not yet councilled
+8,DepCheck (non-medical),73,Shortlisted - not yet councilled
+9,PFMLpilot,73,Shortlisted - not yet councilled
+10,SuitabilityProof,72,Shortlisted - not yet councilled (encroachment watch)
+11,BeneficiaryRecover,71,Shortlisted - not yet councilled
+12,NonDiscTest (standalone),70,Folds into WelfareDoc Suite
