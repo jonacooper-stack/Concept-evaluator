@@ -1,0 +1,57 @@
+# CFO REVIEW — Evidence-of-Insurability (EOI) Orchestration for Voluntary Benefits
+
+## ONE-PARAGRAPH FINANCIAL READ
+The numbers work, and they work for an unusually pleasant reason: this is not a "find budget" sale, it is a "stop the leak" sale where the product pays for itself out of recovered premium that was already elected. The economics of B2B vertical-SaaS-plus-success-fee are excellent here — high gross margin (80%+), self-funding cash dynamics (carriers and brokers pay annual/quarterly upfront, the success fee is collected on a win), and a credible bottoms-up path to ~$300K/founder by month 12 and ~$500K+ by month 24 without heroics, because each large group enrollment is worth real dollars and the success fee scales with premium recovered. The two real financial risks are (a) the per-approved-application success fee depends on carriers/brokers being willing to share recovered premium with a third party, which is a contracting and channel-economics question, not a product question, and (b) revenue concentration is high early — a handful of carrier group divisions or large broker/TPA relationships could be 70%+ of revenue in year one.
+
+## THE MATH
+
+**STEP 1 — Sizing the underlying leak.** Voluntary/supplemental life and disability is a large, growing line. [ATTRIBUTED, directional] LIMRA and Eastbridge consistently report U.S. voluntary benefits in-force/new premium in the tens of billions; voluntary life + disability is a multi-billion-dollar annual new-premium category. The specific failure monetized is EOI non-completion.
+- [ASSUMED] EOI completion rate without active orchestration: 30–55% (i.e., 45–70% of triggered EOI leaks). Cheap test: ask 3–5 carrier group divisions and 3–5 mid-market brokers for their internal EOI completion/abandonment rate — this single number is the thesis and is knowable in a few phone calls.
+- For a 2,000-employee employer, if ~8–15% elect above GI and the average abandoned excess coverage carries [ASSUMED] $200–$600 of annual premium per abandoned case: order of magnitude 2,000 × 10% above-GI × 50% abandonment × $400 = ~$40K/yr of recurring premium leaked at ONE employer.
+
+**STEP 2 — Subscription (PEPM) layer.** [Named comparables] Employee Navigator, Ease, and bswift price ben-admin in the low single-digit PEPM range; specialized point solutions command $0.50–$3+ PEPM.
+- [ASSUMED] EOI-orchestration subscription $0.50–$1.50 PEPM, billed to carrier division and/or broker. A single 2,000-life group at $1.00 PEPM = $24K ARR. Twenty such groups = ~$480K ARR. The contract unit is a book of business (a carrier division or broker bringing many groups), not one employer — which is what makes this scale fast.
+
+**STEP 3 — Success-fee layer (the upside engine).** Take ~$40K/yr leaked premium at a 2,000-life employer. If orchestration lifts completion from [ASSUMED] 40% → 70%, that recovers ~$24K/yr of recurring premium at ONE employer. [ASSUMED] success fee 10–20% of first-year recovered premium (or a fixed per-approved-application fee of $20–$60) → ~$3.6K success fee per employer-cycle at 15%, on top of subscription.
+
+**STEP 4 — Founder-income ladder.** Target ~$300K/founder (~$600K combined) by mo12; ~$500K/founder (~$1.0M+) by mo24. At 80%+ gross margin and a lean 2-founder team, owner-earnings ≈ 55–70% of revenue early.
+- Mo12 ~$600K owner earnings → ~$900K–$1.1M ARR. At blended ~$30K–$50K ARR/group (subscription + success fee), that is ~20–35 active groups via ~2–5 channel relationships. Not heroic for a forced-demand, found-money product.
+- Mo24 ~$1.0M+ owner earnings → ~$1.6M–$2.2M ARR. Roughly double the groups or a few more relationships, plus success-fee compounding as recovered premium renews.
+
+**NET:** The model pencils. The single sensitivity that swings everything is the success-fee share carriers/brokers will actually pay on recovered premium, and the speed of carrier/broker integration cycles.
+
+## SCORES (1–10)
+1.  Startup capital efficiency:        **9** — Pure software; build cost is founder time plus modest cloud/dev tooling (low five figures). No inventory, deposits, or field ops.
+2.  Working-capital profile:           **8** — Carriers/brokers pay subscription annual/quarterly upfront, success fee collected on an approved application; near-zero AR carry. [ASSUMED net-30 to net-60 enterprise terms.]
+3.  Cash flow self-funding:            **8** — Annual/quarterly upfront subscription + per-win success fee means growth largely pays for growth; caveat: enterprise carrier sales cycles tie up founder time, not cash.
+4.  Unit economics quality:            **8** — Paid for out of recovered premium the buyer otherwise loses, so willingness-to-pay is anchored to dollars found; at $30K–$50K blended ARR/group against low-touch delivery, gross margin is high and payback short once a channel relationship is signed. [ASSUMED LTV/CAC ≥ 4–6 at the channel level.]
+5.  Gross margin:                      **9** — Software orchestration + automated nudges/status; marginal cost per added group near-zero. 80–90% is the norm (named comparable: ben-admin/point-solution SaaS gross margins 75–90%). The success fee is essentially pure margin.
+6.  Path to founder-income ladder:     **8** — Bottoms-up ~20–35 groups / a handful of channel relationships for mo12 ~$600K, double for mo24 ~$1M+; conservative for a found-money product, with success-fee compounding as upside.
+7.  Realistic obtainable market:       **8** — Multi-billion-dollar voluntary life+disability new-premium category (LIMRA/Eastbridge, directional); two founders need only low-tens of mid-market groups via a few relationships to hit the ladder.
+8.  Financial risk concentration:      **5** — Honest mediocre: early revenue concentrated in a few carrier divisions / large broker-TPA relationships (could be 60–80% of year-one revenue in 2–4 logos); success fee also re-exposes revenue to election volumes each cycle.
+9.  Scaling economics:                 **8** — Integration to a carrier or ben-admin platform is built once and amortized across every group that flows through it; each added group near-zero marginal cost. Classic improving-margin SaaS curve.
+10. Financeability / exit optionality: **8** — Recurring-revenue cross-carrier orchestration on proprietary EOI workflow data is a clean, acquirable asset; logical buyers are ben-admin platforms, carrier group divisions, or benefits-tech roll-ups.
+
+**AVERAGE SCORE: 7.9 / 10**
+
+## TOP 3 FINANCIAL STRENGTHS
+- Self-funding, found-money economics: the product is paid for out of recurring premium the buyer was already going to abandon, so it does not compete for new budget — it returns dollars, underwriting both high willingness-to-pay and high gross margin (80–90%).
+- Channel leverage on the cost side: the unit of sale is a carrier division or broker/TPA bringing a book of many employer groups, so a handful of relationships delivers the ~20–35 groups for the mo12 ladder; CAC is amortized across many groups.
+- Recurring + aligned hybrid model: PEPM subscription gives a durable upfront-billed base; the per-approved-application success fee aligns pay with premium captured and compounds as recovered coverage renews.
+
+## TOP 3 FINANCIAL RISKS
+- Success-fee acceptability: the upside layer assumes carriers/brokers will share 10–20% of recovered first-year premium with a third party. If they resist (or attribution is disputed — "would that EOI have completed anyway?"), the model collapses toward subscription-only, which still works but is materially smaller.
+- Early revenue concentration: 2–4 carrier/broker logos likely = 60–80% of year-one revenue; loss/stall of one (or a carrier building EOI orchestration in-house) is an existential dent until the base broadens.
+- Sales-cycle and integration drag: carrier and ben-admin integrations and security reviews are slow (6–12+ months to first dollar with a large carrier), delaying the ladder unless faster-moving brokers/TPAs produce early revenue.
+
+## BIGGEST SINGLE RISK
+The single financial issue most likely to define this concept is the success-fee economics — whether the parties who keep the premium (the carrier, and to a lesser extent the broker who earns commission on it) will agree to pay a third-party orchestrator a share of premium that, in their view, "they would have eventually collected anyway." The thesis monetizes a leak, but the counterargument from a carrier CFO is attribution: some abandoned EOIs would have completed without the vendor, so paying 15% of all recovered premium overpays for cases the vendor didn't actually save. If that argument wins, the success fee gets negotiated down to a thin per-application fixed fee or disappears, and the business reverts to a subscription-only PEPM tool — still a real, high-margin SaaS business, but one whose ARR-per-group drops by roughly a third to a half, pushing the ladder from "comfortable" to "needs more logos faster." The mitigant is structural and testable: prove incremental lift with a controlled pilot (groups with orchestration vs. matched groups without), so the success fee is charged only on demonstrated incremental completions above a baseline — converting an attribution fight into a measured, defensible number. Until that lift number exists and a carrier/broker has agreed in principle to pay on it, the success-fee revenue should be treated as upside, not base case, and the model underwritten on subscription economics alone.
+
+## QUESTIONS THE FOUNDERS MUST ANSWER
+- What is the real EOI abandonment rate, and the incremental lift orchestration produces? Get the baseline completion rate from 3–5 carrier divisions and 3–5 brokers, and define how lift will be measured. Everything hangs on this pair of numbers.
+- Will carriers and/or brokers pay a success fee on recovered premium, and how much? Confirm whether the willing buyer is the carrier division, the broker, or both, and what share of first-year (and renewal) recovered premium each will pay — or whether it must be a fixed per-approved-application fee.
+- Who is the contracting/economic buyer per deal, and how concentrated does year-one revenue get? Map the realistic first 10 logos and the % from the top 2.
+- What is the integration cost and time-to-first-dollar with a large carrier vs. a broker/TPA, and can faster channels fund the slow ones?
+
+## RECOMMENDATION: GO
+The financials are genuinely attractive for a bootstrapped two-founder venture: capital-light to launch, high gross margin, self-funding cash dynamics, recurring revenue with an aligned upside layer, and a credible non-heroic path to the founder-income ladder driven by channel leverage and found-money willingness-to-pay. The forcing function is real — elected, contracted-for premium that leaks in a workflow gap owned by no one — exactly the must-have that doesn't require educating the buyer that the problem exists. GO rather than REFINE because the model works on subscription economics alone, with the success fee as upside; the open questions (abandonment/lift baseline, success-fee acceptability, concentration, integration timeline) are validation experiments, not flaws, and every one is answerable with phone calls and a small pilot before any significant build. The one discipline I would impose: underwrite the plan on subscription-only economics, treat the success fee as upside until a measured lift number and an in-principle carrier/broker agreement exist, and prioritize faster-moving broker/TPA channels for first revenue while the slower carrier integrations mature.
